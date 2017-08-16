@@ -1,0 +1,51 @@
+ <div class="container d-table">
+        <div class="d-100vh-va-middle">
+            <div class="row">
+                <div class="col-md-6  offset-md-3">
+                    <div class="card mx-2">
+                        <div class="card-block p-2">
+                            <div class="card-block">
+                                <!-- <h1>Login</h1> -->
+                                
+                                    <img src="assets/img/logo.png"  class="" style="" width="185" height="55" class="logo">
+                               
+                                
+                                <p class="text-muted">Sign In to your account</p>
+                               
+                                <form class="form-horizontal" (ngSubmit)="loginForm.form.valid &&  login()"  #loginForm="ngForm" novalidate>
+
+                                 <div class="form-group row">
+                                            <label class="form-control-label" for="">Mobile No.</label>
+                                            <div class="input-group mb-1">
+                                             
+                                                <input type="text" class="form-control"  [(ngModel)]="user.mobile" name="mobile" #mobile="ngModel" required>
+
+                                                 <div *ngIf="loginForm.submitted && !mobile.valid" class="alert alert-danger">Mobile No. is required</div>
+                                            </div>
+                                            
+                                </div>
+
+                                 <div class="form-group row">
+                                        <label class="form-control-label" for="">Password</label>
+                                        <div class="input-group mb-2">
+                                            <input type="password" class="form-control" 
+                                            [(ngModel)]="user.password" name="password" #password="ngModel" required> 
+                                             <div *ngIf="loginForm.submitted && !password.valid" class="alert alert-danger">Password is required</div>
+                                        </div>
+                                        
+                                </div>
+                                <div class="row">
+                                    <div class=" text-xs-right">
+                                        <button type="submit" class="btn btn-primary px-2">Login</button>
+                                    </div>
+                                    
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

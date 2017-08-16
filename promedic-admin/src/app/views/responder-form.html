@@ -1,0 +1,196 @@
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                     <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-edit"></i>New Responder
+                                <div class="card-actions">
+                                    <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                                    <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+                                    <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <form class="form-horizontal" (ngSubmit)="responderForm.form.valid &&  onSubmit()"  #responderForm="ngForm" novalidate>
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">First Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="responder.first_name" name="firstName" #firstName="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="responderForm.submitted && !firstName.valid" class="alert alert-danger">First Name is required</div>
+                                        </div>
+                                    </div>
+
+                                     <div class="form-group row">
+                                        <label class="form-control-label" for="">Last Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="responder.last_name" name="lastName" #lastName="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="responderForm.submitted && !lastName.valid" class="alert alert-danger">Last Name is required</div>
+                                        </div>
+                                    </div>
+
+
+                                     <div class="form-group row">
+                                        <label class="form-control-label" for="">Mobile</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="responder.mobile" name="mobile" #mobile="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="responderForm.submitted && !mobile.valid" class="alert alert-danger">Mobile No. is required</div>
+                                        </div>
+                                    </div>
+
+
+                                     <div class="form-group row">
+                                        <label class="form-control-label" for="">Password</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="password"  
+                                                [(ngModel)]="responder.password" name="password" #password="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="responderForm.submitted && !password.valid" class="alert alert-danger">Password is required</div>
+                                        </div>
+                                    </div>
+
+                                     <div class="form-group row">
+                                        <label class="form-control-label" for="">Confirm Password</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="password"  
+                                                [(ngModel)]="responder.confPassword" name="confPassword" #confPassword="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="responderForm.submitted && !confPassword.valid" class="alert alert-danger">Confirm Password is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">State</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                
+                                            <select id="select" class="form-control"  [(ngModel)]="responder.state" name="state"  #state="ngModel"  (change)="fetchLGA($event.target.value)" required >
+                                                <option *ngFor="let state of states" [value]="state.id">{{state.name}}</option>
+                                               
+                                            </select>
+
+                                                 <div *ngIf="responderForm.submitted && !state.valid" class="alert alert-danger">State is required</div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Local Govt.</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                
+                                            <select id="select" class="form-control"  [(ngModel)]="responder.lga" name="lga"  #lga="ngModel"  required >
+                                                <option *ngFor="let lga of local_govts" [value]="lga.id">{{lga.name}}</option>
+                                               
+                                            </select>
+
+                                                 <div *ngIf="responderForm.submitted && !lga.valid" class="alert alert-danger">Local Government is required</div>
+                                            </div>
+
+                                           
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-md-2 form-control-label" for="multiple-select">Areas of Concentration</label>
+                                        <div class="col-md-9">
+                                            <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple="" [(ngModel)]="responder.concentrations" name="concentration"  #concentration="ngModel"  required >
+                                                  <option *ngFor="let conc of concentrations" [value]="conc.id">{{conc.name}}</option>
+                                               
+                                            </select>
+
+                                            <div *ngIf="responderForm.submitted && !concentration.valid" class="alert alert-danger">Concentration is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="col-md-2 form-control-label" for="multiple-select">Kits</label>
+                                        <div class="col-md-9">
+                                            <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple="" [(ngModel)]="responder.kits" name="kit"  #kit="ngModel"  required >
+                                                 <option *ngFor="let kit of kits" [value]="kit.id">{{kit.name}}</option>
+                                               
+                                            </select>
+
+                                             <div *ngIf="responderForm.submitted && !kit.valid" class="alert alert-danger">Kit is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    
+
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>

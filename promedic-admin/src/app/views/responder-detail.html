@@ -1,0 +1,205 @@
+<header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                 <div class="col-lg-3">
+                     
+                        
+                          <div class="row">
+                             <div  *ngIf="!responder.profile_pic" class="col-lg-4">
+                                  <img src="../img/Placeholder-Portrait.jpg" height="200" width="200">
+                             </div>
+                             
+                              <div  *ngIf="responder.profile_pic" style="padding-bottom: 10px"  class="row col-lg-4">
+                                  <img src="{{host_address +'/'+ responder.image_url}}" height="200" width="200">
+                             </div> 
+                             
+                              
+
+                          </div>
+                          <div class="row" style="padding-top:5px">
+
+                            <div class="col-lg-4" [hidden]="!upload">
+                                 <input type="file"    class="" (change)="attachFile($event)">
+                              </div>
+
+                                   
+                          </div>
+
+                          <div class="row" style="padding-top: 5px">
+                                  <div  class="col-lg-4"  [hidden]="!upload">
+                                  <button class="btn btn-info" [disabled]="busyUploading" (click)="uploadPhoto()">
+                                  <i class="fa fa-upload"></i>
+                                  Upload Photo
+                                   <i class="fa fa-spinner fa-spin" [hidden]="!busyUploading"></i>
+                                   </button>
+                              </div>
+                          </div>
+
+                          <div class="row" style="padding-top:5px">
+                                  <div class="col-lg-4" >
+                                     <button  class="btn btn-success" (click)="allowUpload()">Change Picture</button>
+                                 </div>
+                          </div>
+
+                            <!--
+                          <div class="row col-lg-8 "  style="padding-left: 10px;">
+                            <div class="row">
+                                 <h6>Document Upload</h6>
+                            </div>
+                            <div class="row">
+                              <form class="form-horizontal" style="padding-left: 10px;" (ngSubmit)="responderForm.form.valid &&  onSubmit()"  #responderForm="ngForm" novalidate>
+                                <div class="form-group row">
+                                        <label class="form-control-label" for="">Document Type</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                
+                                            <select id="select" class="form-control"  [(ngModel)]="doc.doctype" name="doctype"  #doctype="ngModel"   required >
+                                                <option *ngFor="let docType of doc_types" [value]="docType.id">{{docType.name}}</option>
+                                               
+                                            </select>
+
+                                                 <div *ngIf="responderForm.submitted && !state.valid" class="alert alert-danger">Select Document Type</div>
+                                            </div>
+
+                                           
+                                        </div>
+                                 </div>
+
+                                  <div class="form-group row">
+                                        <label class="form-control-label" for="">File</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                
+                                            <input type="file" class="form-control"  [(ngModel)]="doc.docFile" name="docFile"  #docFile="ngModel"   required >
+                                               
+                              
+
+                                                 <div *ngIf="responderForm.submitted && !docFile.valid" class="alert alert-danger">File is required</div>
+                                            </div>
+
+                                           
+                                        </div>
+                                 </div>
+                                  <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                       
+                                    </div>
+                              </form>
+                            </div>
+
+                          </div>
+                          -->
+                      
+                 </div>
+                    <div class="col-lg-9">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Responder Detail
+                            </div>
+                            <div class="card-block">
+
+                             <div class="row">
+                                   <div class="col-lg-4">Responder Code</div>
+                                   <div class="col-lg-4">{{responder.responder_code}}</div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">First Name</div>
+                                   <div class="col-lg-4">{{responder.first_name}}</div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">Middle Name</div>
+                                   <div class="col-lg-4">{{responder.middle_name}}</div>
+                               </div>
+
+                                <div class="row">
+                                   <div class="col-lg-4">Last Name</div>
+                                   <div class="col-lg-4">{{responder.last_name}}</div>
+                               </div>
+
+                                <div class="row">
+                                   <div class="col-lg-4">Mobile</div>
+                                   <div class="col-lg-4">{{responder.mobile}}</div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">Areas of Concentration</div>
+                                   <div class="col-lg-4">
+                                      <ul>
+                                        <li *ngFor="let a of responder.areas_of_concentration">
+                                          {{ a.name }}
+                                        </li>
+                                      </ul>
+                                   </div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">Kits</div>
+                                   <div class="col-lg-4">
+                                      <ul>
+                                        <li *ngFor="let kit of responder.kits">
+                                          {{ kit.name }}
+                                        </li>
+                                      </ul>
+                                    </div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">State</div>
+                                   <div class="col-lg-4">{{responder.state?.name}}</div>
+                               </div>
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">Local Govt</div>
+                                   <div class="col-lg-4">{{responder.local_govt?.name}}</div>
+                               </div>
+
+                             
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+    <footer-component></footer-component>

@@ -1,0 +1,79 @@
+<header-component></header-component>
+<sidebar-component></sidebar-component>
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Local Governments
+                            </div>
+
+                             <div class="card-header">
+                               Search
+                                <input class="form-control" type="text"  placeholder="Search by name" 
+                                                [(ngModel)]="search" (keyup)="searchLG()"/>
+                            </div>
+                            <div class="card-block">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                             <th>State</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let lga of local_govts| paginate: { itemsPerPage: 20, currentPage: p }">
+                                            <td>{{lga.name}}</td>
+
+                                             <td>{{lga.state.name}}</td>
+                                           
+                                            <td>
+                                               
+                                                 <span><a href="#/local_govt/edit/{{lga.id}}"><i class="icon-pencil icons"></i></a></span> |
+                                                    <span><a href=""><i class="icon-trash icons"></i></a></span> 
+                                            </td>
+                                        </tr>
+                                       
+                                      
+                                    </tbody>
+                                </table>
+                                <nav>
+                                  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+    <footer-component></footer-component>

@@ -1,0 +1,77 @@
+<!-- <div *ngFor="let allergy of allergies">
+   			<div>{{allergy.name}}</div>
+ </div> -->
+
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+           
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> HMOs
+                                <a class="" href="#/new-hmo"><i class="icon-pencil icons  "></i></a>
+                            </div>
+                            <div class="card-block">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                           
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let hmo of hmos">
+                                            <td>{{hmo.name}}</td>
+                                           
+                                             <td>
+                                                <span><a href="#/hmo/edit/{{hmo.id}}"><i class="icon-pencil icons"></i></a></span> |
+                                                  <span><a  (click)="deleteHMO(hmo)"><i class="icon-trash icons"></i></a></span> 
+                                            </td>
+                                        </tr>
+                                       
+                                      
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>

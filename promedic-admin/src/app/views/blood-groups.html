@@ -1,0 +1,95 @@
+<!-- <div *ngFor="let bg of bloodGroups">
+   			<div>{{bg.name}}</div>
+ </div> -->
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Blood Groups
+                            </div>
+                            <div class="card-block">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                           
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let bg of bloodGroups">
+                                            <td>{{bg.name}}</td>
+                                           
+                                            <td>
+                                                <span class="tag tag-success">Active</span>
+                                            </td>
+                                        </tr>
+                                       
+                                      
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Prev</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+    
+
+    <footer-component></footer-component>
