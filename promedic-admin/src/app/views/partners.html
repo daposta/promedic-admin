@@ -46,7 +46,7 @@
                              <div class="card-header">
                                Search
                                 <input class="form-control" type="text"  placeholder="Search by name" 
-                                                [(ngModel)]="search" (keyup)="searchAllergy()"/>
+                                                [(ngModel)]="search" (keyup)="searchPartner()"/>
                             </div>
 
 
@@ -64,8 +64,8 @@
                                             <td>{{p.name}}</td>
                                            
                                             <td>
-                                                <span><a href="#/allergy/edit/{{allergy.id}}"><i class="icon-pencil icons"></i></a></span> |
-                                                  <span><a (click)="deleteAllergy(allergy)"><i class="icon-trash icons"></i></a></span> 
+                                                <span><a href="#/partner/edit/{{p.id}}"><i class="icon-pencil icons"></i></a></span> |
+                                                  <span><a (click)="deleteAllergy(p)"><i class="icon-trash icons"></i></a></span> 
                                             </td>
                                         </tr>
                                        

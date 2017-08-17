@@ -46,7 +46,7 @@
                              <div class="card-header">
                                Search
                                 <input class="form-control" type="text"  placeholder="Search by name" 
-                                                [(ngModel)]="search" (keyup)="searchAllergy()"/>
+                                                [(ngModel)]="search" (keyup)="searchTC()"/>
                             </div>
 
 
@@ -60,12 +60,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr *ngFor="let allergy of allergies">
-                                            <td>{{allergy.name}}</td>
+                                        <tr *ngFor="let tc of test_centers">
+                                            <td>{{tc.name}}</td>
                                            
                                             <td>
-                                                <span><a href="#/allergy/edit/{{allergy.id}}"><i class="icon-pencil icons"></i></a></span> |
-                                                  <span><a (click)="deleteAllergy(allergy)"><i class="icon-trash icons"></i></a></span> 
+                                                <span><a href="#/tc/edit/{{tc.id}}"><i class="icon-pencil icons"></i></a></span> |
+                                                  <span><a (click)="deleteTC(tc)"><i class="icon-trash icons"></i></a></span> 
                                             </td>
                                         </tr>
                                        

@@ -25,7 +25,7 @@ export class TestCenterComponent  {
 		  };
 
 
-	searchDisability(){
+	searchTC(){
 
 		if(this.search.length> 3){
 			this._tcService.searchTC(this.search).then(result => this.test_centers = result)
@@ -37,7 +37,7 @@ export class TestCenterComponent  {
 	};
 
 
-	deleteDisability(x){
+	deleteTC(x){
 		this._tcService.deleteTC(x.id).then(response =>{
 			
 			let index: number = this.test_centers.indexOf(x);

@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="card-block">
-                                <form class="form-horizontal" (ngSubmit)="drugForm.form.valid &&  onSubmit()"  #drugForm="ngForm" novalidate>
+                                <form class="form-horizontal" (ngSubmit)="partnerForm.form.valid &&  onSubmit()"  #partnerForm="ngForm" novalidate>
                                     <div class="form-group row">
                                         <label class="form-control-label" for="">Name</label>
                                         <div class="controls">
@@ -47,85 +47,79 @@
                                                 [(ngModel)]="tc.name" name="name" #name="ngModel" required>
                                             </div>
                                             
-                                           <div *ngIf="drugForm.submitted && !name.valid" class="alert alert-danger">tc Name is required</div>
+                                           <div *ngIf="partnerForm.submitted && !name.valid" class="alert alert-danger">Partner Name is required</div>
                                         </div>
                                     </div>
 
 
 
                                     <div class="form-group row">
-                                        <label class="form-control-label" for="">Possible Reactions</label>
+                                        <label class="form-control-label" for="">Description</label>
                                         <div class="controls">
                                             <div class="input-group">
                                                 <textarea id="" class="form-control" type="text"  
-                                                [(ngModel)]="tc.possibleReactions" name="possibleReactions" #possibleReactions="ngModel" required>
+                                                [(ngModel)]="tc.description" name="description" #description="ngModel" required>
 
                                                 </textarea>
                                             </div>
                                             
-                                           <div *ngIf="drugForm.submitted && !possibleReactions.valid" class="alert alert-danger">tc Possible Reactions is required</div>
+                                           <div *ngIf="partnerForm.submitted && !description.valid" class="alert alert-danger">Desciption is required</div>
                                         </div>
                                     </div>
 
 
                                     <div class="form-group row">
-                                        <label class="form-control-label" for="">Allergen</label>
+                                        <label class="form-control-label" for="">Address</label>
                                         <div class="controls">
                                             <div class="input-group">
-                                                <textarea id="" class="form-control" type="text"  
-                                                [(ngModel)]="tc.allergen" name="allergen" #allergen="ngModel" required>
-
-                                                </textarea>
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.address" name="address" #address="ngModel" required>
                                             </div>
                                             
-                                           <div *ngIf="drugForm.submitted && !allergen.valid" class="alert alert-danger">Allergen is required</div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="form-group row">
-                                        <label class="form-control-label" for="">Source</label>
-                                        <div class="controls">
-                                            <div class="input-group">
-                                                <textarea id="" class="form-control" type="text"  
-                                                [(ngModel)]="tc.source" name="source" #source="ngModel" required>
-
-                                                </textarea>
-                                            </div>
-                                            
-                                           <div *ngIf="drugForm.submitted && !source.valid" class="alert alert-danger">tc source is required</div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group row">
-                                        <label class="form-control-label" for="">Cross Reacts With</label>
-                                        <div class="controls">
-                                            <div class="input-group">
-                                                <textarea id="" class="form-control" type="text"  
-                                                [(ngModel)]="tc.reactsWith" name="reactsWith" #reactsWith="ngModel" required>
-
-                                                </textarea>
-                                            </div>
-                                            
-                                           <div *ngIf="drugForm.submitted && !reactsWith.valid" class="alert alert-danger">Cross Reacts With is required</div>
+                                           <div *ngIf="partnerForm.submitted && !address.valid" class="alert alert-danger">Address is required</div>
                                         </div>
                                     </div>
 
 
 
                                     <div class="form-group row">
-                                        <label class="form-control-label" for="">Clinical Presentation</label>
+                                        <label class="form-control-label" for="">State</label>
                                         <div class="controls">
                                             <div class="input-group">
-                                                <textarea id="" class="form-control" type="text"  
-                                                [(ngModel)]="tc.clinicalPresentation" name="clinicalPresentation" #clinicalPresentation="ngModel" required>
-
-                                                </textarea>
+                                                <select id="select" class="form-control"  [(ngModel)]="tc.state" name="state"  #state="ngModel"   required >
+                                                <option *ngFor="let state of states" [value]="state.id">{{state.name}}</option>
+                                               
+                                            </select>
                                             </div>
                                             
-                                           <div *ngIf="drugForm.submitted && !clinicalPresentation.valid" class="alert alert-danger">tc Clinical Presentation is required</div>
+                                           <div *ngIf="partnerForm.submitted && !state.valid" class="alert alert-danger">State is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Mobile 1:</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.mobile1" name="mobile1" #mobile1="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="partnerForm.submitted && !mobile1.valid" class="alert alert-danger">Mobile 1 is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Mobile 2</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                 <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.mobile2" name="mobile2" #mobile2="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="partnerForm.submitted && !mobile2.valid" class="alert alert-danger">Mobile 2 is required</div>
                                         </div>
                                     </div>
 
@@ -136,8 +130,7 @@
                                     
 
                                     <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                        <button type="button" class="btn btn-default">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Save </button>
                                     </div>
                                 </form>
                             </div>

@@ -36,8 +36,8 @@ export class TestCenterService {
      this.http.post(this.testCenterURL, data).subscribe(
          data => {
 
-           this.toasterService.pop('success', 'Drug saved', '');
-             this.router.navigateByUrl('/drugs');
+           this.toasterService.pop('success', 'Test Center saved', '');
+             this.router.navigateByUrl('/test-centers');
          },
          error => console.log(error.json().message)
       )

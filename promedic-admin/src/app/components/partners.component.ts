@@ -17,7 +17,7 @@ export class PartnerComponent  {
 
 	}
 
-	getDisablity() {
+	getPartners() {
 		    this._partnerService
 		        .getPartners()
 		        .then(res => this.partners = res)
@@ -25,13 +25,13 @@ export class PartnerComponent  {
 		  };
 
 
-	searchDisability(){
-
+	searchPartner(){
+		console.log(this.search);
 		if(this.search.length> 3){
 			this._partnerService.searchPartner(this.search).then(result => this.partners = result)
     		.catch(error => this.error = error);
 		}else{
-			this.getDisablity();
+			this.getPartners();
 		}
 		
 	};
@@ -50,6 +50,6 @@ export class PartnerComponent  {
 	}
 
 	ngOnInit(){
-		this.getDisablity();
+		this.getPartners();
 	}
  }
