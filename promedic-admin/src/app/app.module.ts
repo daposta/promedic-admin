@@ -81,6 +81,8 @@ import {RequestOptions} from '@angular/http';
 import {CustomRequestOptions} from './utils/headers';
 import { Globals } from './shared/api';
 
+import { EqualValidator } from  './directives/equal-validator.directive';
+
 const appRoutes: Routes = [
 	
 	  { path: '', component: DashboardComponent ,  canActivate: [LoggedInGuard]},
@@ -132,7 +134,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,RegisterComponent, LoginComponent, 
+    AppComponent,RegisterComponent, LoginComponent, EqualValidator,
   DiseasesComponent, DiseaseEditComponent, DiseaseFormComponent,
   DisabilityComponent, DisabilityEditComponent, DisabilityFormComponent,
   AllergyComponent, AllergyEditComponent, AllergyFormComponent,

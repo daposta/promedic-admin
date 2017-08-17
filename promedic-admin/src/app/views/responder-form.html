@@ -89,7 +89,7 @@
                                         <div class="controls">
                                             <div class="input-group">
                                                 <input id="" class="form-control" type="password"  
-                                                [(ngModel)]="responder.password" name="password" #password="ngModel" required>
+                                                [(ngModel)]="responder.password" name="password" #password="ngModel" required validateEqual="confPassword" reverse="true">
                                             </div>
                                             
                                            <div *ngIf="responderForm.submitted && !password.valid" class="alert alert-danger">Password is required</div>
@@ -101,10 +101,10 @@
                                         <div class="controls">
                                             <div class="input-group">
                                                 <input id="" class="form-control" type="password"  
-                                                [(ngModel)]="responder.confPassword" name="confPassword" #confPassword="ngModel" required>
+                                                [(ngModel)]="responder.confPassword" name="confPassword" #confPassword="ngModel" required validateEqual="password">
                                             </div>
                                             
-                                           <div *ngIf="responderForm.submitted && !confPassword.valid" class="alert alert-danger">Confirm Password is required</div>
+                                            <div *ngIf="responderForm.submitted && !confPassword.valid" class="alert alert-danger"> Password mismatch </div>
                                         </div>
                                     </div>
 
