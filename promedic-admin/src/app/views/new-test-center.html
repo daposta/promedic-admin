@@ -1,0 +1,157 @@
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            
+        </ol>
+
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                     <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-edit"></i>New Test Center
+                                <div class="card-actions">
+                                    <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                                    <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+                                    <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <form class="form-horizontal" (ngSubmit)="drugForm.form.valid &&  onSubmit()"  #drugForm="ngForm" novalidate>
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.name" name="name" #name="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !name.valid" class="alert alert-danger">tc Name is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Possible Reactions</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.possibleReactions" name="possibleReactions" #possibleReactions="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !possibleReactions.valid" class="alert alert-danger">tc Possible Reactions is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Allergen</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.allergen" name="allergen" #allergen="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !allergen.valid" class="alert alert-danger">Allergen is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Source</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.source" name="source" #source="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !source.valid" class="alert alert-danger">tc source is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Cross Reacts With</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.reactsWith" name="reactsWith" #reactsWith="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !reactsWith.valid" class="alert alert-danger">Cross Reacts With is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Clinical Presentation</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.clinicalPresentation" name="clinicalPresentation" #clinicalPresentation="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="drugForm.submitted && !clinicalPresentation.valid" class="alert alert-danger">tc Clinical Presentation is required</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+
+                                    
+
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>

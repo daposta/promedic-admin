@@ -36,6 +36,20 @@ export class StateComponent  {
 		
 	}
 
+
+
+	deleteState(x){
+		this._stateService.deleteState(x.id).then(response =>{
+			
+			let index: number = this.states.indexOf(x);
+			if (index !== -1) {
+		        this.states.splice(index, 1);
+		    }   
+			
+		})
+		.catch(err => this.error = err)
+	}
+
 	ngOnInit(){
 		this.getStates();
 	}

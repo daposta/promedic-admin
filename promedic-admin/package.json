@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular-confirmation-popover": "^3.1.1",
     "angular2-highcharts": "^0.4.1",
     "core-js": "^2.4.1",
     "ng2-pagination": "^2.0.1",

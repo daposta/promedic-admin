@@ -7,7 +7,7 @@ import { Globals } from '../shared/api';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class DrugService {
+export class PartnerService {
   private partnerURL =  this.globals.PARTNERS_URL; 
 
   private toasterService: ToasterService;
@@ -21,7 +21,7 @@ export class DrugService {
       this.toasterService = _toasterService;
   }
 
-  getDrugs() {
+  getPartners() {
      let v = this.page_header();
    return this.http.get(this.partnerURL, v)
               .toPromise()
@@ -31,7 +31,7 @@ export class DrugService {
 
 
 
-  saveDrug(data: any){
+  savePartner(data: any){
     let _data = JSON.stringify(data);
      this.http.post(this.partnerURL, data).subscribe(
          data => {
@@ -44,7 +44,7 @@ export class DrugService {
 
   };
 
-  findDrugByID(pk: any){
+  findPartnerByID(pk: any){
     let v = this.page_header();
      return this.http.get(this.partnerURL + pk +'/', v)
               .toPromise()
@@ -52,9 +52,9 @@ export class DrugService {
               .catch(this.handleError);
   };
 
-  searchDrug(drug:string){
+  searchPartner(partner:string){
       let params = new URLSearchParams();
-    params.append('drug', drug);
+    params.append('partner', partner);
     this.options.search = params;
      return this.http.get(this.partnerURL ,this.options)
               .toPromise()

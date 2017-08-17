@@ -12,6 +12,9 @@ import {ToasterModule, ToasterService} from 'angular2-toaster';
 import {Ng2PaginationModule} from 'ng2-pagination';
 import { ChartModule } from 'angular2-highcharts';
 
+import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
+
+
 
 import { LoginComponent } from './components/login.component';
 import { RegisterComponent } from './components/register.component';
@@ -57,6 +60,13 @@ import {DrugEditComponent} from './components/drug-edit.component';
 import { HMOComponent} from './components/hmo.component';
 import { HMOFormComponent} from './components/hmo-form.component';
 import { HMOEditComponent} from './components/hmo-edit.component';
+
+
+import { TestCenterComponent} from './components/test-centers.component';
+import { NewTCComponent} from './components/new-tc.component';
+
+import { PartnerComponent } from './components/partners.component';
+import { NewPartnerComponent } from './components/new-partner.component';
 
 import {ResponderLocationChartComponent} from './components/charts/res-locs-chart.component';
 import {ResponderKitChartComponent} from './components/charts/res-kits-chart.component';
@@ -107,9 +117,16 @@ const appRoutes: Routes = [
 	  { path: 'new-hmo', component: HMOFormComponent , canActivate: [LoggedInGuard]},
 	  { path: 'hmo/edit/:id', component: HMOEditComponent, canActivate: [LoggedInGuard]},
 
-	  { path: 'test-centers', component: StateComponent, canActivate: [LoggedInGuard] },
+	   { path: 'test-centers', component: TestCenterComponent, canActivate: [LoggedInGuard] },
+	   { path: 'new-tc', component: NewTCComponent , canActivate: [LoggedInGuard]},
 
-	  { path: 'partners', component: StateComponent, canActivate: [LoggedInGuard] },
+
+	   { path: 'partners', component: PartnerComponent, canActivate: [LoggedInGuard] },
+	   { path: 'new-partner', component: NewPartnerComponent , canActivate: [LoggedInGuard]},
+
+	    { path: 'users', component: PartnerComponent, canActivate: [LoggedInGuard] },
+	   { path: 'new-user', component: HMOFormComponent , canActivate: [LoggedInGuard]},
+
 ]
 
 
@@ -125,7 +142,7 @@ const appRoutes: Routes = [
   ClientComponent, ClientDetailComponent, 
   DrugsComponent, DrugEditComponent, DrugDetailComponent, ResponderDetailComponent,
    DashboardComponent, HeaderComponent, 
-  FooterComponent,SidebarComponent,
+  FooterComponent,SidebarComponent, TestCenterComponent, NewTCComponent, PartnerComponent, NewPartnerComponent,
   HMOComponent, HMOEditComponent, HMOFormComponent,
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent
@@ -134,6 +151,9 @@ const appRoutes: Routes = [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 
     ChartModule,
   RouterModule.forRoot(appRoutes, { useHash: true }) ,
+  ConfirmationPopoverModule.forRoot({
+      confirmButtonType: 'danger' // set defaults here
+    })
   ],
   providers: [UserService, Globals, LoggedInGuard, {provide: RequestOptions, useClass: CustomRequestOptions}],
   bootstrap: [AppComponent]

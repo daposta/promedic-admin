@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {LocalGovtService} from '../services/local_govts.srv';
+import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
+
 
 @Component({
   //selector: 'disabilities',
@@ -35,6 +37,21 @@ export class LocalGovtComponent  {
 		}
 		
 	};
+
+
+
+	deleteLocalGovt(x){
+		this._localGovtService.deleteLocalGovt(x.id).then(response =>{
+			
+			let index: number = this.local_govts.indexOf(x);
+			if (index !== -1) {
+		        this.local_govts.splice(index, 1);
+		    }   
+			
+		})
+		.catch(err => this.error = err)
+	}
+
 
 	ngOnInit(){
 		this.getLocalGovts();

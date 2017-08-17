@@ -7,7 +7,7 @@ import { Globals } from '../shared/api';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class DrugService {
+export class TestCenterService {
   private testCenterURL =  this.globals.TEST_CENTERS_URL; 
 
   private toasterService: ToasterService;
@@ -21,7 +21,7 @@ export class DrugService {
       this.toasterService = _toasterService;
   }
 
-  getDrugs() {
+  getTCs() {
      let v = this.page_header();
    return this.http.get(this.testCenterURL, v)
               .toPromise()
@@ -31,7 +31,7 @@ export class DrugService {
 
 
 
-  saveDrug(data: any){
+  saveTC(data: any){
     let _data = JSON.stringify(data);
      this.http.post(this.testCenterURL, data).subscribe(
          data => {
@@ -44,7 +44,7 @@ export class DrugService {
 
   };
 
-  findDrugByID(pk: any){
+  findTCByID(pk: any){
     let v = this.page_header();
      return this.http.get(this.testCenterURL + pk +'/', v)
               .toPromise()
@@ -52,14 +52,27 @@ export class DrugService {
               .catch(this.handleError);
   };
 
-  searchDrug(drug:string){
+  searchTC(tc:string){
       let params = new URLSearchParams();
-    params.append('drug', drug);
+    params.append('tc', tc);
     this.options.search = params;
      return this.http.get(this.testCenterURL ,this.options)
               .toPromise()
               .then(response => response.json())
               .catch(this.handleError);
+  };
+
+
+   deleteTC(pk: any){
+    let v = this.page_header();
+     return this.http.delete(this.testCenterURL + pk +'/', v)
+              .toPromise()
+              .then(response => {
+                //response.json()
+                this.toasterService.pop('success', 'Test Center deleted!', '');
+              })
+              .catch(this.handleError);
+
   };
 
   private page_header(){
