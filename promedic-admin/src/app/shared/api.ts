@@ -37,5 +37,6 @@ export class Globals{
     HMOS_URL =  this.HOST_URL + '/api/core/hmos/';
     PARTNERS_URL =  this.HOST_URL + '/api/core/partners/';
     TEST_CENTERS_URL =  this.HOST_URL + '/api/core/test_centers/';
+    GENDER_URL =  this.HOST_URL + '/api/core/genders/';
 
 }
