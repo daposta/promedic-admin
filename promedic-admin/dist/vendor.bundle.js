@@ -53006,7 +53006,7 @@ function transition$$1(stateChangeExpr, steps) {
 /* unused harmony export FormControl */
 /* unused harmony export FormGroup */
 /* unused harmony export NG_ASYNC_VALIDATORS */
-/* unused harmony export NG_VALIDATORS */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NG_VALIDATORS; });
 /* unused harmony export Validators */
 /* unused harmony export VERSION */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
@@ -61377,7 +61377,7 @@ ResourceLoaderImpl.ctorParameters = function () { return []; };
  * found in the LICENSE file at https://angular.io/license
  */
 var INTERNAL_BROWSER_DYNAMIC_PLATFORM_PROVIDERS = [
-    __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["e" /* ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS */],
+    __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["f" /* ɵINTERNAL_BROWSER_PLATFORM_PROVIDERS */],
     {
         provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["COMPILER_OPTIONS"],
         useValue: { providers: [{ provide: __WEBPACK_IMPORTED_MODULE_1__angular_compiler__["a" /* ResourceLoader */], useClass: ResourceLoaderImpl }] },
@@ -61491,7 +61491,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* unused harmony export enableDebugTools */
 /* unused harmony export By */
 /* unused harmony export NgProbeToken */
-/* unused harmony export DOCUMENT */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return DOCUMENT; });
 /* unused harmony export EVENT_MANAGER_PLUGINS */
 /* unused harmony export EventManager */
 /* unused harmony export HAMMER_GESTURE_CONFIG */
@@ -61499,7 +61499,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return DomSanitizer; });
 /* unused harmony export VERSION */
 /* unused harmony export ɵBROWSER_SANITIZATION_PROVIDERS */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return INTERNAL_BROWSER_PLATFORM_PROVIDERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return INTERNAL_BROWSER_PLATFORM_PROVIDERS; });
 /* unused harmony export ɵinitDomAdapter */
 /* unused harmony export ɵBrowserDomAdapter */
 /* unused harmony export ɵBrowserPlatformLocation */
@@ -61509,7 +61509,7 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 /* unused harmony export ɵDomAdapter */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getDOM; });
 /* unused harmony export ɵsetRootDomAdapter */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return DomRendererFactory2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return DomRendererFactory2; });
 /* unused harmony export ɵNAMESPACE_URIS */
 /* unused harmony export ɵflattenStyles */
 /* unused harmony export ɵshimContentAttribute */
@@ -66621,7 +66621,7 @@ var SHARED_ANIMATION_PROVIDERS = [
     { provide: __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__["a" /* ɵAnimationEngine */], useClass: InjectableAnimationEngine }, {
         provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["RendererFactory2"],
         useFactory: instantiateRendererFactory,
-        deps: [__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["d" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__["a" /* ɵAnimationEngine */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgZone"]]
+        deps: [__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["e" /* ɵDomRendererFactory2 */], __WEBPACK_IMPORTED_MODULE_4__angular_animations_browser__["a" /* ɵAnimationEngine */], __WEBPACK_IMPORTED_MODULE_1__angular_core__["NgZone"]]
     }
 ];
 /**
@@ -72929,6 +72929,448 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["Version"]('4.2.5'
 
 /***/ }),
 
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopover.directive.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__confirmationPopoverWindow_component__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverWindow.component.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__confirmationPopoverOptions_provider__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverOptions.provider.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_positioning__ = __webpack_require__("./node_modules/positioning/dist/positioning.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmationPopover; });
+
+
+
+
+
+/**
+ * All properties can be set on the directive as attributes like so (use `ConfirmationPopoverModule.forRoot()` to configure them globally):
+ * ```html
+ * &lt;button
+ *  class="btn btn-default"
+ *  mwlConfirmationPopover
+ *  [title]="title"
+ *  [message]="message"
+ *  placement="left"
+ *  (confirm)="confirmClicked = true"
+ *  (cancel)="cancelClicked = true"
+ *  [(isOpen)]="isOpen"&gt;
+ *   Show confirm popover!
+ * &lt;/button&gt;
+ * ```
+ */
+var ConfirmationPopover = (function () {
+    /**
+     * @private
+     */
+    function ConfirmationPopover(viewContainerRef, elm, defaultOptions, cfr, position, renderer, document //tslint:disable-line
+    ) {
+        this.viewContainerRef = viewContainerRef;
+        this.elm = elm;
+        this.defaultOptions = defaultOptions;
+        this.cfr = cfr;
+        this.position = position;
+        this.renderer = renderer;
+        this.document = document; //tslint:disable-line
+        /**
+         * Whether to disable showing the popover. Default `false`.
+         */
+        this.isDisabled = false;
+        /**
+         * Will open or show the popover when changed.
+         * Can be sugared with `isOpenChange` to emulate 2-way binding like so `[(isOpen)]="isOpen"`
+         */
+        this.isOpen = false;
+        /**
+         * Will emit when the popover is opened or closed
+         */
+        this.isOpenChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"](true);
+        /**
+         * An expression that is called when the confirm button is clicked.
+         */
+        this.confirm = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        /**
+         * An expression that is called when the cancel button is clicked.
+         */
+        this.cancel = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        /**
+         * @private
+         */
+        this.popover = null;
+    }
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.ngOnInit = function () {
+        this.isOpenChange.emit(false);
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.ngOnChanges = function (changes) {
+        if (changes.isOpen) {
+            if (changes.isOpen.currentValue === true) {
+                this.showPopover();
+            }
+            else {
+                this.hidePopover();
+            }
+        }
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.ngOnDestroy = function () {
+        this.hidePopover();
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.onConfirm = function (event) {
+        this.confirm.emit(event);
+        this.hidePopover();
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.onCancel = function (event) {
+        this.cancel.emit(event);
+        this.hidePopover();
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.onDocumentClick = function (target) {
+        if (this.popover && !this.elm.nativeElement.contains(target) && !this.popover.location.nativeElement.contains(target)) {
+            this.hidePopover();
+        }
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.togglePopover = function () {
+        if (!this.popover) {
+            this.showPopover();
+        }
+        else {
+            this.hidePopover();
+        }
+    };
+    /**
+     * @private
+     */
+    ConfirmationPopover.prototype.onResize = function () {
+        this.positionPopover();
+    };
+    ConfirmationPopover.prototype.showPopover = function () {
+        var _this = this;
+        if (!this.popover && !this.isDisabled) {
+            var options_1 = new __WEBPACK_IMPORTED_MODULE_3__confirmationPopoverOptions_provider__["b" /* ConfirmationPopoverWindowOptions */]();
+            Object.assign(options_1, this.defaultOptions, {
+                title: this.title,
+                message: this.message,
+                onConfirm: function (event) {
+                    _this.onConfirm(event);
+                },
+                onCancel: function (event) {
+                    _this.onCancel(event);
+                },
+                onAfterViewInit: function () {
+                    _this.positionPopover();
+                }
+            });
+            var optionalParams = [
+                'confirmText',
+                'cancelText',
+                'placement',
+                'confirmButtonType',
+                'cancelButtonType',
+                'focusButton',
+                'hideConfirmButton',
+                'hideCancelButton',
+                'popoverClass',
+                'appendToBody',
+                'customTemplate'
+            ];
+            optionalParams.forEach(function (param) {
+                if (typeof _this[param] !== 'undefined') {
+                    options_1[param] = _this[param];
+                }
+            });
+            var componentFactory = this.cfr.resolveComponentFactory(__WEBPACK_IMPORTED_MODULE_2__confirmationPopoverWindow_component__["a" /* ConfirmationPopoverWindow */]);
+            var binding = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ReflectiveInjector"].resolve([{
+                    provide: __WEBPACK_IMPORTED_MODULE_3__confirmationPopoverOptions_provider__["b" /* ConfirmationPopoverWindowOptions */],
+                    useValue: options_1
+                }]);
+            var contextInjector = this.viewContainerRef.parentInjector;
+            var childInjector = __WEBPACK_IMPORTED_MODULE_0__angular_core__["ReflectiveInjector"].fromResolvedProviders(binding, contextInjector);
+            this.popover = this.viewContainerRef.createComponent(componentFactory, this.viewContainerRef.length, childInjector);
+            if (options_1.appendToBody) {
+                this.document.body.appendChild(this.popover.location.nativeElement);
+            }
+            this.isOpenChange.emit(true);
+        }
+    };
+    ConfirmationPopover.prototype.positionPopover = function () {
+        if (this.popover) {
+            var popoverElement = this.popover.location.nativeElement.children[0];
+            var popoverPosition = this.position.positionElements(this.elm.nativeElement, popoverElement, this.placement || this.defaultOptions.placement, this.appendToBody || this.defaultOptions.appendToBody);
+            this.renderer.setStyle(popoverElement, 'top', popoverPosition.top + "px");
+            this.renderer.setStyle(popoverElement, 'left', popoverPosition.left + "px");
+        }
+    };
+    ConfirmationPopover.prototype.hidePopover = function () {
+        if (this.popover) {
+            this.popover.destroy();
+            this.popover = null;
+            this.isOpenChange.emit(false);
+        }
+    };
+    return ConfirmationPopover;
+}());
+
+ConfirmationPopover.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                selector: '[mwlConfirmationPopover]'
+            },] },
+];
+/** @nocollapse */
+ConfirmationPopover.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_3__confirmationPopoverOptions_provider__["a" /* ConfirmationPopoverOptions */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], },
+    { type: __WEBPACK_IMPORTED_MODULE_4_positioning__["a" /* Positioning */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer2"], },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["d" /* DOCUMENT */],] },] },
+]; };
+ConfirmationPopover.propDecorators = {
+    'title': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'message': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'confirmText': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'cancelText': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'placement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'confirmButtonType': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'cancelButtonType': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'focusButton': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'hideConfirmButton': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'hideCancelButton': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'isOpen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'customTemplate': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'isOpenChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+    'confirm': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+    'cancel': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"] },],
+    'popoverClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'appendToBody': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'onDocumentClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['document:click', ['$event.target'],] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['document:touchend', ['$event.target'],] },],
+    'togglePopover': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['click',] },],
+    'onResize': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"], args: ['window:resize',] },],
+};
+//# sourceMappingURL=confirmationPopover.directive.js.map
+
+/***/ }),
+
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopover.module.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_positioning__ = __webpack_require__("./node_modules/positioning/dist/positioning.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__confirmationPopover_directive__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopover.directive.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__confirmationPopoverWindow_component__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverWindow.component.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__focus_directive__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/focus.directive.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__confirmationPopoverOptions_provider__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverOptions.provider.js");
+/* unused harmony export USER_OPTIONS */
+/* unused harmony export optionsFactory */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmationPopoverModule; });
+
+
+
+
+
+
+
+var USER_OPTIONS = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["InjectionToken"]('confirmation popover user options');
+function optionsFactory(userOptions) {
+    var options = new __WEBPACK_IMPORTED_MODULE_6__confirmationPopoverOptions_provider__["a" /* ConfirmationPopoverOptions */]();
+    Object.assign(options, userOptions);
+    return options;
+}
+var ConfirmationPopoverModule = (function () {
+    function ConfirmationPopoverModule() {
+    }
+    ConfirmationPopoverModule.forRoot = function (options) {
+        if (options === void 0) { options = {}; }
+        return {
+            ngModule: ConfirmationPopoverModule,
+            providers: [{
+                    provide: USER_OPTIONS,
+                    useValue: options
+                }, {
+                    provide: __WEBPACK_IMPORTED_MODULE_6__confirmationPopoverOptions_provider__["a" /* ConfirmationPopoverOptions */],
+                    useFactory: optionsFactory,
+                    deps: [USER_OPTIONS]
+                }, __WEBPACK_IMPORTED_MODULE_2_positioning__["a" /* Positioning */]]
+        };
+    };
+    return ConfirmationPopoverModule;
+}());
+
+ConfirmationPopoverModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
+                declarations: [__WEBPACK_IMPORTED_MODULE_3__confirmationPopover_directive__["a" /* ConfirmationPopover */], __WEBPACK_IMPORTED_MODULE_4__confirmationPopoverWindow_component__["a" /* ConfirmationPopoverWindow */], __WEBPACK_IMPORTED_MODULE_5__focus_directive__["a" /* Focus */]],
+                imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]],
+                exports: [__WEBPACK_IMPORTED_MODULE_3__confirmationPopover_directive__["a" /* ConfirmationPopover */], __WEBPACK_IMPORTED_MODULE_5__focus_directive__["a" /* Focus */]],
+                entryComponents: [__WEBPACK_IMPORTED_MODULE_4__confirmationPopoverWindow_component__["a" /* ConfirmationPopoverWindow */]]
+            },] },
+];
+/** @nocollapse */
+ConfirmationPopoverModule.ctorParameters = function () { return []; };
+//# sourceMappingURL=confirmationPopover.module.js.map
+
+/***/ }),
+
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverOptions.provider.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmationPopoverOptions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ConfirmationPopoverWindowOptions; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var ConfirmationPopoverOptions = (function () {
+    function ConfirmationPopoverOptions() {
+        this.confirmText = 'Confirm';
+        this.cancelText = 'Cancel';
+        this.confirmButtonType = 'success';
+        this.cancelButtonType = 'default';
+        this.placement = 'top';
+        this.hideConfirmButton = false;
+        this.hideCancelButton = false;
+        this.popoverClass = '';
+        this.appendToBody = false;
+    }
+    return ConfirmationPopoverOptions;
+}());
+
+/**
+ * @private
+ */
+var ConfirmationPopoverWindowOptions = (function (_super) {
+    __extends(ConfirmationPopoverWindowOptions, _super);
+    function ConfirmationPopoverWindowOptions() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return ConfirmationPopoverWindowOptions;
+}(ConfirmationPopoverOptions));
+
+ConfirmationPopoverWindowOptions.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+ConfirmationPopoverWindowOptions.ctorParameters = function () { return []; };
+//# sourceMappingURL=confirmationPopoverOptions.provider.js.map
+
+/***/ }),
+
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverWindow.component.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__confirmationPopoverOptions_provider__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopoverOptions.provider.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfirmationPopoverWindow; });
+
+
+/**
+ * @private
+ */
+var ConfirmationPopoverWindow = (function () {
+    function ConfirmationPopoverWindow(options) {
+        this.options = options;
+    }
+    ConfirmationPopoverWindow.prototype.ngAfterViewInit = function () {
+        this.options.onAfterViewInit();
+    };
+    return ConfirmationPopoverWindow;
+}());
+
+ConfirmationPopoverWindow.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"], args: [{
+                styles: ["\n    .popover {\n      display: block;\n    }\n  "],
+                template: "\n    <ng-template #defaultTemplate let-options=\"options\">\n      <div [class]=\"'popover ' + options.placement + ' popover-' + options.placement + ' ' + options.popoverClass\">\n        <div class=\"popover-arrow arrow\"></div>\n        <h3 class=\"popover-title\" [innerHTML]=\"options.title\"></h3>\n        <div class=\"popover-content\">\n          <p [innerHTML]=\"options.message\"></p>\n          <div class=\"row\">\n            <div\n              class=\"col-xs-6 col-6\"\n              [ngClass]=\"{'col-xs-offset-3 col-offset-3': options.hideCancelButton}\"\n              *ngIf=\"!options.hideConfirmButton\">\n              <button\n                [mwlFocus]=\"options.focusButton === 'confirm'\"\n                [class]=\"'btn btn-block btn-' + options.confirmButtonType\"\n                (click)=\"options.onConfirm({clickEvent: $event})\"\n                [innerHtml]=\"options.confirmText\">\n              </button>\n            </div>\n            <div\n              class=\"col-xs-6 col-6\"\n              [ngClass]=\"{'col-xs-offset-3 col-offset-3': options.hideConfirmButton}\"\n              *ngIf=\"!options.hideCancelButton\">\n              <button\n                [mwlFocus]=\"options.focusButton === 'cancel'\"\n                [class]=\"'btn btn-block btn-' + options.cancelButtonType\"\n                (click)=\"options.onCancel({clickEvent: $event})\"\n                [innerHtml]=\"options.cancelText\">\n              </button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </ng-template>\n    <ng-template\n      [ngTemplateOutlet]=\"options.customTemplate || defaultTemplate\"\n      [ngTemplateOutletContext]=\"{options: options}\">\n    </ng-template>\n  "
+            },] },
+];
+/** @nocollapse */
+ConfirmationPopoverWindow.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__confirmationPopoverOptions_provider__["b" /* ConfirmationPopoverWindowOptions */], },
+]; };
+//# sourceMappingURL=confirmationPopoverWindow.component.js.map
+
+/***/ }),
+
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/focus.directive.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Focus; });
+
+/**
+ * A helper directive to focus buttons. You will only need this if using a custom template
+ */
+var Focus = (function () {
+    function Focus(elm) {
+        this.elm = elm;
+    }
+    Focus.prototype.ngOnChanges = function (changes) {
+        if (changes.mwlFocus && this.mwlFocus === true) {
+            this.elm.nativeElement.focus();
+        }
+    };
+    return Focus;
+}());
+
+Focus.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{
+                selector: '[mwlFocus]'
+            },] },
+];
+/** @nocollapse */
+Focus.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+]; };
+Focus.propDecorators = {
+    'mwlFocus': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+//# sourceMappingURL=focus.directive.js.map
+
+/***/ }),
+
+/***/ "./node_modules/angular-confirmation-popover/dist/esm/src/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__confirmationPopover_module__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/confirmationPopover.module.js");
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__confirmationPopover_module__["a"]; });
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "./node_modules/angular2-highcharts/dist/ChartComponent.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -75090,6 +75532,149 @@ function __export(m) {
 }
 __export(__webpack_require__("./node_modules/ng2-pagination/dist/ng2-pagination.js"));
 
+
+/***/ }),
+
+/***/ "./node_modules/positioning/dist/positioning.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Positioning; });
+/* unused harmony export positionElements */
+// previous version:
+// https://github.com/angular-ui/bootstrap/blob/07c31d0731f7cb068a1932b8e01d2312b796b4ec/src/position/position.js
+var Positioning = (function () {
+    function Positioning() {
+    }
+    Positioning.prototype.getStyle = function (element, prop) { return window.getComputedStyle(element)[prop]; };
+    Positioning.prototype.isStaticPositioned = function (element) {
+        return (this.getStyle(element, 'position') || 'static') === 'static';
+    };
+    Positioning.prototype.offsetParent = function (element) {
+        var offsetParentEl = element.offsetParent || document.documentElement;
+        while (offsetParentEl && offsetParentEl !== document.documentElement && this.isStaticPositioned(offsetParentEl)) {
+            offsetParentEl = offsetParentEl.offsetParent;
+        }
+        return offsetParentEl || document.documentElement;
+    };
+    Positioning.prototype.position = function (element, round) {
+        if (round === void 0) { round = true; }
+        var elPosition;
+        var parentOffset = { width: 0, height: 0, top: 0, bottom: 0, left: 0, right: 0 };
+        if (this.getStyle(element, 'position') === 'fixed') {
+            elPosition = element.getBoundingClientRect();
+        }
+        else {
+            var offsetParentEl = this.offsetParent(element);
+            elPosition = this.offset(element, false);
+            if (offsetParentEl !== document.documentElement) {
+                parentOffset = this.offset(offsetParentEl, false);
+            }
+            parentOffset.top += offsetParentEl.clientTop;
+            parentOffset.left += offsetParentEl.clientLeft;
+        }
+        elPosition.top -= parentOffset.top;
+        elPosition.bottom -= parentOffset.top;
+        elPosition.left -= parentOffset.left;
+        elPosition.right -= parentOffset.left;
+        if (round) {
+            elPosition.top = Math.round(elPosition.top);
+            elPosition.bottom = Math.round(elPosition.bottom);
+            elPosition.left = Math.round(elPosition.left);
+            elPosition.right = Math.round(elPosition.right);
+        }
+        return elPosition;
+    };
+    Positioning.prototype.offset = function (element, round) {
+        if (round === void 0) { round = true; }
+        var elBcr = element.getBoundingClientRect();
+        var viewportOffset = {
+            top: window.pageYOffset - document.documentElement.clientTop,
+            left: window.pageXOffset - document.documentElement.clientLeft
+        };
+        var elOffset = {
+            height: elBcr.height || element.offsetHeight,
+            width: elBcr.width || element.offsetWidth,
+            top: elBcr.top + viewportOffset.top,
+            bottom: elBcr.bottom + viewportOffset.top,
+            left: elBcr.left + viewportOffset.left,
+            right: elBcr.right + viewportOffset.left
+        };
+        if (round) {
+            elOffset.height = Math.round(elOffset.height);
+            elOffset.width = Math.round(elOffset.width);
+            elOffset.top = Math.round(elOffset.top);
+            elOffset.bottom = Math.round(elOffset.bottom);
+            elOffset.left = Math.round(elOffset.left);
+            elOffset.right = Math.round(elOffset.right);
+        }
+        return elOffset;
+    };
+    Positioning.prototype.positionElements = function (hostElement, targetElement, placement, appendToBody) {
+        var hostElPosition = appendToBody ? this.offset(hostElement, false) : this.position(hostElement, false);
+        var targetElBCR = targetElement.getBoundingClientRect();
+        var placementPrimary = placement.split('-')[0] || 'top';
+        var placementSecondary = placement.split('-')[1] || 'center';
+        var targetElPosition = {
+            'height': targetElBCR.height || targetElement.offsetHeight,
+            'width': targetElBCR.width || targetElement.offsetWidth,
+            'top': 0,
+            'bottom': targetElBCR.height || targetElement.offsetHeight,
+            'left': 0,
+            'right': targetElBCR.width || targetElement.offsetWidth
+        };
+        switch (placementPrimary) {
+            case 'top':
+                targetElPosition.top = hostElPosition.top - targetElement.offsetHeight;
+                break;
+            case 'bottom':
+                targetElPosition.top = hostElPosition.top + hostElPosition.height;
+                break;
+            case 'left':
+                targetElPosition.left = hostElPosition.left - targetElement.offsetWidth;
+                break;
+            case 'right':
+                targetElPosition.left = hostElPosition.left + hostElPosition.width;
+                break;
+        }
+        switch (placementSecondary) {
+            case 'top':
+                targetElPosition.top = hostElPosition.top;
+                break;
+            case 'bottom':
+                targetElPosition.top = hostElPosition.top + hostElPosition.height - targetElement.offsetHeight;
+                break;
+            case 'left':
+                targetElPosition.left = hostElPosition.left;
+                break;
+            case 'right':
+                targetElPosition.left = hostElPosition.left + hostElPosition.width - targetElement.offsetWidth;
+                break;
+            case 'center':
+                if (placementPrimary === 'top' || placementPrimary === 'bottom') {
+                    targetElPosition.left = hostElPosition.left + hostElPosition.width / 2 - targetElement.offsetWidth / 2;
+                }
+                else {
+                    targetElPosition.top = hostElPosition.top + hostElPosition.height / 2 - targetElement.offsetHeight / 2;
+                }
+                break;
+        }
+        targetElPosition.top = Math.round(targetElPosition.top);
+        targetElPosition.bottom = Math.round(targetElPosition.bottom);
+        targetElPosition.left = Math.round(targetElPosition.left);
+        targetElPosition.right = Math.round(targetElPosition.right);
+        return targetElPosition;
+    };
+    return Positioning;
+}());
+
+var positionService = new Positioning();
+function positionElements(hostElement, targetElement, placement, appendToBody) {
+    var pos = positionService.positionElements(hostElement, targetElement, placement, appendToBody);
+    targetElement.style.top = pos.top + "px";
+    targetElement.style.left = pos.left + "px";
+}
+//# sourceMappingURL=positioning.js.map
 
 /***/ }),
 

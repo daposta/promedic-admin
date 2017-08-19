@@ -1,4 +1,4 @@
-webpackJsonp([1],{
+webpackJsonp([0],{
 
 /***/ "./src async recursive":
 /***/ (function(module, exports) {
@@ -85,49 +85,55 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_pagination___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_ng2_pagination__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_highcharts__ = __webpack_require__("./node_modules/angular2-highcharts/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_highcharts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_angular2_highcharts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_login_component__ = __webpack_require__("./src/app/components/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_register_component__ = __webpack_require__("./src/app/components/register.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_diseases_component__ = __webpack_require__("./src/app/components/diseases.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_disease_edit_component__ = __webpack_require__("./src/app/components/disease-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_disease_form_component__ = __webpack_require__("./src/app/components/disease-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_drugs_component__ = __webpack_require__("./src/app/components/drugs.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_allergies_component__ = __webpack_require__("./src/app/components/allergies.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_allergy_edit_component__ = __webpack_require__("./src/app/components/allergy-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_allergy_form_component__ = __webpack_require__("./src/app/components/allergy-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_dashboard_component__ = __webpack_require__("./src/app/components/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_header_component__ = __webpack_require__("./src/app/components/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_footer_component__ = __webpack_require__("./src/app/components/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_disabilities_component__ = __webpack_require__("./src/app/components/disabilities.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_disability_form_component__ = __webpack_require__("./src/app/components/disability-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_disability_edit_component__ = __webpack_require__("./src/app/components/disability-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_blood_groups_component__ = __webpack_require__("./src/app/components/blood-groups.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_sidebar_component__ = __webpack_require__("./src/app/components/sidebar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_states_component__ = __webpack_require__("./src/app/components/states.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_state_edit_component__ = __webpack_require__("./src/app/components/state-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_local_govts_component__ = __webpack_require__("./src/app/components/local_govts.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_local_govt_edit_component__ = __webpack_require__("./src/app/components/local-govt-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_responders_component__ = __webpack_require__("./src/app/components/responders.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_responder_detail_component__ = __webpack_require__("./src/app/components/responder-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_responder_form_component__ = __webpack_require__("./src/app/components/responder-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_responder_edit_component__ = __webpack_require__("./src/app/components/responder-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_clients_component__ = __webpack_require__("./src/app/components/clients.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_client_detail_component__ = __webpack_require__("./src/app/components/client-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_drug_detail_component__ = __webpack_require__("./src/app/components/drug-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_drug_form_component__ = __webpack_require__("./src/app/components/drug-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_drug_edit_component__ = __webpack_require__("./src/app/components/drug-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_hmo_component__ = __webpack_require__("./src/app/components/hmo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_hmo_form_component__ = __webpack_require__("./src/app/components/hmo-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_hmo_edit_component__ = __webpack_require__("./src/app/components/hmo-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular_confirmation_popover__ = __webpack_require__("./node_modules/angular-confirmation-popover/dist/esm/src/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_login_component__ = __webpack_require__("./src/app/components/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_register_component__ = __webpack_require__("./src/app/components/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__ = __webpack_require__("./src/app/components/diseases.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__ = __webpack_require__("./src/app/components/disease-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__ = __webpack_require__("./src/app/components/disease-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__ = __webpack_require__("./src/app/components/drugs.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__ = __webpack_require__("./src/app/components/allergies.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_allergy_edit_component__ = __webpack_require__("./src/app/components/allergy-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_allergy_form_component__ = __webpack_require__("./src/app/components/allergy-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_dashboard_component__ = __webpack_require__("./src/app/components/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_header_component__ = __webpack_require__("./src/app/components/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_footer_component__ = __webpack_require__("./src/app/components/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_disabilities_component__ = __webpack_require__("./src/app/components/disabilities.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_disability_form_component__ = __webpack_require__("./src/app/components/disability-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__components_disability_edit_component__ = __webpack_require__("./src/app/components/disability-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__components_blood_groups_component__ = __webpack_require__("./src/app/components/blood-groups.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__components_sidebar_component__ = __webpack_require__("./src/app/components/sidebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__components_states_component__ = __webpack_require__("./src/app/components/states.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__components_state_edit_component__ = __webpack_require__("./src/app/components/state-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__components_local_govts_component__ = __webpack_require__("./src/app/components/local_govts.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__components_local_govt_edit_component__ = __webpack_require__("./src/app/components/local-govt-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__components_responders_component__ = __webpack_require__("./src/app/components/responders.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__components_responder_detail_component__ = __webpack_require__("./src/app/components/responder-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__components_responder_form_component__ = __webpack_require__("./src/app/components/responder-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__components_responder_edit_component__ = __webpack_require__("./src/app/components/responder-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__components_clients_component__ = __webpack_require__("./src/app/components/clients.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__components_client_detail_component__ = __webpack_require__("./src/app/components/client-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_drug_detail_component__ = __webpack_require__("./src/app/components/drug-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_drug_form_component__ = __webpack_require__("./src/app/components/drug-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_drug_edit_component__ = __webpack_require__("./src/app/components/drug-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_hmo_component__ = __webpack_require__("./src/app/components/hmo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_hmo_form_component__ = __webpack_require__("./src/app/components/hmo-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_hmo_edit_component__ = __webpack_require__("./src/app/components/hmo-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_test_centers_component__ = __webpack_require__("./src/app/components/test-centers.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_new_tc_component__ = __webpack_require__("./src/app/components/new-tc.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_partners_component__ = __webpack_require__("./src/app/components/partners.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_new_partner_component__ = __webpack_require__("./src/app/components/new-partner.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -189,37 +195,49 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_19__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_10__components_login_component__["a" /* LoginComponent */] },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_11__components_register_component__["a" /* RegisterComponent */] },
-    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_15__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_12__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_13__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_16__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_17__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_22__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_23__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_24__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_25__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_28__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_27__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_29__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_30__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_38__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_37__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_31__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_33__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_32__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_35__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_36__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_40__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_41__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_42__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_20__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */] },
+    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_23__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_24__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_25__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_26__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_29__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_28__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_30__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_31__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_39__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_40__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_32__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_33__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_36__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_37__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_41__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_42__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_43__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_44__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_45__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_46__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_47__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_46__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_42__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */]] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -229,27 +247,30 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_11__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_10__components_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__components_diseases_component__["a" /* DiseasesComponent */], __WEBPACK_IMPORTED_MODULE_13__components_disease_edit_component__["a" /* DiseaseEditComponent */], __WEBPACK_IMPORTED_MODULE_14__components_disease_form_component__["a" /* DiseaseFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_22__components_disabilities_component__["a" /* DisabilityComponent */], __WEBPACK_IMPORTED_MODULE_24__components_disability_edit_component__["a" /* DisabilityEditComponent */], __WEBPACK_IMPORTED_MODULE_23__components_disability_form_component__["a" /* DisabilityFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__components_allergies_component__["a" /* AllergyComponent */], __WEBPACK_IMPORTED_MODULE_17__components_allergy_edit_component__["a" /* AllergyEditComponent */], __WEBPACK_IMPORTED_MODULE_18__components_allergy_form_component__["a" /* AllergyFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__components_blood_groups_component__["a" /* BloodGroupComponent */], __WEBPACK_IMPORTED_MODULE_27__components_states_component__["a" /* StateComponent */], __WEBPACK_IMPORTED_MODULE_28__components_state_edit_component__["a" /* StateEditComponent */], __WEBPACK_IMPORTED_MODULE_38__components_drug_form_component__["a" /* DrugFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_31__components_responders_component__["a" /* ResponderComponent */], __WEBPACK_IMPORTED_MODULE_34__components_responder_edit_component__["a" /* ResponderEditComponent */], __WEBPACK_IMPORTED_MODULE_33__components_responder_form_component__["a" /* ResponderFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_29__components_local_govts_component__["a" /* LocalGovtComponent */], __WEBPACK_IMPORTED_MODULE_30__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_35__components_clients_component__["a" /* ClientComponent */], __WEBPACK_IMPORTED_MODULE_36__components_client_detail_component__["a" /* ClientDetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__components_drugs_component__["a" /* DrugsComponent */], __WEBPACK_IMPORTED_MODULE_39__components_drug_edit_component__["a" /* DrugEditComponent */], __WEBPACK_IMPORTED_MODULE_37__components_drug_detail_component__["a" /* DrugDetailComponent */], __WEBPACK_IMPORTED_MODULE_32__components_responder_detail_component__["a" /* ResponderDetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__components_dashboard_component__["a" /* DashboardComponent */], __WEBPACK_IMPORTED_MODULE_20__components_header_component__["a" /* HeaderComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__components_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_26__components_sidebar_component__["a" /* SidebarComponent */],
-            __WEBPACK_IMPORTED_MODULE_40__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_42__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_41__components_hmo_form_component__["a" /* HMOFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_43__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_44__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_45__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
-            __WEBPACK_IMPORTED_MODULE_46__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_48__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_47__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */]
+            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_58__directives_equal_validator_directive__["a" /* EqualValidator */],
+            __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__components_disabilities_component__["a" /* DisabilityComponent */], __WEBPACK_IMPORTED_MODULE_25__components_disability_edit_component__["a" /* DisabilityEditComponent */], __WEBPACK_IMPORTED_MODULE_24__components_disability_form_component__["a" /* DisabilityFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], __WEBPACK_IMPORTED_MODULE_18__components_allergy_edit_component__["a" /* AllergyEditComponent */], __WEBPACK_IMPORTED_MODULE_19__components_allergy_form_component__["a" /* AllergyFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__components_blood_groups_component__["a" /* BloodGroupComponent */], __WEBPACK_IMPORTED_MODULE_28__components_states_component__["a" /* StateComponent */], __WEBPACK_IMPORTED_MODULE_29__components_state_edit_component__["a" /* StateEditComponent */], __WEBPACK_IMPORTED_MODULE_39__components_drug_form_component__["a" /* DrugFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_32__components_responders_component__["a" /* ResponderComponent */], __WEBPACK_IMPORTED_MODULE_35__components_responder_edit_component__["a" /* ResponderEditComponent */], __WEBPACK_IMPORTED_MODULE_34__components_responder_form_component__["a" /* ResponderFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_30__components_local_govts_component__["a" /* LocalGovtComponent */], __WEBPACK_IMPORTED_MODULE_31__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_36__components_clients_component__["a" /* ClientComponent */], __WEBPACK_IMPORTED_MODULE_37__components_client_detail_component__["a" /* ClientDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], __WEBPACK_IMPORTED_MODULE_40__components_drug_edit_component__["a" /* DrugEditComponent */], __WEBPACK_IMPORTED_MODULE_38__components_drug_detail_component__["a" /* DrugDetailComponent */], __WEBPACK_IMPORTED_MODULE_33__components_responder_detail_component__["a" /* ResponderDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__components_dashboard_component__["a" /* DashboardComponent */], __WEBPACK_IMPORTED_MODULE_21__components_header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__components_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_27__components_sidebar_component__["a" /* SidebarComponent */], __WEBPACK_IMPORTED_MODULE_44__components_test_centers_component__["a" /* TestCenterComponent */], __WEBPACK_IMPORTED_MODULE_45__components_new_tc_component__["a" /* NewTCComponent */], __WEBPACK_IMPORTED_MODULE_46__components_partners_component__["a" /* PartnerComponent */], __WEBPACK_IMPORTED_MODULE_47__components_new_partner_component__["a" /* NewPartnerComponent */],
+            __WEBPACK_IMPORTED_MODULE_41__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_43__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_42__components_hmo_form_component__["a" /* HMOFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_48__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_49__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_50__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_51__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_53__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_52__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_7_angular2_toaster__["a" /* ToasterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_8_ng2_pagination__["Ng2PaginationModule"],
             __WEBPACK_IMPORTED_MODULE_9_angular2_highcharts__["ChartModule"],
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { useHash: true }),
+            __WEBPACK_IMPORTED_MODULE_10_angular_confirmation_popover__["a" /* ConfirmationPopoverModule */].forRoot({
+                confirmButtonType: 'danger' // set defaults here
+            })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_49__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_52__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_50__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_51__utils_headers__["a" /* CustomRequestOptions */] }],
+        providers: [__WEBPACK_IMPORTED_MODULE_54__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_57__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_55__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_56__utils_headers__["a" /* CustomRequestOptions */] }],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -300,6 +321,17 @@ var AllergyComponent = (function () {
         }
     };
     ;
+    AllergyComponent.prototype.deleteAllergy = function (x) {
+        var _this = this;
+        this._allergyService.deleteAllergy(x.id).then(function (response) {
+            var index = _this.allergies.indexOf(x);
+            if (index !== -1) {
+                _this.allergies.splice(index, 1);
+            }
+            console.log(_this.allergies);
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
     AllergyComponent.prototype.ngOnInit = function () {
         this.getAllergies();
     };
@@ -1233,6 +1265,16 @@ var ClientComponent = (function () {
         }
     };
     ;
+    ClientComponent.prototype.deleteClient = function (x) {
+        var _this = this;
+        this._clientService.deleteClient(x.id).then(function (response) {
+            var index = _this.clients.indexOf(x);
+            if (index !== -1) {
+                _this.clients.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
     ClientComponent.prototype.ngOnInit = function () {
         this.getClients();
     };
@@ -1327,6 +1369,16 @@ var DisabilityComponent = (function () {
         }
     };
     ;
+    DisabilityComponent.prototype.deleteDisability = function (x) {
+        var _this = this;
+        this._disabilityService.deleteDisability(x.id).then(function (response) {
+            var index = _this.disabilities.indexOf(x);
+            if (index !== -1) {
+                _this.disabilities.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
     DisabilityComponent.prototype.ngOnInit = function () {
         this.getDisablity();
     };
@@ -1615,6 +1667,16 @@ var DiseasesComponent = (function () {
         else {
             this.fetchDiseases();
         }
+    };
+    DiseasesComponent.prototype.deleteDisease = function (x) {
+        var _this = this;
+        this._diseaseService.deleteDisease(x.id).then(function (response) {
+            var index = _this.diseases.indexOf(x);
+            if (index !== -1) {
+                _this.diseases.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
     };
     DiseasesComponent.prototype.ngOnInit = function () {
         this.fetchDiseases();
@@ -2154,7 +2216,8 @@ var _a, _b;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__ = __webpack_require__("./src/app/services/hmo.srv.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_states_srv__ = __webpack_require__("./src/app/services/states.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HMOFormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2168,17 +2231,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HMOFormComponent = (function () {
-    function HMOFormComponent(hmoSrv, route) {
+    function HMOFormComponent(hmoSrv, _stateService, route) {
         this.hmoSrv = hmoSrv;
+        this._stateService = _stateService;
         this.route = route;
         this.hmo = {};
     }
-    // getLocalGovts(){
-    //   this._localGovtService.getLocalGovts().then(local_govts => this.local_govts = local_govts)
-    //           .catch(error => this.error = error);
-    // }
+    HMOFormComponent.prototype.getStates = function () {
+        var _this = this;
+        this._stateService.getStates().then(function (states) { return _this.states = states; })
+            .catch(function (error) { return _this.error = error; });
+    };
     HMOFormComponent.prototype.ngOnInit = function () {
+        this.getStates();
     };
     HMOFormComponent.prototype.onSubmit = function () {
         this.hmoSrv.saveHMO(this.hmo);
@@ -2190,13 +2257,13 @@ HMOFormComponent = __decorate([
         // moduleId: module.id,
         selector: 'hero-form',
         template: __webpack_require__("./src/app/views/hmo-form.html"),
-        providers: [__WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */],
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_hmo_srv__["a" /* HMOService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object])
 ], HMOFormComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=hmo-form.component.js.map
 
 /***/ }),
@@ -2229,6 +2296,16 @@ var HMOComponent = (function () {
             .getHMOs()
             .then(function (hmos) { return _this.hmos = hmos; })
             .catch(function (error) { return _this.error = error; });
+    };
+    HMOComponent.prototype.deleteHMO = function (x) {
+        var _this = this;
+        this._hmoService.deleteHMO(x.id).then(function (response) {
+            var index = _this.hmos.indexOf(x);
+            if (index !== -1) {
+                _this.hmos.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
     };
     HMOComponent.prototype.ngOnInit = function () {
         this.fetchHMOs();
@@ -2362,6 +2439,16 @@ var LocalGovtComponent = (function () {
         }
     };
     ;
+    LocalGovtComponent.prototype.deleteLocalGovt = function (x) {
+        var _this = this;
+        this._localGovtService.deleteLocalGovt(x.id).then(function (response) {
+            var index = _this.local_govts.indexOf(x);
+            if (index !== -1) {
+                _this.local_govts.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
     LocalGovtComponent.prototype.ngOnInit = function () {
         this.getLocalGovts();
     };
@@ -2423,6 +2510,194 @@ LoginComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=login.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/new-partner.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__ = __webpack_require__("./src/app/services/partner.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_states_srv__ = __webpack_require__("./src/app/services/states.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewPartnerComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NewPartnerComponent = (function () {
+    function NewPartnerComponent(partnerSrv, _stateService, route) {
+        this.partnerSrv = partnerSrv;
+        this._stateService = _stateService;
+        this.route = route;
+        this.partner = {};
+    }
+    NewPartnerComponent.prototype.getStates = function () {
+        var _this = this;
+        this._stateService.getStates().then(function (states) { return _this.states = states; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    NewPartnerComponent.prototype.ngOnInit = function () {
+        this.getStates();
+    };
+    NewPartnerComponent.prototype.onSubmit = function () {
+        this.partnerSrv.savePartner(this.partner);
+    };
+    return NewPartnerComponent;
+}());
+NewPartnerComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'hero-form',
+        template: __webpack_require__("./src/app/views/new-partner.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object])
+], NewPartnerComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=new-partner.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/new-tc.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__ = __webpack_require__("./src/app/services/test-center.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_states_srv__ = __webpack_require__("./src/app/services/states.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewTCComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NewTCComponent = (function () {
+    function NewTCComponent(tcSrv, _stateService, route) {
+        this.tcSrv = tcSrv;
+        this._stateService = _stateService;
+        this.route = route;
+        this.tc = {};
+    }
+    NewTCComponent.prototype.getStates = function () {
+        var _this = this;
+        this._stateService.getStates().then(function (states) { return _this.states = states; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    NewTCComponent.prototype.ngOnInit = function () {
+        this.getStates();
+    };
+    NewTCComponent.prototype.onSubmit = function () {
+        this.tcSrv.saveTC(this.tc);
+    };
+    return NewTCComponent;
+}());
+NewTCComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'hero-form',
+        template: __webpack_require__("./src/app/views/new-test-center.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object])
+], NewTCComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=new-tc.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/partners.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__ = __webpack_require__("./src/app/services/partner.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartnerComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PartnerComponent = (function () {
+    function PartnerComponent(_partnerService) {
+        this._partnerService = _partnerService;
+        this.search = "";
+    }
+    PartnerComponent.prototype.getPartners = function () {
+        var _this = this;
+        this._partnerService
+            .getPartners()
+            .then(function (res) { return _this.partners = res; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    PartnerComponent.prototype.searchPartner = function () {
+        var _this = this;
+        console.log(this.search);
+        if (this.search.length > 3) {
+            this._partnerService.searchPartner(this.search).then(function (result) { return _this.partners = result; })
+                .catch(function (error) { return _this.error = error; });
+        }
+        else {
+            this.getPartners();
+        }
+    };
+    ;
+    PartnerComponent.prototype.deletePartner = function (x) {
+        var _this = this;
+        this._partnerService.deletePartner(x.id).then(function (response) {
+            var index = _this.partners.indexOf(x);
+            if (index !== -1) {
+                _this.partners.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
+    PartnerComponent.prototype.ngOnInit = function () {
+        this.getPartners();
+    };
+    return PartnerComponent;
+}());
+PartnerComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'disabilities',
+        template: __webpack_require__("./src/app/views/partners.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_partner_srv__["a" /* PartnerService */]) === "function" && _a || Object])
+], PartnerComponent);
+
+var _a;
+//# sourceMappingURL=partners.component.js.map
 
 /***/ }),
 
@@ -2669,6 +2944,7 @@ var _a, _b, _c, _d, _e, _f;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__ = __webpack_require__("./src/app/services/local_govts.srv.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__ = __webpack_require__("./src/app/services/kit.srv.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__ = __webpack_require__("./src/app/services/concentration.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_gender_srv__ = __webpack_require__("./src/app/services/gender.srv.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResponderFormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2685,18 +2961,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ResponderFormComponent = (function () {
-    function ResponderFormComponent(_stateService, _localGovtService, _responderService, _concentrationService, _kitSrv) {
+    function ResponderFormComponent(_stateService, _localGovtService, _responderService, _concentrationService, _kitSrv, _genderSrv) {
         this._stateService = _stateService;
         this._localGovtService = _localGovtService;
         this._responderService = _responderService;
         this._concentrationService = _concentrationService;
         this._kitSrv = _kitSrv;
+        this._genderSrv = _genderSrv;
         this.responder = {};
     }
     ResponderFormComponent.prototype.getStates = function () {
         var _this = this;
         this._stateService.getStates().then(function (states) { return _this.states = states; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ResponderFormComponent.prototype.getGenders = function () {
+        var _this = this;
+        this._genderSrv.getGenders().then(function (genders) { return _this.genders = genders; })
             .catch(function (error) { return _this.error = error; });
     };
     // getLocalGovts(){
@@ -2726,7 +3009,7 @@ var ResponderFormComponent = (function () {
         this.getStates();
         this.fetchConcentrations();
         this.fetchKits();
-        // this.fetchLGA();
+        this.getGenders();
     };
     ResponderFormComponent.prototype.onSubmit = function () {
         this._responderService.saveResponder(this.responder);
@@ -2738,14 +3021,14 @@ ResponderFormComponent = __decorate([
         // moduleId: module.id,
         selector: 'hero-form',
         template: __webpack_require__("./src/app/views/responder-form.html"),
-        providers: [__WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */], __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */], __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */],
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */], __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */], __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */], __WEBPACK_IMPORTED_MODULE_6__services_gender_srv__["a" /* GenderService */],
             __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__["a" /* KitService */]
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__["a" /* KitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__["a" /* KitService */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_local_govts_srv__["a" /* LocalGovtService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_responders_srv__["a" /* ResponderService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_concentration_srv__["a" /* ConcentrationService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__["a" /* KitService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_kit_srv__["a" /* KitService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__services_gender_srv__["a" /* GenderService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__services_gender_srv__["a" /* GenderService */]) === "function" && _f || Object])
 ], ResponderFormComponent);
 
-var _a, _b, _c, _d, _e;
+var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=responder-form.component.js.map
 
 /***/ }),
@@ -2950,6 +3233,16 @@ var StateComponent = (function () {
             this.getStates();
         }
     };
+    StateComponent.prototype.deleteState = function (x) {
+        var _this = this;
+        this._stateService.deleteState(x.id).then(function (response) {
+            var index = _this.states.indexOf(x);
+            if (index !== -1) {
+                _this.states.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
     StateComponent.prototype.ngOnInit = function () {
         this.getStates();
     };
@@ -2966,6 +3259,154 @@ StateComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=states.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/test-centers.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__ = __webpack_require__("./src/app/services/test-center.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestCenterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TestCenterComponent = (function () {
+    function TestCenterComponent(_tcService) {
+        this._tcService = _tcService;
+        this.search = "";
+    }
+    TestCenterComponent.prototype.getTCs = function () {
+        var _this = this;
+        this._tcService
+            .getTCs()
+            .then(function (res) { return _this.test_centers = res; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    TestCenterComponent.prototype.searchTC = function () {
+        var _this = this;
+        if (this.search.length > 3) {
+            this._tcService.searchTC(this.search).then(function (result) { return _this.test_centers = result; })
+                .catch(function (error) { return _this.error = error; });
+        }
+        else {
+            this.getTCs();
+        }
+    };
+    ;
+    TestCenterComponent.prototype.deleteTC = function (x) {
+        var _this = this;
+        this._tcService.deleteTC(x.id).then(function (response) {
+            var index = _this.test_centers.indexOf(x);
+            if (index !== -1) {
+                _this.test_centers.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
+    TestCenterComponent.prototype.ngOnInit = function () {
+        this.getTCs();
+    };
+    return TestCenterComponent;
+}());
+TestCenterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'test-centers',
+        template: __webpack_require__("./src/app/views/test-centers.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_test_center_srv__["a" /* TestCenterService */]) === "function" && _a || Object])
+], TestCenterComponent);
+
+var _a;
+//# sourceMappingURL=test-centers.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/directives/equal-validator.directive.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/@angular/forms.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EqualValidator; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+var EqualValidator = EqualValidator_1 = (function () {
+    function EqualValidator(validateEqual, reverse) {
+        this.validateEqual = validateEqual;
+        this.reverse = reverse;
+    }
+    Object.defineProperty(EqualValidator.prototype, "isReverse", {
+        get: function () {
+            if (!this.reverse)
+                return false;
+            return this.reverse === 'true' ? true : false;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    EqualValidator.prototype.validate = function (c) {
+        // self value
+        var v = c.value;
+        // control vlaue
+        var e = c.root.get(this.validateEqual);
+        // value not equal
+        if (e && v !== e.value && !this.isReverse) {
+            return {
+                validateEqual: false
+            };
+        }
+        // value equal and reverse
+        if (e && v === e.value && this.isReverse) {
+            delete e.errors['validateEqual'];
+            if (!Object.keys(e.errors).length)
+                e.setErrors(null);
+        }
+        // value not equal and reverse
+        if (e && v !== e.value && this.isReverse) {
+            e.setErrors({ validateEqual: false });
+        }
+        return null;
+    };
+    return EqualValidator;
+}());
+EqualValidator = EqualValidator_1 = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+        selector: '[validateEqual][formControlName],[validateEqual][formControl],[validateEqual][ngModel]',
+        providers: [
+            { provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NG_VALIDATORS */], useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["forwardRef"])(function () { return EqualValidator_1; }), multi: true }
+        ]
+    }),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Attribute"])('validateEqual')),
+    __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Attribute"])('reverse')),
+    __metadata("design:paramtypes", [String, String])
+], EqualValidator);
+
+var EqualValidator_1;
+//# sourceMappingURL=equal-validator.directive.js.map
 
 /***/ }),
 
@@ -3062,6 +3503,18 @@ var AllergyService = (function () {
             _this.toasterService.pop('success', 'Allergy saved', '');
             _this.router.navigateByUrl('allergies');
         }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    AllergyService.prototype.deleteAllergy = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.allergiesURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Allergy deleted!', '');
+        })
+            .catch(this.handleError);
     };
     ;
     AllergyService.prototype.handleError = function (error) {
@@ -3260,6 +3713,18 @@ var ClientService = (function () {
         return this.http.get(this.clientsURL, this.options)
             .toPromise()
             .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    ClientService.prototype.deleteClient = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.clientsURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Client deleted!', '');
+        })
             .catch(this.handleError);
     };
     ;
@@ -3509,6 +3974,18 @@ var DisabilityService = (function () {
         }, function (error) { return console.log(error.json().message); });
     };
     ;
+    DisabilityService.prototype.deleteDisability = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.disabilityURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Disability deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
     DisabilityService.prototype.page_header = function () {
         var data = localStorage.getItem('auth_token');
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
@@ -3622,6 +4099,18 @@ var DiseaseService = (function () {
                 _this.router.navigateByUrl('diseases');
             }, function (error) { return console.log(error.json().message); });
         }
+    };
+    ;
+    DiseaseService.prototype.deleteDisease = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.diseasesURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Disease deleted!', '');
+        })
+            .catch(this.handleError);
     };
     ;
     DiseaseService.prototype.page_header = function () {
@@ -4200,6 +4689,18 @@ var DrugService = (function () {
             .catch(this.handleError);
     };
     ;
+    DrugService.prototype.deleteDrug = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.drugURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Drug deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
     DrugService.prototype.page_header = function () {
         var data = localStorage.getItem('auth_token');
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
@@ -4225,6 +4726,73 @@ DrugService = __decorate([
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=drugs.srv.js.map
+
+/***/ }),
+
+/***/ "./src/app/services/gender.srv.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenderService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var GenderService = (function () {
+    function GenderService(http, router, globals) {
+        this.http = http;
+        this.router = router;
+        this.globals = globals;
+        this.apiURL = this.globals.GENDER_URL;
+    }
+    GenderService.prototype.getGenders = function () {
+        var v = this.page_header();
+        return this.http.get(this.apiURL, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    GenderService.prototype.page_header = function () {
+        var data = localStorage.getItem('auth_token');
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
+        var opt;
+        headers.append('Authorization', 'JWT ' + data);
+        opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
+        return opt;
+    };
+    GenderService.prototype.handleError = function (error) {
+        var err = error.json();
+        if (error.detail = "Signature has expired.") {
+            localStorage.removeItem('auth_token');
+            this.router.navigateByUrl('/login');
+        }
+        return Promise.reject(error.message || error);
+    };
+    return GenderService;
+}());
+GenderService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+], GenderService);
+
+var _a, _b, _c;
+//# sourceMappingURL=gender.srv.js.map
 
 /***/ }),
 
@@ -4314,6 +4882,18 @@ var HMOService = (function () {
             _this.toasterService.pop('success', 'HMO saved', '');
             _this.router.navigateByUrl('hmos');
         }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    HMOService.prototype.deleteHMO = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.hmoURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'HMO deleted!', '');
+        })
+            .catch(this.handleError);
     };
     ;
     HMOService.prototype.page_header = function () {
@@ -4494,6 +5074,18 @@ var LocalGovtService = (function () {
         }
     };
     ;
+    LocalGovtService.prototype.deleteLocalGovt = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.localGovtURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Local Government deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
     LocalGovtService.prototype.page_header = function () {
         var data = localStorage.getItem('auth_token');
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
@@ -4519,6 +5111,120 @@ LocalGovtService = __decorate([
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=local_govts.srv.js.map
+
+/***/ }),
+
+/***/ "./src/app/services/partner.srv.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartnerService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var PartnerService = (function () {
+    function PartnerService(http, router, _toasterService, globals) {
+        this.http = http;
+        this.router = router;
+        this.globals = globals;
+        this.partnerURL = this.globals.PARTNERS_URL;
+        this.v = localStorage.getItem('auth_token');
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]({ 'Content-Type': 'application/json',
+                'Authorization': 'JWT ' + this.v
+            }) });
+        this.toasterService = _toasterService;
+    }
+    PartnerService.prototype.getPartners = function () {
+        var v = this.page_header();
+        return this.http.get(this.partnerURL, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    PartnerService.prototype.savePartner = function (data) {
+        var _this = this;
+        var _data = JSON.stringify(data);
+        this.http.post(this.partnerURL, data).subscribe(function (data) {
+            _this.toasterService.pop('success', 'Partner saved', '');
+            _this.router.navigateByUrl('/partners');
+        }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    PartnerService.prototype.findPartnerByID = function (pk) {
+        var v = this.page_header();
+        return this.http.get(this.partnerURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    PartnerService.prototype.searchPartner = function (partner) {
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        params.append('partner', partner);
+        this.options.search = params;
+        return this.http.get(this.partnerURL, this.options)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    PartnerService.prototype.deletePartner = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.partnerURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Partner deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
+    PartnerService.prototype.page_header = function () {
+        var data = localStorage.getItem('auth_token');
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
+        var opt;
+        headers.append('Authorization', 'JWT ' + data);
+        opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
+        return opt;
+    };
+    PartnerService.prototype.handleError = function (error) {
+        var err = error.json();
+        if (error.detail = "Signature has expired.") {
+            localStorage.removeItem('auth_token');
+            this.router.navigateByUrl('/login');
+        }
+        return Promise.reject(error.message || error);
+    };
+    return PartnerService;
+}());
+PartnerService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+], PartnerService);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=partner.srv.js.map
 
 /***/ }),
 
@@ -4591,6 +5297,18 @@ var ResponderService = (function () {
                 _this.router.navigateByUrl('responder/' + responder.id);
             }, function (error) { return console.log(error.json().message); });
         }
+    };
+    ;
+    ResponderService.prototype.deleteResponder = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.responderURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Responder deleted!', '');
+        })
+            .catch(this.handleError);
     };
     ;
     ResponderService.prototype.findResponderByID = function (pk) {
@@ -4798,6 +5516,18 @@ var StateService = (function () {
             .catch(this.handleError);
     };
     ;
+    StateService.prototype.deleteState = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.statesURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'State deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
     StateService.prototype.page_header = function () {
         var data = localStorage.getItem('auth_token');
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
@@ -4823,6 +5553,120 @@ StateService = __decorate([
 
 var _a, _b, _c, _d;
 //# sourceMappingURL=states.srv.js.map
+
+/***/ }),
+
+/***/ "./src/app/services/test-center.srv.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestCenterService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var TestCenterService = (function () {
+    function TestCenterService(http, router, _toasterService, globals) {
+        this.http = http;
+        this.router = router;
+        this.globals = globals;
+        this.testCenterURL = this.globals.TEST_CENTERS_URL;
+        this.v = localStorage.getItem('auth_token');
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]({ 'Content-Type': 'application/json',
+                'Authorization': 'JWT ' + this.v
+            }) });
+        this.toasterService = _toasterService;
+    }
+    TestCenterService.prototype.getTCs = function () {
+        var v = this.page_header();
+        return this.http.get(this.testCenterURL, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    TestCenterService.prototype.saveTC = function (data) {
+        var _this = this;
+        var _data = JSON.stringify(data);
+        this.http.post(this.testCenterURL, data).subscribe(function (data) {
+            _this.toasterService.pop('success', 'Test Center saved', '');
+            _this.router.navigateByUrl('/test-centers');
+        }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    TestCenterService.prototype.findTCByID = function (pk) {
+        var v = this.page_header();
+        return this.http.get(this.testCenterURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    TestCenterService.prototype.searchTC = function (tc) {
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        params.append('tc', tc);
+        this.options.search = params;
+        return this.http.get(this.testCenterURL, this.options)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    TestCenterService.prototype.deleteTC = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.testCenterURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Test Center deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
+    TestCenterService.prototype.page_header = function () {
+        var data = localStorage.getItem('auth_token');
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
+        var opt;
+        headers.append('Authorization', 'JWT ' + data);
+        opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
+        return opt;
+    };
+    TestCenterService.prototype.handleError = function (error) {
+        var err = error.json();
+        if (error.detail = "Signature has expired.") {
+            localStorage.removeItem('auth_token');
+            this.router.navigateByUrl('/login');
+        }
+        return Promise.reject(error.message || error);
+    };
+    return TestCenterService;
+}());
+TestCenterService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+], TestCenterService);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=test-center.srv.js.map
 
 /***/ }),
 
@@ -4863,7 +5707,6 @@ var UserService = (function () {
     }
     UserService.prototype.login = function (mobile, password) {
         var _this = this;
-        console.log(this.loginUrl);
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         return this.http.post(this.loginUrl, JSON.stringify({ mobile: mobile, password: password }), { headers: headers })
@@ -4878,15 +5721,30 @@ var UserService = (function () {
                 _this.router.navigate(['/login']);
             }
         }, function (error) {
-            console.log(error);
-            _this.evil = JSON.parse(error['_body']).non_field_errors[0];
-            _this._toasterService.pop('error', _this.evil, '');
+            //console.log(error);
+            if (error['status']) {
+                _this.evil = JSON.parse(error['_body']).non_field_errors[0];
+                _this._toasterService.pop('error', _this.evil, '');
+            }
+            else {
+                _this._toasterService.pop('error', 'You are not connected to the server', '');
+            }
         });
     };
     ;
     UserService.prototype.newUser = function () {
     };
     ;
+    // deleteUser(pk: any){
+    //    let v = this.page_header();
+    //     return this.http.delete(this.user + pk +'/', v)
+    //              .toPromise()
+    //              .then(response => {
+    //                //response.json()
+    //                this.toasterService.pop('success', 'Local Government deleted!', '');
+    //              })
+    //              .catch(this.handleError);
+    //  };
     UserService.prototype.logout = function () {
         // localStorage.removeItem('auth_token');
         // this.loggedIn = false;
@@ -4937,7 +5795,7 @@ var _a, _b, _c, _d;
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])();
 var Globals = (function () {
     function Globals() {
-        this.HOST_URL = 'http://139.162.213.237:8002'; // 'http://0.0.0.0:8002';
+        this.HOST_URL = 'http://139.162.213.237:8002'; // 'http://0.0.0.0:8002'; //  // 
         this.LOGIN_URL = this.HOST_URL + '/api/core/api-token-auth/';
         this.LOGOUT_URL = this.HOST_URL + '/client/api/logout/';
         this.DASHBOARD_URL = this.HOST_URL + '/api/medic/dashboard_data/'; //'http://139.162.213.237:8002/api/medic/dashboard_data/';
@@ -4964,6 +5822,9 @@ var Globals = (function () {
         this.DOC_TYPES_URL = this.HOST_URL + '/api/core/doc_types/';
         this.SIDEFFECTS_URL = this.HOST_URL + '/api/core/side_effects/';
         this.HMOS_URL = this.HOST_URL + '/api/core/hmos/';
+        this.PARTNERS_URL = this.HOST_URL + '/api/core/partners/';
+        this.TEST_CENTERS_URL = this.HOST_URL + '/api/core/test_centers/';
+        this.GENDER_URL = this.HOST_URL + '/api/core/genders/';
     }
     return Globals;
 }());
@@ -5056,14 +5917,14 @@ var _a, _b;
 /***/ "./src/app/views/allergies.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Allergies\n                                <a class=\"\" href=\"#/new-allergy\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchAllergy()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let allergy of allergies\">\n                                            <td>{{allergy.name}}</td>\n                                           \n                                            <td>\n                                                <span><a href=\"#/allergy/edit/{{allergy.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Allergies\n                                <a class=\"\" href=\"#/new-allergy\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchAllergy()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let allergy of allergies\">\n                                            <td>{{allergy.name}}</td>\n                                           \n                                            <td>\n                                                <span><a href=\"#/allergy/edit/{{allergy.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteAllergy(allergy)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
 /***/ "./src/app/views/allergy-edit.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>Allergy Edit\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"drugForm.form.valid &&  onSubmit()\"  #drugForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !name.valid\" class=\"alert alert-danger\">Allergy Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Description</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.description\" name=\"description\" #description=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !description.valid\" class=\"alert alert-danger\">Allergy description is required</div>\n                                        </div>\n                                    </div>\n\n                                    \n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>Allergy Edit\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"drugForm.form.valid &&  onSubmit()\"  #drugForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !name.valid\" class=\"alert alert-danger\">Allergy Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Possible Reactions</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.possibleReactions\" name=\"possibleReactions\" #possibleReactions=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !possibleReactions.valid\" class=\"alert alert-danger\">Allergy Possible Reactions is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Allergen</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.allergen\" name=\"allergen\" #allergen=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !allergen.valid\" class=\"alert alert-danger\">Allergen is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Source</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.source\" name=\"source\" #source=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !source.valid\" class=\"alert alert-danger\">Allergy source is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Cross Reacts With</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.reactsWith\" name=\"reactsWith\" #reactsWith=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !reactsWith.valid\" class=\"alert alert-danger\">Cross Reacts With is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Clinical Presentation</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"allergy.clinicalPresentation\" name=\"clinicalPresentation\" #clinicalPresentation=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !clinicalPresentation.valid\" class=\"alert alert-danger\">Allergy Clinical Presentation is required</div>\n                                        </div>\n                                    </div>\n\n                                    \n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5098,7 +5959,7 @@ module.exports = "\n<header-component></header-component>\n <sidebar-component><
 /***/ "./src/app/views/disabilities.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Disabilities\n                                 <a class=\"\" href=\"#/new-disability\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDisability()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Status</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let disability of disabilities| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{disability.name}}</td>\n                                           \n                                             <td>\n                                                  <span><a href=\"#/disability/edit/{{disability.id}}\"><i class=\"icon-pencil icons\"></i></a></span>  |\n                                                 <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span>\n                                                 \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Disabilities\n                                 <a class=\"\" href=\"#/new-disability\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDisability()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Status</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let disability of disabilities| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{disability.name}}</td>\n                                           \n                                             <td>\n                                                  <span><a href=\"#/disability/edit/{{disability.id}}\"><i class=\"icon-pencil icons\"></i></a></span>  |\n                                                 <span><a (click)=\"deleteDisability(disability)\"><i class=\"icon-trash icons\"></i></a></span>\n                                                 \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5133,7 +5994,7 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/diseases.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n           \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Medical Conditions\n                                 <a class=\"\" href=\"#/new-disease\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDisease()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Status</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let d of diseases| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{d.name}}</td>\n                                           \n                                            \n                                            <td>\n                                                <span><a href=\"#/disease/edit/{{d.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n           \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Medical Conditions\n                                 <a class=\"\" href=\"#/new-disease\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDisease()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Status</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let d of diseases| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{d.name}}</td>\n                                           \n                                            \n                                            <td>\n                                                <span><a href=\"#/disease/edit/{{d.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteDisease(d)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5161,7 +6022,7 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/drugs.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Drugs\n                                 <a class=\"\" href=\"#/new-drug\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDrug()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n\n                                            <th>Form</th>\n                                            \n                                             <th>Dispense Type</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let drug of drugs | paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td><a href=\"#/drug/{{drug.id}}\">{{drug.name}}</a> </td>\n                                             <td>{{drug.form.name}}</td>\n                                            <td>{{drug.dispense_type.name}}</td>\n                                           \n                                            <td>\n                                                  <span><a href=\"#/drug/edit/{{drug.id}}\"><i class=\"icon-pencil icons\"></i></a></span>  |\n                                                 <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span>\n                                                 \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                               \n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Drugs\n                                 <a class=\"\" href=\"#/new-drug\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchDrug()\"/>\n                            </div>\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n\n                                            <th>Form</th>\n                                            \n                                             <th>Dispense Type</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let drug of drugs | paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td><a href=\"#/drug/{{drug.id}}\">{{drug.name}}</a> </td>\n                                             <td>{{drug.form.name}}</td>\n                                            <td>{{drug.dispense_type.name}}</td>\n                                           \n                                            <td>\n                                                  <span><a href=\"#/drug/edit/{{drug.id}}\"><i class=\"icon-pencil icons\"></i></a></span>  |\n                                                 <span><a (click)=\"deleteDrug(drug)\"><i class=\"icon-trash icons\"></i></a></span>\n                                                 \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                               \n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5189,14 +6050,14 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/hmo-form.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New HMO\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"drugForm.form.valid &&  onSubmit()\"  #drugForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"hmo.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"drugForm.submitted && !name.valid\" class=\"alert alert-danger\">HMO Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    \n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New HMO\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"hmoForm.form.valid &&  onSubmit()\"  #hmoForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"hmo.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"hmoForm.submitted && !name.valid\" class=\"alert alert-danger\">HMO Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Address</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"hmo.address\" name=\"address\" #address=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"hmoForm.submitted && !address.valid\" class=\"alert alert-danger\">Address is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">State</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"hmo.state\" name=\"state\"  #state=\"ngModel\"   required >\n                                                <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option>\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"hmoForm.submitted && !state.valid\" class=\"alert alert-danger\">State is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 1:</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"hmo.mobile1\" name=\"mobile1\" #mobile1=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"hmoForm.submitted && !mobile1.valid\" class=\"alert alert-danger\">Mobile 1 is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 2</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                 <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"hmo.mobile2\" name=\"mobile2\" #mobile2=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"hmoForm.submitted && !mobile2.valid\" class=\"alert alert-danger\">Mobile 2 is required</div>\n                                        </div>\n                                    </div>\n\n                                    \n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
 /***/ "./src/app/views/hmos.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n           \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> HMOs\n                                <a class=\"\" href=\"#/new-hmo\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let hmo of hmos\">\n                                            <td>{{hmo.name}}</td>\n                                           \n                                             <td>\n                                                <span><a href=\"#/hmo/edit/{{hmo.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n           \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> HMOs\n                                <a class=\"\" href=\"#/new-hmo\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let hmo of hmos\">\n                                            <td>{{hmo.name}}</td>\n                                           \n                                             <td>\n                                                <span><a href=\"#/hmo/edit/{{hmo.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a  (click)=\"deleteHMO(hmo)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5210,7 +6071,7 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/local_govts.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Local Governments\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchLG()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                             <th>State</th>\n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let lga of local_govts| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{lga.name}}</td>\n\n                                             <td>{{lga.state.name}}</td>\n                                           \n                                            <td>\n                                               \n                                                 <span><a href=\"#/local_govt/edit/{{lga.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                    <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Local Governments\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchLG()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                             <th>State</th>\n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let lga of local_govts| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{lga.name}}</td>\n\n                                             <td>{{lga.state.name}}</td>\n                                           \n                                            <td>\n                                               \n                                                 <span><a href=\"#/local_govt/edit/{{lga.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                    <span><a (click)=\"deleteLocalGovt(lga)\"><i class=\"icon-trash icons\"></i></a></span> \n\n                                                  \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5218,6 +6079,27 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ (function(module, exports) {
 
 module.exports = " <div class=\"container d-table\">\n        <div class=\"d-100vh-va-middle\">\n            <div class=\"row\">\n                <div class=\"col-md-6  offset-md-3\">\n                    <div class=\"card mx-2\">\n                        <div class=\"card-block p-2\">\n                            <div class=\"card-block\">\n                                <!-- <h1>Login</h1> -->\n                                \n                                    <img src=\"assets/img/logo.png\"  class=\"\" style=\"\" width=\"185\" height=\"55\" class=\"logo\">\n                               \n                                \n                                <p class=\"text-muted\">Sign In to your account</p>\n                               \n                                <form class=\"form-horizontal\" (ngSubmit)=\"loginForm.form.valid &&  login()\"  #loginForm=\"ngForm\" novalidate>\n\n                                 <div class=\"form-group row\">\n                                            <label class=\"form-control-label\" for=\"\">Mobile No.</label>\n                                            <div class=\"input-group mb-1\">\n                                             \n                                                <input type=\"text\" class=\"form-control\"  [(ngModel)]=\"user.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n\n                                                 <div *ngIf=\"loginForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile No. is required</div>\n                                            </div>\n                                            \n                                </div>\n\n                                 <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Password</label>\n                                        <div class=\"input-group mb-2\">\n                                            <input type=\"password\" class=\"form-control\" \n                                            [(ngModel)]=\"user.password\" name=\"password\" #password=\"ngModel\" required> \n                                             <div *ngIf=\"loginForm.submitted && !password.valid\" class=\"alert alert-danger\">Password is required</div>\n                                        </div>\n                                        \n                                </div>\n                                <div class=\"row\">\n                                    <div class=\" text-xs-right\">\n                                        <button type=\"submit\" class=\"btn btn-primary px-2\">Login</button>\n                                    </div>\n                                    \n                                </div>\n                                </form>\n                            </div>\n                        </div>\n                       \n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>"
+
+/***/ }),
+
+/***/ "./src/app/views/new-partner.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Partner\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"partnerForm.form.valid &&  onSubmit()\"  #partnerForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"partner.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !name.valid\" class=\"alert alert-danger\">Partner Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Description</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"partner.description\" name=\"description\" #description=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !description.valid\" class=\"alert alert-danger\">Desciption is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Address</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"partner.address\" name=\"address\" #address=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !address.valid\" class=\"alert alert-danger\">Address is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">State</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"partner.state\" name=\"state\"  #state=\"ngModel\"   required >\n                                                <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option>\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !state.valid\" class=\"alert alert-danger\">State is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 1:</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"partner.mobile1\" name=\"mobile1\" #mobile1=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !mobile1.valid\" class=\"alert alert-danger\">Mobile 1 is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 2</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                 <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"partner.mobile2\" name=\"mobile2\" #mobile2=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !mobile2.valid\" class=\"alert alert-danger\">Mobile 2 is required</div>\n                                        </div>\n                                    </div>\n\n                                    \n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/new-test-center.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Test Center\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"partnerForm.form.valid &&  onSubmit()\"  #partnerForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"tc.name\" name=\"name\" #name=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !name.valid\" class=\"alert alert-danger\">Partner Name is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Description</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"tc.description\" name=\"description\" #description=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !description.valid\" class=\"alert alert-danger\">Desciption is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Address</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"tc.address\" name=\"address\" #address=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !address.valid\" class=\"alert alert-danger\">Address is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">State</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"tc.state\" name=\"state\"  #state=\"ngModel\"   required >\n                                                <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option>\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !state.valid\" class=\"alert alert-danger\">State is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 1:</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"tc.mobile1\" name=\"mobile1\" #mobile1=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !mobile1.valid\" class=\"alert alert-danger\">Mobile 1 is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile 2</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                 <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"tc.mobile2\" name=\"mobile2\" #mobile2=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"partnerForm.submitted && !mobile2.valid\" class=\"alert alert-danger\">Mobile 2 is required</div>\n                                        </div>\n                                    </div>\n\n                                    \n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/partners.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Partners\n                                <a class=\"\" href=\"#/new-partner\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchPartner()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let p of partners\">\n                                            <td>{{p.name}}</td>\n                                           \n                                            <td>\n                                                <span><a href=\"#/partner/edit/{{p.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteAllergy(p)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5231,7 +6113,7 @@ module.exports = " <div class=\"container d-table\">\n        <div class=\"d-100
 /***/ "./src/app/views/responder-detail.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                 <div class=\"col-lg-3\">\n                     \n                        \n                          <div class=\"row\">\n                             <div  *ngIf=\"!responder.profile_pic\" class=\"col-lg-4\">\n                                  <img src=\"../img/Placeholder-Portrait.jpg\" height=\"200\" width=\"200\">\n                             </div>\n                             \n                              <div  *ngIf=\"responder.profile_pic\" style=\"padding-bottom: 10px\"  class=\"row col-lg-4\">\n                                  <img src=\"{{host_address +'/'+ responder.image_url}}\" height=\"200\" width=\"200\">\n                             </div> \n                             \n                              \n\n                          </div>\n                          <div class=\"row\" style=\"padding-top:5px\">\n\n                            <div class=\"col-lg-4\" [hidden]=\"!upload\">\n                                 <input type=\"file\"    class=\"\" (change)=\"attachFile($event)\">\n                              </div>\n\n                                   \n                          </div>\n\n                          <div class=\"row\" style=\"padding-top: 5px\">\n                                  <div  class=\"col-lg-4\"  [hidden]=\"!upload\">\n                                  <button class=\"btn btn-info\" [disabled]=\"busyUploading\" (click)=\"uploadPhoto()\">\n                                  <i class=\"fa fa-upload\"></i>\n                                  Upload Photo\n                                   <i class=\"fa fa-spinner fa-spin\" [hidden]=\"!busyUploading\"></i>\n                                   </button>\n                              </div>\n                          </div>\n\n                          <div class=\"row\" style=\"padding-top:5px\">\n                                  <div class=\"col-lg-4\" >\n                                     <button  class=\"btn btn-success\" (click)=\"allowUpload()\">Change Picture</button>\n                                 </div>\n                          </div>\n\n                            <!--\n                          <div class=\"row col-lg-8 \"  style=\"padding-left: 10px;\">\n                            <div class=\"row\">\n                                 <h6>Document Upload</h6>\n                            </div>\n                            <div class=\"row\">\n                              <form class=\"form-horizontal\" style=\"padding-left: 10px;\" (ngSubmit)=\"responderForm.form.valid &&  onSubmit()\"  #responderForm=\"ngForm\" novalidate>\n                                <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Document Type</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"doc.doctype\" name=\"doctype\"  #doctype=\"ngModel\"   required >\n                                                <option *ngFor=\"let docType of doc_types\" [value]=\"docType.id\">{{docType.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !state.valid\" class=\"alert alert-danger\">Select Document Type</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                 </div>\n\n                                  <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">File</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <input type=\"file\" class=\"form-control\"  [(ngModel)]=\"doc.docFile\" name=\"docFile\"  #docFile=\"ngModel\"   required >\n                                               \n                              \n\n                                                 <div *ngIf=\"responderForm.submitted && !docFile.valid\" class=\"alert alert-danger\">File is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                 </div>\n                                  <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                       \n                                    </div>\n                              </form>\n                            </div>\n\n                          </div>\n                          -->\n                      \n                 </div>\n                    <div class=\"col-lg-9\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Responder Detail\n                            </div>\n                            <div class=\"card-block\">\n\n                             <div class=\"row\">\n                                   <div class=\"col-lg-4\">Responder Code</div>\n                                   <div class=\"col-lg-4\">{{responder.responder_code}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">First Name</div>\n                                   <div class=\"col-lg-4\">{{responder.first_name}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Middle Name</div>\n                                   <div class=\"col-lg-4\">{{responder.middle_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Last Name</div>\n                                   <div class=\"col-lg-4\">{{responder.last_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Mobile</div>\n                                   <div class=\"col-lg-4\">{{responder.mobile}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Areas of Concentration</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let a of responder.areas_of_concentration\">\n                                          {{ a.name }}\n                                        </li>\n                                      </ul>\n                                   </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Kits</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let kit of responder.kits\">\n                                          {{ kit.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">State</div>\n                                   <div class=\"col-lg-4\">{{responder.state?.name}}</div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Local Govt</div>\n                                   <div class=\"col-lg-4\">{{responder.local_govt?.name}}</div>\n                               </div>\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                 <div class=\"col-lg-3\">\n                     \n                        \n                          <div class=\"row\">\n                             <div  *ngIf=\"!responder.profile_pic\" class=\"col-lg-4\">\n                                  <img src=\"../img/Placeholder-Portrait.jpg\" height=\"200\" width=\"200\">\n                             </div>\n                             \n                              <div  *ngIf=\"responder.profile_pic\" style=\"padding-bottom: 10px\"  class=\"row col-lg-4\">\n                                  <img src=\"{{host_address +'/'+ responder.image_url}}\" height=\"200\" width=\"200\">\n                             </div> \n                             \n                              \n\n                          </div>\n                          <div class=\"row\" style=\"padding-top:5px\">\n\n                            <div class=\"col-lg-4\" [hidden]=\"!upload\">\n                                 <input type=\"file\"    class=\"\" (change)=\"attachFile($event)\">\n                              </div>\n\n                                   \n                          </div>\n\n                          <div class=\"row\" style=\"padding-top: 5px\">\n                                  <div  class=\"col-lg-4\"  [hidden]=\"!upload\">\n                                  <button class=\"btn btn-info\" [disabled]=\"busyUploading\" (click)=\"uploadPhoto()\">\n                                  <i class=\"fa fa-upload\"></i>\n                                  Upload Photo\n                                   <i class=\"fa fa-spinner fa-spin\" [hidden]=\"!busyUploading\"></i>\n                                   </button>\n                              </div>\n                          </div>\n\n                          <div class=\"row\" style=\"padding-top:5px\">\n                                  <div class=\"col-lg-4\" >\n                                     <button  class=\"btn btn-success\" (click)=\"allowUpload()\">Change Picture</button>\n                                 </div>\n                          </div>\n\n                            <!--\n                          <div class=\"row col-lg-8 \"  style=\"padding-left: 10px;\">\n                            <div class=\"row\">\n                                 <h6>Document Upload</h6>\n                            </div>\n                            <div class=\"row\">\n                              <form class=\"form-horizontal\" style=\"padding-left: 10px;\" (ngSubmit)=\"responderForm.form.valid &&  onSubmit()\"  #responderForm=\"ngForm\" novalidate>\n                                <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Document Type</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"doc.doctype\" name=\"doctype\"  #doctype=\"ngModel\"   required >\n                                                <option *ngFor=\"let docType of doc_types\" [value]=\"docType.id\">{{docType.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !state.valid\" class=\"alert alert-danger\">Select Document Type</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                 </div>\n\n                                  <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">File</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <input type=\"file\" class=\"form-control\"  [(ngModel)]=\"doc.docFile\" name=\"docFile\"  #docFile=\"ngModel\"   required >\n                                               \n                              \n\n                                                 <div *ngIf=\"responderForm.submitted && !docFile.valid\" class=\"alert alert-danger\">File is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                 </div>\n                                  <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                       \n                                    </div>\n                              </form>\n                            </div>\n\n                          </div>\n                          -->\n                      \n                 </div>\n                    <div class=\"col-lg-9\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Responder Detail\n                            </div>\n                            <div class=\"card-block\">\n\n                             <div class=\"row\">\n                                   <div class=\"col-lg-4\">Responder Code</div>\n                                   <div class=\"col-lg-4\">{{responder.responder_code}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">First Name</div>\n                                   <div class=\"col-lg-4\">{{responder.first_name}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Middle Name</div>\n                                   <div class=\"col-lg-4\">{{responder.middle_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Last Name</div>\n                                   <div class=\"col-lg-4\">{{responder.last_name}}</div>\n                               </div>\n\n                                 <div class=\"row\">\n                                   <div class=\"col-lg-4\">Gender</div>\n                                   <div class=\"col-lg-4\">{{responder?.gender.name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Mobile</div>\n                                   <div class=\"col-lg-4\">{{responder.mobile}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Areas of Concentration</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let a of responder.areas_of_concentration\">\n                                          {{ a.name }}\n                                        </li>\n                                      </ul>\n                                   </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Kits</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let kit of responder.kits\">\n                                          {{ kit.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">State</div>\n                                   <div class=\"col-lg-4\">{{responder.state?.name}}</div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Local Govt</div>\n                                   <div class=\"col-lg-4\">{{responder.local_govt?.name}}</div>\n                               </div>\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5245,7 +6127,7 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/responder-form.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Responder\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"responderForm.form.valid &&  onSubmit()\"  #responderForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">First Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.first_name\" name=\"firstName\" #firstName=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !firstName.valid\" class=\"alert alert-danger\">First Name is required</div>\n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Last Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.last_name\" name=\"lastName\" #lastName=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !lastName.valid\" class=\"alert alert-danger\">Last Name is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile No. is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">State</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"responder.state\" name=\"state\"  #state=\"ngModel\"  (change)=\"fetchLGA($event.target.value)\" required >\n                                                <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !state.valid\" class=\"alert alert-danger\">State is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Local Govt.</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"responder.lga\" name=\"lga\"  #lga=\"ngModel\"  required >\n                                                <option *ngFor=\"let lga of local_govts\" [value]=\"lga.id\">{{lga.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !lga.valid\" class=\"alert alert-danger\">Local Government is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"col-md-2 form-control-label\" for=\"multiple-select\">Areas of Concentration</label>\n                                        <div class=\"col-md-9\">\n                                            <select id=\"multiple-select\" name=\"multiple-select\" class=\"form-control\" size=\"5\" multiple=\"\" [(ngModel)]=\"responder.concentrations\" name=\"concentration\"  #concentration=\"ngModel\"  required >\n                                                  <option *ngFor=\"let conc of concentrations\" [value]=\"conc.id\">{{conc.name}}</option>\n                                               \n                                            </select>\n\n                                            <div *ngIf=\"responderForm.submitted && !concentration.valid\" class=\"alert alert-danger\">Concentration is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"col-md-2 form-control-label\" for=\"multiple-select\">Kits</label>\n                                        <div class=\"col-md-9\">\n                                            <select id=\"multiple-select\" name=\"multiple-select\" class=\"form-control\" size=\"5\" multiple=\"\" [(ngModel)]=\"responder.kits\" name=\"kit\"  #kit=\"ngModel\"  required >\n                                                 <option *ngFor=\"let kit of kits\" [value]=\"kit.id\">{{kit.name}}</option>\n                                               \n                                            </select>\n\n                                             <div *ngIf=\"responderForm.submitted && !kit.valid\" class=\"alert alert-danger\">Kit is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Responder\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"responderForm.form.valid &&  onSubmit()\"  #responderForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">First Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.first_name\" name=\"firstName\" #firstName=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !firstName.valid\" class=\"alert alert-danger\">First Name is required</div>\n                                        </div>\n                                    </div>\n\n                                      <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Middle Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.middleName\" name=\"middleName\" #middleName=\"ngModel\"  required>\n                                            </div>\n\n                                             <div *ngIf=\"responderForm.submitted && !middleName.valid\" class=\"alert alert-danger\">Middle name  is required</div>\n                                            \n                                         \n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Last Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.last_name\" name=\"lastName\" #lastName=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !lastName.valid\" class=\"alert alert-danger\">Last Name is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"responder.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile No. is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"responder.password\" name=\"password\" #password=\"ngModel\" required validateEqual=\"confPassword\" reverse=\"true\">\n                                            </div>\n                                            \n                                           <div *ngIf=\"responderForm.submitted && !password.valid\" class=\"alert alert-danger\">Password is required</div>\n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Confirm Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"responder.confPassword\" name=\"confPassword\" #confPassword=\"ngModel\" required validateEqual=\"password\">\n                                            </div>\n                                            \n                                            <div *ngIf=\"responderForm.submitted && !confPassword.valid\" class=\"alert alert-danger\"> Password mismatch </div>\n                                        </div>\n                                    </div>\n\n\n                                      <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Gender</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"responder.gender\" name=\"gender\"  #gender=\"ngModel\"  required >\n                                                <option *ngFor=\"let gender of genders\" [value]=\"gender.id\">{{gender.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !gender.valid\" class=\"alert alert-danger\">Gender is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                    </div>\n\n\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">State</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"responder.state\" name=\"state\"  #state=\"ngModel\"  (change)=\"fetchLGA($event.target.value)\" required >\n                                                <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !state.valid\" class=\"alert alert-danger\">State is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Local Govt.</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                \n                                            <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"responder.lga\" name=\"lga\"  #lga=\"ngModel\"  required >\n                                                <option *ngFor=\"let lga of local_govts\" [value]=\"lga.id\">{{lga.name}}</option>\n                                               \n                                            </select>\n\n                                                 <div *ngIf=\"responderForm.submitted && !lga.valid\" class=\"alert alert-danger\">Local Government is required</div>\n                                            </div>\n\n                                           \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"col-md-2 form-control-label\" for=\"multiple-select\">Areas of Concentration</label>\n                                        <div class=\"col-md-9\">\n                                            <select id=\"multiple-select\" name=\"multiple-select\" class=\"form-control\" size=\"5\" multiple=\"\" [(ngModel)]=\"responder.concentrations\" name=\"concentration\"  #concentration=\"ngModel\"  required >\n                                                  <option *ngFor=\"let conc of concentrations\" [value]=\"conc.id\">{{conc.name}}</option>\n                                               \n                                            </select>\n\n                                            <div *ngIf=\"responderForm.submitted && !concentration.valid\" class=\"alert alert-danger\">Concentration is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"col-md-2 form-control-label\" for=\"multiple-select\">Kits</label>\n                                        <div class=\"col-md-9\">\n                                            <select id=\"multiple-select\" name=\"multiple-select\" class=\"form-control\" size=\"5\" multiple=\"\" [(ngModel)]=\"responder.kits\" name=\"kit\"  #kit=\"ngModel\"  required >\n                                                 <option *ngFor=\"let kit of kits\" [value]=\"kit.id\">{{kit.name}}</option>\n                                               \n                                            </select>\n\n                                             <div *ngIf=\"responderForm.submitted && !kit.valid\" class=\"alert alert-danger\">Kit is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                        <button type=\"button\" class=\"btn btn-default\">Cancel</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -5259,7 +6141,7 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ "./src/app/views/sidebar.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
+module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
 
 /***/ }),
 
@@ -5273,7 +6155,14 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ "./src/app/views/states.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> States\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchStates()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let state of states| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{state.name}}</td>\n                                           \n                                            <td>\n                                               \n                                                 <span><a href=\"#/state/edit/{{state.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                    <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> States\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchStates()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let state of states| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{state.name}}</td>\n                                           \n                                            <td>\n                                               \n                                                 <span><a href=\"#/state/edit/{{state.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                    <span><a (click)=\"deleteState(state)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/test-centers.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Test Centers\n                                <a class=\"\" href=\"#/new-tc\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchTC()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let tc of test_centers\">\n                                            <td>{{tc.name}}</td>\n                                           \n                                            <td>\n                                                <span><a href=\"#/tc/edit/{{tc.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteTC(tc)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
