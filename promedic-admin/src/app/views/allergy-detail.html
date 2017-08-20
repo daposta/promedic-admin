@@ -1,0 +1,93 @@
+<header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Partner Detail
+                            </div>
+                            <div class="card-block">
+                               <div class="row">
+                                   <div class="col-lg-4">Name</div>
+                                   <div class="col-lg-4">{{allergy.name}}</div>
+                               </div>
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">Possible Reactions</div>
+                                   <div class="col-lg-4">{{allergy.possible_reactions}}</div>
+                               </div>
+
+
+                                 <div class="row">
+                                   <div class="col-lg-4">Allergen</div>
+                                   <div class="col-lg-4">{{allergy.allergen}}</div>
+                               </div>
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">Source</div>
+                                   <div class="col-lg-4">{{allergy.source}}</div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-lg-4">Reacts With</div>
+                                   <div class="col-lg-4">{{allergy.reacts_with}}</div>
+                               </div>
+
+
+                                <div class="row">
+                                   <div class="col-lg-4">Clinical Presentation</div>
+                                   <div class="col-lg-4">{{allergy.clinical_presentation}}</div>
+                               </div>
+
+                              
+
+
+                             
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+    <footer-component></footer-component>

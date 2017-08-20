@@ -46,7 +46,7 @@
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let hmo of hmos">
-                                            <td>{{hmo.name}}</td>
+                                            <td><a href="#/hmo/{{hmo.id}}">{{hmo.name}}</a></td>
                                            
                                              <td>
                                                 <span><a href="#/hmo/edit/{{hmo.id}}"><i class="icon-pencil icons"></i></a></span> |

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/switchMap';
 import { Globals } from '../shared/api';
 
 @Component({
-  selector: 'responder-detail',
+  selector: 'client-detail',
   templateUrl: '../views/client-detail.html' ,
   providers: [ClientService, DocumentTypeService]
 })

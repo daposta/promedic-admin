@@ -61,7 +61,7 @@
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let tc of test_centers">
-                                            <td>{{tc.name}}</td>
+                                            <td><a href="#/test-center/{{tc.id}}">{{tc.name}}</a></td>
                                            
                                             <td>
                                                 <span><a href="#/tc/edit/{{tc.id}}"><i class="icon-pencil icons"></i></a></span> |

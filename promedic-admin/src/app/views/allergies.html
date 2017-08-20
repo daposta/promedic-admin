@@ -61,7 +61,7 @@
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let allergy of allergies">
-                                            <td>{{allergy.name}}</td>
+                                            <td><a href="#/allergy/{{allergy.id}}">{{allergy.name}}</a></td>
                                            
                                             <td>
                                                 <span><a href="#/allergy/edit/{{allergy.id}}"><i class="icon-pencil icons"></i></a></span> |

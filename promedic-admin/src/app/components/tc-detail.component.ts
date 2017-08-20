@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
-import {DrugService} from '../services/drugs.srv';
+import { TestCenterService} from '../services/test-center.srv';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 import 'rxjs/add/operator/switchMap';
 
 
 @Component({
   selector: 'drug-detail',
-  templateUrl: '../views/drug-detail.html' ,
-  providers: [DrugService]
+  templateUrl: '../views/tc-detail.html' ,
+  providers: [TestCenterService]
 })
 
-export class DrugDetailComponent { 
+export class TCDetailComponent { 
 
-	drug: Object= {};
+	tc: Object= {};
  	error: any;	
 
-	constructor(private _drugsService : DrugService, private route: ActivatedRoute){
+	constructor(private _tcSrv : TestCenterService, private route: ActivatedRoute){
 
 	}
 
@@ -28,9 +28,9 @@ export class DrugDetailComponent {
 
 	ngOnInit() {
 		 this.route.params.switchMap((params: Params) => 
-		 	this._drugsService.findDrugByID(+ params['id']))
+		 	this._tcSrv.findTCByID(+ params['id']))
 		 .subscribe(
-		 	drug => this.drug = drug
+		 	res => this.tc = res
 		 	);
 		 
 	}
