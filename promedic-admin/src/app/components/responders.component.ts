@@ -41,6 +41,19 @@ export class ResponderComponent  {
 		
 	};
 
+
+	deleteResponder(x){
+		this._responderService.deleteResponder(x.id).then(response =>{
+			
+			let index: number = this.responders.indexOf(x);
+			if (index !== -1) {
+		        this.responders.splice(index, 1);
+		    }   
+			
+		})
+		.catch(err => this.error = err)
+	}
+
 	ngOnInit(){
 		this.getResponders();
 	}

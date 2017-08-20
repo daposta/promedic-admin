@@ -80,7 +80,7 @@ export class ClientAllergytChartComponent {
             enabled: false
         },
         tooltip: {
-            pointFormat: 'Population in 2008: <b>{point.y} millions</b>'
+            pointFormat:  _data[0][1] +' clients have  ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
         },
         series: [{
             name: 'Population',

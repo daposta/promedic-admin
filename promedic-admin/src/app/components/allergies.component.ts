@@ -45,7 +45,6 @@ export class AllergyComponent  {
 		        this.allergies.splice(index, 1);
 		    }   
 			
-			console.log(this.allergies);
 		})
 		.catch(err => this.error = err)
 	}

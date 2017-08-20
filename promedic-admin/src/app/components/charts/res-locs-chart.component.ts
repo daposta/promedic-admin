@@ -33,7 +33,7 @@ export class ResponderLocationChartComponent {
                let inner = [item['state__name'], item['total']];
                 iArray.push(inner);  
               });
-            
+           
              this.displayChart(iArray);
 
              })
@@ -74,7 +74,7 @@ export class ResponderLocationChartComponent {
             enabled: false
         },
         tooltip: {
-            pointFormat: 'Population in 2008: <b>{point.y} millions</b>'
+            pointFormat:  _data[0][1] +' responder in  ' +_data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
         },
         series: [{
             name: 'Population',
