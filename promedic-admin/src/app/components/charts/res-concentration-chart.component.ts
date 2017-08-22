@@ -80,7 +80,7 @@ export class ResponderConcentrationChartComponent {
             enabled: false
         },
         tooltip: {
-            pointFormat:  _data[0][1] +' responders in ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
+            pointFormat:  _data[0][1] +' responder(s) in ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
         },
         series: [{
             name: 'Population',

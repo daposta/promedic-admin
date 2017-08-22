@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
 import { HMOService} from '../services/hmo.srv';
+import {StateService} from '../services/states.srv';
 import {Router, ActivatedRoute, Params} from '@angular/router';
 
 @Component({
   // moduleId: module.id,
   selector: 'hero-form',
   templateUrl: '../views/hmo-edit.html',
-  providers : [HMOService, 
+  providers : [HMOService, StateService
     ]
 })
 
@@ -15,19 +16,21 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 export class HMOEditComponent {
 
   hmo: any= {};
+  states: any[];
   error: any;  
   
 
-  constructor(private hmoSrv : HMOService, private route: ActivatedRoute){
+  constructor(private hmoSrv : HMOService,private _stateService : StateService,  private route: ActivatedRoute){
 
   }
 
   
 
-  // getLocalGovts(){
-  //   this._localGovtService.getLocalGovts().then(local_govts => this.local_govts = local_govts)
-  //           .catch(error => this.error = error);
-  // }
+  getStates(){
+      this._stateService.getStates().then(states => this.states = states)
+            .catch(error => this.error = error);
+  }
+
 
 
   getHMOInfo(){
@@ -36,16 +39,21 @@ export class HMOEditComponent {
      .subscribe(
        data => {
          this.hmo = data;
+         console.log(data.state.id);
+         this.hmo.myState = data.state.id;
          
        });
 
 
   };
 
+
+
  
 
   ngOnInit(){
      this.getHMOInfo();
+     this.getStates()
     
     // this.fetchLGA();
      

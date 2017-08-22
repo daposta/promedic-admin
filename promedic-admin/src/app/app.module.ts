@@ -68,9 +68,12 @@ import { TestCenterComponent} from './components/test-centers.component';
 import { NewTCComponent} from './components/new-tc.component';
 import { TCDetailComponent} from './components/tc-detail.component';
 
+import { TCEditComponent} from './components/tc-edit.component';
+
 import { PartnerComponent } from './components/partners.component';
 import { NewPartnerComponent } from './components/new-partner.component';
 import { PartnerDetailComponent} from './components/partner-detail.component';
+import { PartnerEditComponent } from './components/partner-edit.component';
 
 import {ResponderLocationChartComponent} from './components/charts/res-locs-chart.component';
 import {ResponderKitChartComponent} from './components/charts/res-kits-chart.component';
@@ -130,11 +133,14 @@ const appRoutes: Routes = [
 	   { path: 'test-centers', component: TestCenterComponent, canActivate: [LoggedInGuard] },
 	    { path: 'test-center/:id', component: TCDetailComponent, canActivate: [LoggedInGuard]},
 	   { path: 'new-tc', component: NewTCComponent , canActivate: [LoggedInGuard]},
+	    { path: 'test-center/edit/:id', component: TCEditComponent, canActivate: [LoggedInGuard]},
 
 
 	   { path: 'partners', component: PartnerComponent, canActivate: [LoggedInGuard] },
 	    { path: 'partner/:id', component: PartnerDetailComponent, canActivate: [LoggedInGuard]},
 	   { path: 'new-partner', component: NewPartnerComponent , canActivate: [LoggedInGuard]},
+	   { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
+	  
 
 	    { path: 'users', component: PartnerComponent, canActivate: [LoggedInGuard] },
 	   { path: 'new-user', component: HMOFormComponent , canActivate: [LoggedInGuard]},
@@ -154,8 +160,9 @@ const appRoutes: Routes = [
   ClientComponent, ClientDetailComponent, 
   DrugsComponent, DrugEditComponent, DrugDetailComponent, ResponderDetailComponent,
    DashboardComponent, HeaderComponent, 
-  FooterComponent,SidebarComponent, TestCenterComponent, NewTCComponent, TCDetailComponent,
-  PartnerComponent, NewPartnerComponent, PartnerDetailComponent,
+  FooterComponent,SidebarComponent,
+   TestCenterComponent, NewTCComponent, TCDetailComponent,TCEditComponent,
+  PartnerComponent, NewPartnerComponent, PartnerDetailComponent, PartnerEditComponent,
   HMOComponent, HMOEditComponent, HMOFormComponent, HMODetailComponent,
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent

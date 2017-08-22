@@ -75,6 +75,24 @@ export class TestCenterService {
 
   };
 
+  updateTCInfo(tc:any= {}){
+     let v = this.page_header();
+    //let _data = JSON.stringify(hmo);
+    if (tc){
+        this.http.patch(this.testCenterURL + tc.id + '/', tc, v).subscribe(
+           data => {
+
+             this.toasterService.pop('success', 'Test Center Info updated', '');
+              this.router.navigateByUrl('test-center/' + tc.id);
+            
+           },
+           error => console.log(error.json().message)
+        )
+    }
+     
+
+  };
+
   private page_header(){
      let data =  localStorage.getItem('auth_token');
       let headers = new Headers();

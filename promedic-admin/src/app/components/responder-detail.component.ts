@@ -65,7 +65,11 @@ export class ResponderDetailComponent {
 		 this.route.params.switchMap((params: Params) => 
 		 	this._responderService.findResponderByID(+ params['id']))
 		 .subscribe(
-		 	data => this.responder = data
+		 	data => {
+
+		 		this.responder = data;
+		 	}
+		 	
 		 	);
 
 		 this.getDocumentTypes();

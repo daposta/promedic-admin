@@ -64,17 +64,20 @@ export class ResponderEditComponent {
 		 .subscribe(
 		 	data => {
 		 		this.responder = data;
+        this.responder.mobile = data.member? data.member.mobile : '';
 		 		this.responder.state = data.state.id ;
 		 		if(this.responder.state){
 		 			this.fetchLGA(this.responder.state);
 		 		}
 		 		this.responder.lga = data.local_govt.id ;
-		 		let aocs : any[];
+		 		let aocs = [];
 		 		data.areas_of_concentration.forEach(function(item:any){
-		 			aocs.push(item.id);
+                aocs.push(item.id);
+         
+		 		
 		 		});
 		 		this.responder.aocs = aocs;
-		 		let res_kits :any[];
+		 		let res_kits = [];
 		 		data.kits.forEach(function(item:any){
 		 			res_kits.push(item.id);
 		 		});

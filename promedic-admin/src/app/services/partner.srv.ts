@@ -44,6 +44,24 @@ export class PartnerService {
 
   };
 
+  updatePartnerInfo(partner:any= {}){
+     let v = this.page_header();
+    //let _data = JSON.stringify(hmo);
+    if (partner){
+        this.http.patch(this.partnerURL + partner.id + '/', partner, v).subscribe(
+           data => {
+
+             this.toasterService.pop('success', 'Partner Info updated', '');
+              this.router.navigateByUrl('/partner/' +partner.id);
+            
+           },
+           error => console.log(error.json().message)
+        )
+    }
+     
+
+  };
+
   findPartnerByID(pk: any){
     let v = this.page_header();
      return this.http.get(this.partnerURL + pk +'/', v)
