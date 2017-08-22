@@ -1,0 +1,135 @@
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            
+        </ol>
+
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                     <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-edit"></i>HMO Edit
+                                <div class="card-actions">
+                                    <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                                    <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+                                    <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <form class="form-horizontal" (ngSubmit)="tcForm.form.valid &&  onSubmit()"  #tcForm="ngForm" novalidate>
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.name" name="name" #name="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="tcForm.submitted && !name.valid" class="alert alert-danger">Test Center Name is required</div>
+                                        </div>
+                                    </div>
+
+                                                                        <div class="form-group row">
+                                        <label class="form-control-label" for="">Address</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.address" name="address" #address="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="tcForm.submitted && !address.valid" class="alert alert-danger">Address is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">State</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <select id="select" class="form-control"  [(ngModel)]="tc.myState" name="state"  #state="ngModel"   required >
+                                                <option *ngFor="let state of states" [value]="state.id" [selected]="tc.myState== state.id">{{state.name}}</option>
+                                               
+                                            </select>
+                                            </div>
+                                            
+                                           <div *ngIf="tcForm.submitted && !state.valid" class="alert alert-danger">State is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Mobile 1:</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.mobile1" name="mobile1" #mobile1="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="tcForm.submitted && !mobile1.valid" class="alert alert-danger">Mobile 1 is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Mobile 2</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                 <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="tc.mobile2" name="mobile2" #mobile2="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="tcForm.submitted && !mobile2.valid" class="alert alert-danger">Mobile 2 is required</div>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+
+
+                                    
+
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>
