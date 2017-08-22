@@ -75,6 +75,10 @@ import { NewPartnerComponent } from './components/new-partner.component';
 import { PartnerDetailComponent} from './components/partner-detail.component';
 import { PartnerEditComponent } from './components/partner-edit.component';
 
+
+import { UserComponent } from './components/users.component';
+// import { NewPartnerComponent } from './components/new-partner.component';
+
 import {ResponderLocationChartComponent} from './components/charts/res-locs-chart.component';
 import {ResponderKitChartComponent} from './components/charts/res-kits-chart.component';
 import {ResponderConcentrationChartComponent} from './components/charts/res-concentration-chart.component';
@@ -142,8 +146,8 @@ const appRoutes: Routes = [
 	   { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
 	  
 
-	    { path: 'users', component: PartnerComponent, canActivate: [LoggedInGuard] },
-	   { path: 'new-user', component: HMOFormComponent , canActivate: [LoggedInGuard]},
+	    { path: 'users', component:UserComponent , canActivate: [LoggedInGuard] },
+	   // { path: 'new-user', component: HMOFormComponent , canActivate: [LoggedInGuard]},
 
 ]
 
@@ -165,7 +169,8 @@ const appRoutes: Routes = [
   PartnerComponent, NewPartnerComponent, PartnerDetailComponent, PartnerEditComponent,
   HMOComponent, HMOEditComponent, HMOFormComponent, HMODetailComponent,
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
-  ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent
+  ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent,
+  UserComponent,
   ],
   imports: [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 

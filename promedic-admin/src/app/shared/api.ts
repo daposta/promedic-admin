@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 
 Injectable()
 export class Globals{
-	HOST_URL = 'http://139.162.213.237:8002';  //// 'http://0.0.0.0:8002'; ////  //  // 
+	HOST_URL = 'http://0.0.0.0:8002'; //'http://139.162.213.237:8002';  //  
 	LOGIN_URL =  this.HOST_URL + '/api/core/api-token-auth/';
     LOGOUT_URL = this.HOST_URL + '/client/api/logout/';
     DASHBOARD_URL = this.HOST_URL + '/api/medic/dashboard_data/';//'http://139.162.213.237:8002/api/medic/dashboard_data/';
@@ -38,5 +38,6 @@ export class Globals{
     PARTNERS_URL =  this.HOST_URL + '/api/core/partners/';
     TEST_CENTERS_URL =  this.HOST_URL + '/api/core/test_centers/';
     GENDER_URL =  this.HOST_URL + '/api/core/genders/';
+    USERS_URL =  this.HOST_URL + '/api/core/users/';
 
 }

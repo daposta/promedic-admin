@@ -47,7 +47,8 @@ export class ResponderKitChartComponent {
     
    
     displayChart(_data:any[]){
-        
+         // console.log(_data[i][0], _data[][1]);
+
          this.options = {
             chart: {
             type: 'column'
@@ -81,7 +82,9 @@ export class ResponderKitChartComponent {
             enabled: false
         },
         tooltip: {
-            pointFormat:  _data[0][1] +' responder(s) has  ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
+
+            pointFormat: '{point.y}' +' responder(s)'
+            // _data[0][1] +' responder(s) has  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
         },
         series: [{
             name: 'Population',
@@ -91,7 +94,7 @@ export class ResponderKitChartComponent {
                 rotation: -90,
                 color: '#FFFFFF',
                 align: 'right',
-                format: '{point.y:.1f}', // one decimal
+                format: '{point.y:.1f}', // one decimal '{point.y:.1f}', 
                 y: 10, // 10 pixels down from the top
                 style: {
                     fontSize: '13px',
