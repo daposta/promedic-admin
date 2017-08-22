@@ -6224,7 +6224,7 @@ var _a, _b, _c, _d;
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])();
 var Globals = (function () {
     function Globals() {
-        this.HOST_URL = 'http://139.162.213.237:8002'; // 'http://0.0.0.0:8002'; ////  //  // 
+        this.HOST_URL = 'http://139.162.213.237:8002'; //// 'http://0.0.0.0:8002'; ////  //  // 
         this.LOGIN_URL = this.HOST_URL + '/api/core/api-token-auth/';
         this.LOGOUT_URL = this.HOST_URL + '/client/api/logout/';
         this.DASHBOARD_URL = this.HOST_URL + '/api/medic/dashboard_data/'; //'http://139.162.213.237:8002/api/medic/dashboard_data/';
