@@ -30,7 +30,7 @@
                      <div class="col-lg-8">
                         <div class="card">
                             <div class="card-header">
-                                <i class="fa fa-edit"></i>New User
+                                <i class="fa fa-edit"></i>Edit User
                                 <div class="card-actions">
                                     <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
                                     <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
@@ -64,7 +64,7 @@
                                         </div>
                                     </div>
 
-
+<!-- 
                                     <div class="form-group row">
                                         <label class="form-control-label" for="">Password</label>
                                         <div class="controls">
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
 
-
+ -->
 
 
 
@@ -101,8 +101,8 @@
                                             <div class="input-group">
                                                 <select id="select" class="form-control"  [(ngModel)]="user.userType" name="userType"  #userType="ngModel"   required >
                                                 <!-- <option *ngFor="let state of states" [value]="state.id">{{state.name}}</option> -->
-                                                <option value="AD">Admin</option>
-                                                <option value="SA">Sub-Admin</option>
+                                                <option [selected]="user.user_type== 'AD'" value="AD">Admin</option>
+                                                <option  [selected]="user.user_type== 'SA'" value="SA">Sub-Admin</option>
 
                                                
                                             </select>

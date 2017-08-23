@@ -40,7 +40,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <i class="fa fa-align-justify"></i> Users
-                                <a class="" href="#/new-tc"><i class="icon-pencil icons  "></i></a>
+                                <a class="" href="#/new-user"><i class="icon-pencil icons  "></i></a>
                             </div>
 
                              <div class="card-header">
@@ -56,17 +56,18 @@
                                         <tr>
                                             <th>Mobile</th>
                                             <th>Email</th>
+                                             <th>User Type</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let user of users">
-                                            <td><a href="#/test-center/{{user.id}}">{{user.mobile}}</a></td>
+                                            <td><a href="#/user/{{user.id}}">{{user.mobile}}</a></td>
                                            <td>{{user.email}}</td>
-                                           
+                                            <td>{{user.user_role_type}}</td>
                                             <td>
-                                                <span><a href="#/test-center/edit/{{user.id}}"><i class="icon-pencil icons"></i></a></span> |
-                                                  <span><a (click)="deleteTC(user)"><i class="icon-trash icons"></i></a></span> 
+                                                <span><a href="#/user/edit/{{user.id}}"><i class="icon-pencil icons"></i></a></span> |
+                                                  <span><a (click)="deleteUser(user)"><i class="icon-trash icons"></i></a></span> 
                                             </td>
                                         </tr>
                                        

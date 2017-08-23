@@ -129,17 +129,21 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_new_partner_component__ = __webpack_require__("./src/app/components/new-partner.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_partner_detail_component__ = __webpack_require__("./src/app/components/partner-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_partner_edit_component__ = __webpack_require__("./src/app/components/partner-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_users_component__ = __webpack_require__("./src/app/components/users.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_user_detail_component__ = __webpack_require__("./src/app/components/user-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_new_user_component__ = __webpack_require__("./src/app/components/new-user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_user_edit_component__ = __webpack_require__("./src/app/components/user-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -213,49 +217,55 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_21__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_21__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */] },
-    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_27__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_30__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_29__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_31__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_40__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_41__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_33__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_37__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_42__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_43__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_45__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_46__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_48__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_47__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_49__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_50__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_52__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_51__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_53__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_50__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_27__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_30__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_29__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_31__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_40__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_41__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_33__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_37__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_42__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_43__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_45__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_46__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_48__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_47__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_49__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_50__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_52__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_51__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_53__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_54__components_users_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/:id', component: __WEBPACK_IMPORTED_MODULE_55__components_user_detail_component__["a" /* UserDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_56__components_new_user_component__["a" /* NewUserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_57__components_user_edit_component__["a" /* UserEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */]] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -265,7 +275,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_64__directives_equal_validator_directive__["a" /* EqualValidator */],
+            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_68__directives_equal_validator_directive__["a" /* EqualValidator */],
             __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */],
             __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */],
             __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */],
@@ -279,8 +289,9 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_46__components_test_centers_component__["a" /* TestCenterComponent */], __WEBPACK_IMPORTED_MODULE_47__components_new_tc_component__["a" /* NewTCComponent */], __WEBPACK_IMPORTED_MODULE_48__components_tc_detail_component__["a" /* TCDetailComponent */], __WEBPACK_IMPORTED_MODULE_49__components_tc_edit_component__["a" /* TCEditComponent */],
             __WEBPACK_IMPORTED_MODULE_50__components_partners_component__["a" /* PartnerComponent */], __WEBPACK_IMPORTED_MODULE_51__components_new_partner_component__["a" /* NewPartnerComponent */], __WEBPACK_IMPORTED_MODULE_52__components_partner_detail_component__["a" /* PartnerDetailComponent */], __WEBPACK_IMPORTED_MODULE_53__components_partner_edit_component__["a" /* PartnerEditComponent */],
             __WEBPACK_IMPORTED_MODULE_42__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_45__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_44__components_hmo_form_component__["a" /* HMOFormComponent */], __WEBPACK_IMPORTED_MODULE_43__components_hmo_detail_component__["a" /* HMODetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_54__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_55__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_56__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
-            __WEBPACK_IMPORTED_MODULE_57__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_59__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_58__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */]
+            __WEBPACK_IMPORTED_MODULE_58__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_59__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_60__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_61__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_63__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_62__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_54__components_users_component__["a" /* UserComponent */], __WEBPACK_IMPORTED_MODULE_55__components_user_detail_component__["a" /* UserDetailComponent */], __WEBPACK_IMPORTED_MODULE_56__components_new_user_component__["a" /* NewUserComponent */], __WEBPACK_IMPORTED_MODULE_57__components_user_edit_component__["a" /* UserEditComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_7_angular2_toaster__["a" /* ToasterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_8_ng2_pagination__["Ng2PaginationModule"],
@@ -290,7 +301,7 @@ AppModule = __decorate([
                 confirmButtonType: 'danger' // set defaults here
             })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_60__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_63__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_61__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_62__utils_headers__["a" /* CustomRequestOptions */] }],
+        providers: [__WEBPACK_IMPORTED_MODULE_64__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_67__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_65__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_66__utils_headers__["a" /* CustomRequestOptions */] }],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -658,7 +669,7 @@ var ClientAllergytChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' client(s) have  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' client(s)' //_data[0][1] +' client(s) have  ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -766,7 +777,7 @@ var ClientDisabilityChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' client(s) have  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' clients(s)' //'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -874,7 +885,7 @@ var ClientDiseaseChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' client(s) have  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' client(s)' //_data[0][1] +' client(s) have  ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -982,7 +993,7 @@ var ResponderConcentrationChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' responder(s) in ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' responder(s)' //_data[0][1] +' responder(s) in ' +_data[0][0]//'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -1057,6 +1068,7 @@ var ResponderKitChartComponent = (function () {
             .catch(function (error) { return _this.error = error; });
     };
     ResponderKitChartComponent.prototype.displayChart = function (_data) {
+        // console.log(_data[i][0], _data[][1]);
         this.options = {
             chart: {
                 type: 'column'
@@ -1090,7 +1102,8 @@ var ResponderKitChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' responder(s) has  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' responder(s)'
+                // _data[0][1] +' responder(s) has  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -1197,7 +1210,7 @@ var ResponderLocationChartComponent = (function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: _data[0][1] + ' responder(s) in  ' + _data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+                pointFormat: '{point.y}' + ' responder(s)' //_data[0][1] +' responder(s) in  ' +_data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
             },
             series: [{
                     name: 'Population',
@@ -2761,6 +2774,63 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "./src/app/components/new-user.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_states_srv__ = __webpack_require__("./src/app/services/states.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewUserComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NewUserComponent = (function () {
+    function NewUserComponent(userSrv, _stateService, route) {
+        this.userSrv = userSrv;
+        this._stateService = _stateService;
+        this.route = route;
+        this.user = {};
+    }
+    // getStates(){
+    //     this._stateService.getStates().then(states => this.states = states)
+    //           .catch(error => this.error = error);
+    // }
+    NewUserComponent.prototype.ngOnInit = function () {
+        // this.getStates();
+    };
+    NewUserComponent.prototype.onSubmit = function () {
+        this.userSrv.saveUser(this.user);
+    };
+    return NewUserComponent;
+}());
+NewUserComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'user-form',
+        template: __webpack_require__("./src/app/views/new-user.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_states_srv__["a" /* StateService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object])
+], NewUserComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=new-user.component.js.map
+
+/***/ }),
+
 /***/ "./src/app/components/partner-detail.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3736,6 +3806,193 @@ var _a;
 
 /***/ }),
 
+/***/ "./src/app/components/user-detail.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap__ = __webpack_require__("./node_modules/rxjs/add/operator/switchMap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserDetailComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var UserDetailComponent = (function () {
+    function UserDetailComponent(userService, route) {
+        this.userService = userService;
+        this.route = route;
+        this.user = {};
+    }
+    UserDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.switchMap(function (params) {
+            return _this.userService.findUserByID(+params['id']);
+        })
+            .subscribe(function (resp) { return _this.user = resp; });
+    };
+    return UserDetailComponent;
+}());
+UserDetailComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'user-detail',
+        template: __webpack_require__("./src/app/views/user-detail.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], UserDetailComponent);
+
+var _a, _b;
+//# sourceMappingURL=user-detail.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/user-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserEditComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var UserEditComponent = (function () {
+    function UserEditComponent(userSrv, route) {
+        this.userSrv = userSrv;
+        this.route = route;
+        this.user = {};
+    }
+    // getLocalGovts(){
+    //   this._localGovtService.getLocalGovts().then(local_govts => this.local_govts = local_govts)
+    //           .catch(error => this.error = error);
+    // }
+    UserEditComponent.prototype.getUserInfo = function () {
+        var _this = this;
+        this.route.params.switchMap(function (params) {
+            return _this.userSrv.findUserByID(+params['id']);
+        })
+            .subscribe(function (data) {
+            _this.user = data;
+        });
+    };
+    ;
+    UserEditComponent.prototype.ngOnInit = function () {
+        this.getUserInfo();
+        // this.fetchLGA();
+    };
+    UserEditComponent.prototype.onSubmit = function () {
+        this.userSrv.updateUserInfo(this.user);
+    };
+    return UserEditComponent;
+}());
+UserEditComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'hero-form',
+        template: __webpack_require__("./src/app/views/user-edit.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */],
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], UserEditComponent);
+
+var _a, _b;
+//# sourceMappingURL=user-edit.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/users.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var UserComponent = (function () {
+    function UserComponent(userSrv) {
+        this.userSrv = userSrv;
+        this.search = "";
+    }
+    UserComponent.prototype.getUsers = function () {
+        var _this = this;
+        this.userSrv.fetchUsers()
+            .then(function (res) { return _this.users = res; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    UserComponent.prototype.searchUser = function () {
+        var _this = this;
+        if (this.search.length == 11) {
+            this.userSrv.searchUser(this.search).then(function (result) { return _this.users = result; })
+                .catch(function (error) { return _this.error = error; });
+        }
+        else {
+            this.getUsers();
+        }
+    };
+    ;
+    UserComponent.prototype.deleteUser = function (x) {
+        var _this = this;
+        this.userSrv.deleteUser(x.id).then(function (response) {
+            var index = _this.users.indexOf(x);
+            if (index !== -1) {
+                _this.users.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
+    UserComponent.prototype.ngOnInit = function () {
+        this.getUsers();
+    };
+    return UserComponent;
+}());
+UserComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'users',
+        template: __webpack_require__("./src/app/views/users.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_user_srv__["a" /* UserService */]) === "function" && _a || Object])
+], UserComponent);
+
+var _a;
+//# sourceMappingURL=users.component.js.map
+
+/***/ }),
+
 /***/ "./src/app/directives/equal-validator.directive.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3889,7 +4146,7 @@ var AllergyService = (function () {
     };
     ;
     AllergyService.prototype.searchAllergy = function (allergy) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('allergy', allergy);
         this.options.search = params;
         return this.http.get(this.allergiesURL, this.options)
@@ -3928,7 +4185,7 @@ var AllergyService = (function () {
 }());
 AllergyService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], AllergyService);
 
 var _a, _b, _c, _d;
@@ -4022,7 +4279,7 @@ var BloodGroupService = (function () {
 }());
 BloodGroupService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], BloodGroupService);
 
 var _a, _b, _c, _d;
@@ -4109,7 +4366,7 @@ var ClientService = (function () {
             .catch(this.handleError);
     };
     ClientService.prototype.searchClient = function (client) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('client', client);
         this.options.search = params;
         console.log();
@@ -4151,7 +4408,7 @@ var ClientService = (function () {
 }());
 ClientService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], ClientService);
 
 var _a, _b, _c, _d;
@@ -4215,7 +4472,7 @@ var ConcentrationService = (function () {
 }());
 ConcentrationService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
 ], ConcentrationService);
 
 var _a, _b;
@@ -4282,7 +4539,7 @@ var DashboardService = (function () {
 }());
 DashboardService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DashboardService);
 
 var _a, _b, _c;
@@ -4358,7 +4615,7 @@ var DisabilityService = (function () {
     };
     ;
     DisabilityService.prototype.searchDisability = function (disability) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('disability', disability);
         this.options.search = params;
         return this.http.get(this.disabilityURL, this.options)
@@ -4409,7 +4666,7 @@ var DisabilityService = (function () {
 }());
 DisabilityService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], DisabilityService);
 
 var _a, _b, _c, _d;
@@ -4482,7 +4739,7 @@ var DiseaseService = (function () {
     };
     ;
     DiseaseService.prototype.searchDisease = function (disease) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('disease', disease);
         this.options.search = params;
         return this.http.get(this.diseasesURL, this.options)
@@ -4536,7 +4793,7 @@ var DiseaseService = (function () {
 }());
 DiseaseService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], DiseaseService);
 
 var _a, _b, _c, _d;
@@ -4603,7 +4860,7 @@ var DrugDispenseTypeService = (function () {
 }());
 DrugDispenseTypeService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DrugDispenseTypeService);
 
 var _a, _b, _c;
@@ -4663,7 +4920,7 @@ var DocumentTypeService = (function () {
 }());
 DocumentTypeService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
 ], DocumentTypeService);
 
 var _a, _b;
@@ -4734,7 +4991,7 @@ var DrugBrandService = (function () {
 }());
 DrugBrandService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DrugBrandService);
 
 var _a, _b, _c;
@@ -4797,7 +5054,7 @@ var DrugClassificationService = (function () {
 }());
 DrugClassificationService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DrugClassificationService);
 
 var _a, _b, _c;
@@ -4860,7 +5117,7 @@ var DrugContraIndicationService = (function () {
 }());
 DrugContraIndicationService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DrugContraIndicationService);
 
 var _a, _b, _c;
@@ -4947,7 +5204,7 @@ var DrugFormService = (function () {
 }());
 DrugFormService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], DrugFormService);
 
 var _a, _b, _c, _d;
@@ -5010,7 +5267,7 @@ var DrugIndicationService = (function () {
 }());
 DrugIndicationService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], DrugIndicationService);
 
 var _a, _b, _c;
@@ -5083,7 +5340,7 @@ var DrugService = (function () {
     };
     ;
     DrugService.prototype.searchDrug = function (drug) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('drug', drug);
         this.options.search = params;
         return this.http.get(this.drugURL, this.options)
@@ -5124,7 +5381,7 @@ var DrugService = (function () {
 }());
 DrugService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], DrugService);
 
 var _a, _b, _c, _d;
@@ -5191,7 +5448,7 @@ var GenderService = (function () {
 }());
 GenderService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], GenderService);
 
 var _a, _b, _c;
@@ -5268,7 +5525,7 @@ var HMOService = (function () {
     };
     ;
     HMOService.prototype.searchHMO = function (hmo) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('hmo', hmo);
         this.options.search = params;
         return this.http.get(this.hmoURL, this.options)
@@ -5315,7 +5572,7 @@ var HMOService = (function () {
 }());
 HMOService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], HMOService);
 
 var _a, _b, _c, _d;
@@ -5379,7 +5636,7 @@ var KitService = (function () {
 }());
 KitService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shared_api__["a" /* Globals */]) === "function" && _b || Object])
 ], KitService);
 
 var _a, _b;
@@ -5444,7 +5701,7 @@ var LocalGovtService = (function () {
     };
     ;
     LocalGovtService.prototype.findLocalGovtByStateID = function (pk) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('state', pk);
         this.options.search = params;
         return this.http.get(this.localGovtFilterURL, this.options)
@@ -5454,7 +5711,7 @@ var LocalGovtService = (function () {
     };
     ;
     LocalGovtService.prototype.searchLocalGovts = function (lg) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('lg', lg);
         this.options.search = params;
         console.log();
@@ -5509,7 +5766,7 @@ var LocalGovtService = (function () {
 }());
 LocalGovtService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], LocalGovtService);
 
 var _a, _b, _c, _d;
@@ -5595,7 +5852,7 @@ var PartnerService = (function () {
     };
     ;
     PartnerService.prototype.searchPartner = function (partner) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('partner', partner);
         this.options.search = params;
         return this.http.get(this.partnerURL, this.options)
@@ -5636,7 +5893,7 @@ var PartnerService = (function () {
 }());
 PartnerService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], PartnerService);
 
 var _a, _b, _c, _d;
@@ -5751,7 +6008,7 @@ var ResponderService = (function () {
     };
     ;
     ResponderService.prototype.searchResponder = function (q) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('responder', q);
         this.options.search = params;
         return this.http.get(this.responderURL, this.options)
@@ -5780,7 +6037,7 @@ var ResponderService = (function () {
 }());
 ResponderService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], ResponderService);
 
 var _a, _b, _c, _d;
@@ -5847,7 +6104,7 @@ var SideEffectService = (function () {
 }());
 SideEffectService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _c || Object])
 ], SideEffectService);
 
 var _a, _b, _c;
@@ -5922,7 +6179,7 @@ var StateService = (function () {
     };
     ;
     StateService.prototype.searchState = function (state) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('state', state);
         this.options.search = params;
         console.log();
@@ -5964,7 +6221,7 @@ var StateService = (function () {
 }());
 StateService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
 ], StateService);
 
 var _a, _b, _c, _d;
@@ -6037,7 +6294,7 @@ var TestCenterService = (function () {
     };
     ;
     TestCenterService.prototype.searchTC = function (tc) {
-        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
         params.append('tc', tc);
         this.options.search = params;
         return this.http.get(this.testCenterURL, this.options)
@@ -6091,7 +6348,7 @@ var TestCenterService = (function () {
 }());
 TestCenterService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], TestCenterService);
 
 var _a, _b, _c, _d;
@@ -6108,6 +6365,8 @@ var _a, _b, _c, _d;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6123,6 +6382,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var UserService = (function () {
     function UserService(http, router, _toasterService, globals) {
         this.http = http;
@@ -6132,6 +6392,11 @@ var UserService = (function () {
         this.loggedIn = false;
         this.loginUrl = this.globals.LOGIN_URL;
         this.logoutUrl = this.globals.LOGOUT_URL;
+        this.usersUrl = this.globals.USERS_URL;
+        this.v = localStorage.getItem('auth_token');
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]({ 'Content-Type': 'application/json',
+                'Authorization': 'JWT ' + this.v
+            }) });
         this.loggedIn = !!localStorage.getItem('auth_token');
     }
     UserService.prototype.login = function (mobile, password) {
@@ -6164,16 +6429,13 @@ var UserService = (function () {
     UserService.prototype.newUser = function () {
     };
     ;
-    // deleteUser(pk: any){
-    //    let v = this.page_header();
-    //     return this.http.delete(this.user + pk +'/', v)
-    //              .toPromise()
-    //              .then(response => {
-    //                //response.json()
-    //                this.toasterService.pop('success', 'Local Government deleted!', '');
-    //              })
-    //              .catch(this.handleError);
-    //  };
+    UserService.prototype.fetchUsers = function () {
+        var v = this.page_header();
+        return this.http.get(this.usersUrl, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
     UserService.prototype.logout = function () {
         // localStorage.removeItem('auth_token');
         // this.loggedIn = false;
@@ -6191,6 +6453,60 @@ var UserService = (function () {
     UserService.prototype.isloggedIn = function () {
         return this.loggedIn;
     };
+    UserService.prototype.findUserByID = function (pk) {
+        var v = this.page_header();
+        return this.http.get(this.usersUrl + pk + '/', v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    UserService.prototype.searchUser = function (user) {
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        params.append('user', user);
+        this.options.search = params;
+        return this.http.get(this.usersUrl, this.options)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    UserService.prototype.deleteUser = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.usersUrl + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this._toasterService.pop('success', 'User deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
+    UserService.prototype.saveUser = function (data) {
+        var _this = this;
+        var _data = JSON.stringify(data);
+        this.http.post(this.usersUrl, data).subscribe(function (data) {
+            _this._toasterService.pop('success', 'User saved', '');
+            _this.router.navigateByUrl('/users');
+        }, function (error) {
+            _this._toasterService.pop('error', error.json().message, '');
+        });
+    };
+    ;
+    UserService.prototype.updateUserInfo = function (user) {
+        var _this = this;
+        if (user === void 0) { user = {}; }
+        var v = this.page_header();
+        //let _data = JSON.stringify(hmo);
+        if (user) {
+            this.http.patch(this.usersUrl + user.id + '/', user, v).subscribe(function (data) {
+                _this._toasterService.pop('success', 'User Info updated', '');
+                _this.router.navigateByUrl('user/' + user.id);
+            }, function (error) { return console.log(error.json().message); });
+        }
+    };
+    ;
     UserService.prototype.page_header = function () {
         var data = localStorage.getItem('auth_token');
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
@@ -6199,11 +6515,19 @@ var UserService = (function () {
         opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
         return opt;
     };
+    UserService.prototype.handleError = function (error) {
+        var err = error.json();
+        if (error.detail = "Signature has expired.") {
+            localStorage.removeItem('auth_token');
+            this.router.navigateByUrl('/login');
+        }
+        return Promise.reject(error.message || error);
+    };
     return UserService;
 }());
 UserService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
 ], UserService);
 
 var _a, _b, _c, _d;
@@ -6224,7 +6548,7 @@ var _a, _b, _c, _d;
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])();
 var Globals = (function () {
     function Globals() {
-        this.HOST_URL = 'http://139.162.213.237:8002'; //// 'http://0.0.0.0:8002'; ////  //  // 
+        this.HOST_URL = 'http://0.0.0.0:8002'; //'http://139.162.213.237:8002';  //  
         this.LOGIN_URL = this.HOST_URL + '/api/core/api-token-auth/';
         this.LOGOUT_URL = this.HOST_URL + '/client/api/logout/';
         this.DASHBOARD_URL = this.HOST_URL + '/api/medic/dashboard_data/'; //'http://139.162.213.237:8002/api/medic/dashboard_data/';
@@ -6254,6 +6578,7 @@ var Globals = (function () {
         this.PARTNERS_URL = this.HOST_URL + '/api/core/partners/';
         this.TEST_CENTERS_URL = this.HOST_URL + '/api/core/test_centers/';
         this.GENDER_URL = this.HOST_URL + '/api/core/genders/';
+        this.USERS_URL = this.HOST_URL + '/api/core/users/';
     }
     return Globals;
 }());
@@ -6374,21 +6699,21 @@ module.exports = "<!-- <div *ngFor=\"let bg of bloodGroups\">\n   \t\t\t<div>{{b
 /***/ "./src/app/views/client-detail.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Client Detail\n                            </div>\n                            <div class=\"card-block\">\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">First Name</div>\n                                   <div class=\"col-lg-4\">{{client.first_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Middle Name</div>\n                                   <div class=\"col-lg-4\">{{client.middle_name}}</div>\n                               </div>\n\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Last Name</div>\n                                   <div class=\"col-lg-4\">{{client.last_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Nickame</div>\n                                   <div class=\"col-lg-4\">{{client.nick_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Gender</div>\n                                   <div class=\"col-lg-4\">{{client.gender?.name}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Address</div>\n                                   <div class=\"col-lg-4\">{{client.contact_address}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Date of Birth</div>\n                                   <div class=\"col-lg-4\">{{client.date_of_birth}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Genotype</div>\n                                   <div class=\"col-lg-4\">{{client.genotype?.name}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Disabilities</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let d of client.disabilities\">\n                                          {{ d.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Diseases</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let disease of client.diseases\">\n                                          {{ disease.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Allergies</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let allergy of client.allergies\">\n                                          {{ allergy.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n                             \n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Emergency Name</div>\n                                   <div class=\"col-lg-4\">{{client.emergency_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Emergency No.</div>\n                                   <div class=\"col-lg-4\">{{client.emergency_number}}</div>\n                               </div>\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Client Detail\n                            </div>\n                            <div class=\"card-block\">\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">First Name</div>\n                                   <div class=\"col-lg-4\">{{client.first_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Middle Name</div>\n                                   <div class=\"col-lg-4\">{{client.middle_name}}</div>\n                               </div>\n\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Last Name</div>\n                                   <div class=\"col-lg-4\">{{client.last_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Nickame</div>\n                                   <div class=\"col-lg-4\">{{client.nick_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Gender</div>\n                                   <div class=\"col-lg-4\">{{client.gender?.name}}</div>\n                               </div>\n\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Mobile</div>\n                                   <div class=\"col-lg-4\">{{client?.member?.mobile}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Address</div>\n                                   <div class=\"col-lg-4\">{{client.contact_address}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Date of Birth</div>\n                                   <div class=\"col-lg-4\">{{client.date_of_birth}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Genotype</div>\n                                   <div class=\"col-lg-4\">{{client.genotype?.name}}</div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Disabilities</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let d of client.disabilities\">\n                                          {{ d.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Diseases</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let disease of client.diseases\">\n                                          {{ disease.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Allergies</div>\n                                   <div class=\"col-lg-4\">\n                                      <ul>\n                                        <li *ngFor=\"let allergy of client.allergies\">\n                                          {{ allergy.name }}\n                                        </li>\n                                      </ul>\n                                    </div>\n                               </div>\n                             \n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Emergency Name</div>\n                                   <div class=\"col-lg-4\">{{client.emergency_name}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Emergency No.</div>\n                                   <div class=\"col-lg-4\">{{client.emergency_number}}</div>\n                               </div>\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
 /***/ "./src/app/views/clients.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Clients \n                                 <a class=\"\" href=\"#/new-responder\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchClient()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Client Name</th>\n\n                                            <th>First Name</th>\n                                             <th>Last Name</th>\n                                              <th>Gender</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let client of clients | paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td><a href=\"#/client/{{client.id}}\">{{client.first_name}}</a></td>\n                                             <td>{{client.middle_name}}</td>\n                                            <td>{{client.last_name}}</td>\n                                            <td>{{client.gender.name}}</td>\n                                           \n                                           \n                                            <td>\n                                                \n                                                 \n                                                  <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                 <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Clients \n                                 <a class=\"\" href=\"#/new-responder\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchClient()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Client Name</th>\n\n                                            <th>First Name</th>\n                                             <th>Last Name</th>\n                                              <th>Gender</th>\n                                               <th>Mobile</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let client of clients | paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td><a href=\"#/client/{{client.id}}\">{{client.first_name}}</a></td>\n                                             <td>{{client.middle_name}}</td>\n                                            <td>{{client.last_name}}</td>\n                                            <td>{{client?.gender?.name}}</td>\n                                            <td>{{client?.member?.mobile}}</td>\n                                           \n                                           \n                                            <td>\n                                                \n                                                 \n                                                  <span><a href=\"\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                 <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
 
 /***/ }),
 
 /***/ "./src/app/views/dashboard.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<header-component></header-component>\n <sidebar-component></sidebar-component>\n\n <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n \n\n        <div class=\"container-fluid\">\n\n\n\n            <div class=\"animated fadeIn\">\n\n                <div class=\"card-columns col-2\">\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Locations\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-locations-component></responder-locations-component>\n                            </div>\n                        </div>\n                    </div>\n                     <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Kits\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Status\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <canvas id=\"canvas-2\"></canvas>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Areas of Concentration\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                 <responder-concentration-component></responder-concentration-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Reviews\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Users\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Allergies\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <client-allergies-component></client-allergies-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Diseases\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-diseases-component></client-diseases-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Disabilities\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-disabilities-component></client-disabilities-component>\n                            </div>\n                        </div>\n                    </div>\n                     \n                </div>\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n    \n\n\n<footer-component></footer-component>"
+module.exports = "\n<header-component></header-component>\n <sidebar-component></sidebar-component>\n\n <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n \n\n        <div class=\"container-fluid\">\n\n\n\n            <div class=\"animated fadeIn\">\n\n                <div class=\"card-columns col-2\">\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Locations\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-locations-component></responder-locations-component>\n                            </div>\n                        </div>\n                    </div>\n                     <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Kits\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Status\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <canvas id=\"canvas-2\"></canvas>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Areas of Concentration\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                 <responder-concentration-component></responder-concentration-component>\n                            </div>\n                        </div>\n                    </div>\n                   <!--  <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Reviews\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Users\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div> -->\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Allergies\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <client-allergies-component></client-allergies-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Diseases\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-diseases-component></client-diseases-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Disabilities\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-disabilities-component></client-disabilities-component>\n                            </div>\n                        </div>\n                    </div>\n                     \n                </div>\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n    \n\n\n<footer-component></footer-component>"
 
 /***/ }),
 
@@ -6539,6 +6864,13 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 
 /***/ }),
 
+/***/ "./src/app/views/new-user.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New User\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"userForm.form.valid &&  onSubmit()\"  #userForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile Number is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Email</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.email\" name=\"email\" #email=\"ngModel\" >\n                                            </div>\n                                            \n                                          \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.password\" name=\"password\" #password=\"ngModel\" required validateEqual=\"confPassword\" reverse=\"true\">\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !password.valid\" class=\"alert alert-danger\">Password is required</div>\n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Confirm Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.confPassword\" name=\"confPassword\" #confPassword=\"ngModel\" required validateEqual=\"password\">\n                                            </div>\n                                            \n                                            <div *ngIf=\"userForm.submitted && !confPassword.valid\" class=\"alert alert-danger\"> Password mismatch </div>\n                                        </div>\n                                    </div>\n\n\n\n\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">User Type</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"user.userType\" name=\"userType\"  #userType=\"ngModel\"   required >\n                                                <!-- <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option> -->\n                                                <option value=\"AD\">Admin</option>\n                                                <option value=\"SA\">Sub-Admin</option>\n\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !userType.valid\" class=\"alert alert-danger\">User Type is required</div>\n                                        </div>\n                                    </div>\n\n\n                                   \n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
 /***/ "./src/app/views/partner-detail.html":
 /***/ (function(module, exports) {
 
@@ -6598,7 +6930,7 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ "./src/app/views/sidebar.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
+module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/users\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
 
 /***/ }),
 
@@ -6634,6 +6966,27 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ (function(module, exports) {
 
 module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Test Centers\n                                <a class=\"\" href=\"#/new-tc\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchTC()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let tc of test_centers\">\n                                            <td><a href=\"#/test-center/{{tc.id}}\">{{tc.name}}</a></td>\n                                           \n                                            <td>\n                                                <span><a href=\"#/test-center/edit/{{tc.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteTC(tc)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/user-detail.html":
+/***/ (function(module, exports) {
+
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> User Detail\n                            </div>\n                            <div class=\"card-block\">\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Mobile</div>\n                                   <div class=\"col-lg-4\">{{user.mobile}}</div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Email </div>\n                                   <div class=\"col-lg-4\">{{user.email}}</div>\n                               </div>\n\n\n                                 <div class=\"row\">\n                                   <div class=\"col-lg-4\">Role</div>\n                                   <div class=\"col-lg-4\">{{user.user_role_type}}</div>\n                               </div>\n\n                                 <div class=\"row\">\n                                   <div class=\"col-lg-4\">Is Active</div>\n                                   <div class=\"col-lg-4\">{{user.is_active}}</div>\n                               </div>\n\n\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/user-edit.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>Edit User\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"userForm.form.valid &&  onSubmit()\"  #userForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile Number is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Email</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.email\" name=\"email\" #email=\"ngModel\" >\n                                            </div>\n                                            \n                                          \n                                        </div>\n                                    </div>\n\n<!-- \n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.password\" name=\"password\" #password=\"ngModel\" required validateEqual=\"confPassword\" reverse=\"true\">\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !password.valid\" class=\"alert alert-danger\">Password is required</div>\n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Confirm Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.confPassword\" name=\"confPassword\" #confPassword=\"ngModel\" required validateEqual=\"password\">\n                                            </div>\n                                            \n                                            <div *ngIf=\"userForm.submitted && !confPassword.valid\" class=\"alert alert-danger\"> Password mismatch </div>\n                                        </div>\n                                    </div>\n\n -->\n\n\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">User Type</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"user.userType\" name=\"userType\"  #userType=\"ngModel\"   required >\n                                                <!-- <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option> -->\n                                                <option [selected]=\"user.user_type== 'AD'\" value=\"AD\">Admin</option>\n                                                <option  [selected]=\"user.user_type== 'SA'\" value=\"SA\">Sub-Admin</option>\n\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !userType.valid\" class=\"alert alert-danger\">User Type is required</div>\n                                        </div>\n                                    </div>\n\n\n                                   \n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/users.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Users\n                                <a class=\"\" href=\"#/new-user\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by mobile\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchUser()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Mobile</th>\n                                            <th>Email</th>\n                                             <th>User Type</th>\n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let user of users\">\n                                            <td><a href=\"#/user/{{user.id}}\">{{user.mobile}}</a></td>\n                                           <td>{{user.email}}</td>\n                                            <td>{{user.user_role_type}}</td>\n                                            <td>\n                                                <span><a href=\"#/user/edit/{{user.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a (click)=\"deleteUser(user)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 

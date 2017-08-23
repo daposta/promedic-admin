@@ -5,8 +5,8 @@ import 'rxjs/add/operator/switchMap';
 
 
 @Component({
-  selector: 'drug-detail',
-  templateUrl: '../views/drug-detail.html' ,
+  selector: 'user-detail',
+  templateUrl: '../views/user-detail.html' ,
   providers: [UserService ]
 })
 

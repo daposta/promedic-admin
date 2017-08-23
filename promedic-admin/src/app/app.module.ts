@@ -77,7 +77,9 @@ import { PartnerEditComponent } from './components/partner-edit.component';
 
 
 import { UserComponent } from './components/users.component';
-// import { NewPartnerComponent } from './components/new-partner.component';
+import { UserDetailComponent } from './components/user-detail.component';
+import { NewUserComponent } from './components/new-user.component';
+import { UserEditComponent } from './components/user-edit.component';
 
 import {ResponderLocationChartComponent} from './components/charts/res-locs-chart.component';
 import {ResponderKitChartComponent} from './components/charts/res-kits-chart.component';
@@ -147,8 +149,10 @@ const appRoutes: Routes = [
 	  
 
 	    { path: 'users', component:UserComponent , canActivate: [LoggedInGuard] },
-	   // { path: 'new-user', component: HMOFormComponent , canActivate: [LoggedInGuard]},
-
+	   { path: 'user/:id', component: UserDetailComponent, canActivate: [LoggedInGuard]},
+	   { path: 'new-user', component: NewUserComponent , canActivate: [LoggedInGuard]},
+	   { path: 'user/edit/:id', component: UserEditComponent, canActivate: [LoggedInGuard]},
+	  
 ]
 
 
@@ -170,7 +174,7 @@ const appRoutes: Routes = [
   HMOComponent, HMOEditComponent, HMOFormComponent, HMODetailComponent,
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent,
-  UserComponent,
+  UserComponent, UserDetailComponent, NewUserComponent, UserEditComponent,
   ],
   imports: [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 

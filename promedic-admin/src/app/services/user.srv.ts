@@ -133,8 +133,12 @@ export class UserService{
            this._toasterService.pop('success', 'User saved', '');
              this.router.navigateByUrl('/users');
          },
-         error => console.log(error.json().message)
-      )
+         error => {
+         	
+         	 this._toasterService.pop('error', error.json().message, '');
+         }
+         )
+      
 
   };
 
