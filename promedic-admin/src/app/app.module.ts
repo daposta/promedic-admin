@@ -51,6 +51,7 @@ import {ResponderEditComponent} from './components/responder-edit.component';
 
 import {ClientComponent} from './components/clients.component';
 import {ClientDetailComponent} from './components/client-detail.component';
+import {ClientEditComponent} from './components/client-edit.component';
 
 
 import {DrugDetailComponent} from './components/drug-detail.component';
@@ -95,6 +96,7 @@ import {CustomRequestOptions} from './utils/headers';
 import { Globals } from './shared/api';
 
 import { EqualValidator } from  './directives/equal-validator.directive';
+import { OnlyNumber } from  './directives/only-number.directive';
 
 const appRoutes: Routes = [
 	
@@ -130,6 +132,7 @@ const appRoutes: Routes = [
 
 	  { path: 'clients', component: ClientComponent, canActivate: [LoggedInGuard] },
 	  { path: 'client/:id', component: ClientDetailComponent, canActivate: [LoggedInGuard]},
+	   { path: 'client/edit/:id', component: ClientEditComponent, canActivate: [LoggedInGuard]},
 
 	  { path: 'hmos', component: HMOComponent, canActivate: [LoggedInGuard] },
 	  { path: 'new-hmo', component: HMOFormComponent , canActivate: [LoggedInGuard]},
@@ -158,14 +161,14 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,RegisterComponent, LoginComponent, EqualValidator,
+    AppComponent,RegisterComponent, LoginComponent, EqualValidator, OnlyNumber,
   DiseasesComponent, DiseaseEditComponent, DiseaseFormComponent,
   DisabilityComponent, DisabilityEditComponent, DisabilityFormComponent,
   AllergyComponent, AllergyEditComponent, AllergyFormComponent, AllergyDetailComponent,
    BloodGroupComponent, StateComponent, StateEditComponent, DrugFormComponent, 
   ResponderComponent, ResponderEditComponent, ResponderFormComponent, 
   LocalGovtComponent, LocalGovtEditComponent,
-  ClientComponent, ClientDetailComponent, 
+  ClientComponent, ClientDetailComponent, ClientEditComponent,
   DrugsComponent, DrugEditComponent, DrugDetailComponent, ResponderDetailComponent,
    DashboardComponent, HeaderComponent, 
   FooterComponent,SidebarComponent,

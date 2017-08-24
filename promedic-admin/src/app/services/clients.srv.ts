@@ -45,23 +45,23 @@ export class ClientService {
 
   // };
 
-  //  updateClientInfo(responder:any= {}){
-  //    let v = this.page_header();
-  //   let _data = JSON.stringify(responder);
-  //   if (responder){
-  //       this.http.patch(this.responderURL + responder.id + '/', responder, v).subscribe(
-  //          data => {
+   updateClientInfo(client:any= {}){
+     let v = this.page_header();
+    let _data = JSON.stringify(client);
+    if (client){
+        this.http.patch(this.clientsURL + client.id + '/', client, v).subscribe(
+           data => {
 
-  //            this.toasterService.pop('success', 'Responder Info updated', '');
-  //             this.router.navigateByUrl('responder/' + responder.id);
+             this.toasterService.pop('success', 'Client Info updated', '');
+              this.router.navigateByUrl('client/' + client.id);
             
-  //          },
-  //          error => console.log(error.json().message)
-  //       )
-  //   }
+           },
+           error => console.log(error.json().message)
+        )
+    }
      
 
-  // };
+  };
 
 
   findClientByID(pk: any){

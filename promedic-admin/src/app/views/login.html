@@ -18,7 +18,7 @@
                                             <label class="form-control-label" for="">Mobile No.</label>
                                             <div class="input-group mb-1">
                                              
-                                                <input type="text" class="form-control"  [(ngModel)]="user.mobile" name="mobile" #mobile="ngModel" required>
+                                                <input type="text" class="form-control" OnlyNumber="true" maxlength="11" minlength="11"  [(ngModel)]="user.mobile" name="mobile" #mobile="ngModel" required>
 
                                                  <div *ngIf="loginForm.submitted && !mobile.valid" class="alert alert-danger">Mobile No. is required</div>
                                             </div>

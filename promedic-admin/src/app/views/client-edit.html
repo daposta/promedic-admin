@@ -1,0 +1,322 @@
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                     <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-edit"></i>Edit Client Information
+                                <div class="card-actions">
+                                    <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                                    <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+                                    <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <form class="form-horizontal" (ngSubmit)="clientForm.form.valid &&  onSubmit()"  #clientForm="ngForm" novalidate>
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">First Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="client.first_name" name="firstName" #firstName="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="clientForm.submitted && !firstName.valid" class="alert alert-danger">First Name is required</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Middle Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="client.middle_name" name="middleName" #middleName="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="clientForm.submitted && !middleName.valid" class="alert alert-danger">Middle Name is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Last Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="client.last_name" name="lastName" #lastName="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="clientForm.submitted && !lastName.valid" class="alert alert-danger">Last Name is required</div>
+                                        </div>
+                                    </div>
+
+
+                                     <div class="form-group row">
+                                        <label class="form-control-label" for="">Nickname</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                               <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="client.nick_name" name="nickName" #nickName="ngModel" >
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Date of Birth</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                              <input  id="" class="form-control" type="date"  
+                                                [(ngModel)]="client.date_of_birth" name="dob" #dob="ngModel" required="">
+
+                                                  <div *ngIf="clientForm.submitted && !dob.valid" class="alert alert-danger">Date of Birth Required</div>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Gender</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                               <select id="select" class="form-control" [(ngModel)]="client.gender" name="gender"  #gender="ngModel"
+                                           required>
+                                                <option *ngFor="let df of gender_list" [selected]="client.gender == df.id " [value]="df.id">{{df.name}}</option>
+                                               
+                                            </select>
+
+                                              <div *ngIf="clientForm.submitted && !gender.valid" class="alert alert-danger">Select Gender</div>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Contact Address</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                              <input  id="" class="form-control"   
+                                                [(ngModel)]="client.contact_address" name="address" #address="ngModel" >
+
+                                                  <div *ngIf="clientForm.submitted && !address.valid" class="alert alert-danger">Contact Adress is required</div>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Blood Group</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <select id="select" class="form-control"   [(ngModel)]="client.blood_group" name="bloodGrp"  #bloodGrp="ngModel"
+                                           required>
+                                                <option *ngFor="let bg of blood_group_list" [selected]="client.client == bg.id " [value]="bg.id">{{bg.name}}</option>
+                                    </select>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Genotype</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <select id="select" class="form-control"   [(ngModel)]="client.genotype" name="genotype"  #genotype="ngModel"
+                                           required>
+                                                <option *ngFor="let df of genotype_list" [selected]="client.genotype == df.id " [value]="df.id">{{df.name}}</option>
+                                               
+                                            </select>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Allergies</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                 <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple="" [(ngModel)]="client.allergies_list" name="allergies"  #allergies="ngModel" >
+                                                  <option *ngFor="let allergy of allergy_list"  [value]="allergy.id">{{allergy.name}}</option>
+                                               
+                                            </select>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Diseases</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                              <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple="" [(ngModel)]="client.diseases_list" name="diseases"  #diseases="ngModel" >
+                                                  <option *ngFor="let disease of diseases_list" [value]="disease.id">{{disease.name}}</option>
+                                               
+                                            </select>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Disabilities</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                               <select id="multiple-select" name="multiple-select" class="form-control" size="5" multiple="" [(ngModel)]="client.disabilities_list" name="disabilities"  #disabilities="ngModel" >
+                                                  <option *ngFor="let disability of disability_list"  [value]="disability.id">{{disability.name}}</option>
+                                               
+                                            </select>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">NHIS No.</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                               <input id="" class="form-control" type="text"  OnlyNumber="true"
+                                                [(ngModel)]="client.nhis_number" name="name" #name="ngModel" >
+
+                                               
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Contact Address</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                              <select id="select" class="form-control"   [(ngModel)]="client.hmo" name="hmo"  #hmo="ngModel"
+                                           >
+                                                <option *ngFor="let df of hmo_list" [value]="df.id">{{df.name}}</option>
+                                               
+                                            </select>
+
+                                                  <div *ngIf="clientForm.submitted && !hmo.valid" class="alert alert-danger">HMO is required</div>
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Emergency Contact Name.</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                             <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="client.emergency_name" name="contactName" #contactName="ngModel" required>
+
+                                                   <div *ngIf="clientForm.submitted && !contactName.valid" class="alert alert-danger">Emergency Contact Name is required</div>
+                                               
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+
+                                      <div class="form-group row">
+                                        <label class="form-control-label" for="">Emergency Contact No.</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                               <input id="" class="form-control" type="text" OnlyNumber="true"
+                                               maxlength="11" minlength="11" 
+                                                [(ngModel)]="client.emergency_number" name="contactNo" #contactNo="ngModel" required>
+
+                                                 <div *ngIf="clientForm.submitted && !contactName.valid" class="alert alert-danger">Emergency Contact No. is required</div>
+
+                                               
+                                            </div>
+                                            
+                                         
+                                        </div>
+                                    </div>
+
+
+ 
+                                    
+
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-default">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>
