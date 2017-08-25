@@ -63,6 +63,26 @@ export class DrugService {
   };
 
 
+  updateDrugInfo(drug:any= {}){
+     let v = this.page_header();
+    //let _data = JSON.stringify(hmo);
+    if (drug){
+        this.http.patch(this.drugURL + drug.id + '/', drug, v).subscribe(
+           data => {
+
+             this.toasterService.pop('success', 'Drug Info updated', '');
+             // this.router.navigateByUrl('Drug');
+             this.router.navigateByUrl('/drug/' +drug.id);
+            
+           },
+           error => console.log(error.json().message)
+        )
+    }
+     
+
+  };
+
+
   deleteDrug(pk: any){
     let v = this.page_header();
      return this.http.delete(this.drugURL + pk +'/', v)

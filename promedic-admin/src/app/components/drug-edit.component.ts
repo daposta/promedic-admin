@@ -83,17 +83,38 @@ export class DrugEditComponent {
      .subscribe(
        data =>{ 
          this.drug = data;
-         let temp_indications : any[];
+          this.drug.temp_dispense_type = data.dispense_type.id;
+          this.drug.temp_form = data.form.id;
+
+           let temp_brands = [];
+         data.brand.forEach(function(item:any){
+           temp_brands.push(item.id);
+         });
+         this.drug.temp_brands = temp_brands;
+
+         let temp_indications = [];
          data.indications.forEach(function(item:any){
-           console.log(item);
            temp_indications.push(item.id);
          });
          this.drug.temp_indications = temp_indications;
-         // let contra_indications :any[];
-         // data.contra_indications.forEach(function(item:any){
-         //   contra_indications.push(item.id);
-         // });
-         // this.drug.temp_contra_indications = contra_indications;
+         let contra_indications = [];
+         data.contra_indications.forEach(function(item:any){
+           contra_indications.push(item.id);
+         });
+         this.drug.temp_contra_indications = contra_indications;
+
+         let side_effects_list = [];
+         data.side_effects.forEach(function(item:any){
+           side_effects_list.push(item.id);
+         });
+         this.drug.temp_side_effects = side_effects_list;
+
+          let temp_classifications = [];
+         data.classifications.forEach(function(item:any){
+            temp_classifications.push(item.id);
+         });
+         this.drug.temp_classifications = temp_classifications;
+
        });
   }
  
@@ -113,7 +134,7 @@ export class DrugEditComponent {
 
 
   onSubmit(){
-    this._drugService.saveDrug(this.drug);
+    this._drugService.updateDrugInfo(this.drug);
 
   }
 
