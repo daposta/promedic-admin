@@ -34,7 +34,7 @@
                 <div class="row">
                  <div class="col-lg-3">
                      
-                        
+                        <div class="row">
                           <div class="row">
                              <div  *ngIf="!responder.profile_pic" class="col-lg-4">
                                   <img src="assets/img/Placeholder-Portrait.jpg" height="200" width="200">
@@ -72,54 +72,20 @@
                                  </div>
                           </div>
 
-                            <!--
-                          <div class="row col-lg-8 "  style="padding-left: 10px;">
-                            <div class="row">
-                                 <h6>Document Upload</h6>
-                            </div>
-                            <div class="row">
-                              <form class="form-horizontal" style="padding-left: 10px;" (ngSubmit)="responderForm.form.valid &&  onSubmit()"  #responderForm="ngForm" novalidate>
-                                <div class="form-group row">
-                                        <label class="form-control-label" for="">Document Type</label>
-                                        <div class="controls">
-                                            <div class="input-group">
-                                                
-                                            <select id="select" class="form-control"  [(ngModel)]="doc.doctype" name="doctype"  #doctype="ngModel"   required >
-                                                <option *ngFor="let docType of doc_types" [value]="docType.id">{{docType.name}}</option>
-                                               
-                                            </select>
+                        </div>
 
-                                                 <div *ngIf="responderForm.submitted && !state.valid" class="alert alert-danger">Select Document Type</div>
-                                            </div>
+                        <div class="row" style="padding-top: 5px">
+                              <div class="row">
+                                  Supporting Documents
+                                   <input   type="file" (change)="fileChangeEvent($event)" placeholder="Upload a file..." multiple/>
+                               
+                                 <button type="button" class="btn btn-success btn-s" (click)="uploadResponderDocs()">
+                                    <i class="glyphicon glyphicon-open-file"></i>&nbsp;Upload
+                                  </button>
+                              </div>
+                        </div>
 
-                                           
-                                        </div>
-                                 </div>
-
-                                  <div class="form-group row">
-                                        <label class="form-control-label" for="">File</label>
-                                        <div class="controls">
-                                            <div class="input-group">
-                                                
-                                            <input type="file" class="form-control"  [(ngModel)]="doc.docFile" name="docFile"  #docFile="ngModel"   required >
-                                               
-                              
-
-                                                 <div *ngIf="responderForm.submitted && !docFile.valid" class="alert alert-danger">File is required</div>
-                                            </div>
-
-                                           
-                                        </div>
-                                 </div>
-                                  <div class="form-actions">
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                       
-                                    </div>
-                              </form>
-                            </div>
-
-                          </div>
-                          -->
+                            
                       
                  </div>
                     <div class="col-lg-9">
@@ -198,6 +164,34 @@
                                
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Supporting Docs
+                            </div>
+                            <div class="card-block">
+
+                               
+
+                               <div class="row">
+                                   <!-- <div class="col-lg-4">Areas of Concentration</div> -->
+                                   <div class="col-lg-3">
+                                      <div *ngFor="let doc of responder.responder_docs">
+                                           <img src="{{ doc}}" height="300" width="300">
+                                      </div>
+                                   </div>
+                               </div>
+
+                              
+
+                              
+
+                             
+                             
+                               
+                            </div>
+                        </div>
+
                     </div>
                     <!--/col-->
                 </div>

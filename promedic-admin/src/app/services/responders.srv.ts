@@ -12,7 +12,9 @@ export class ResponderService {
   private responderURL =  this.globals.RESPONDERS_URL; // 'http://139.162.213.237:8002/api/core/responders/';
   private toasterService: ToasterService;
   private responderPhotoURL =  this.globals.RESPONDER_PHOTO_URL; //'http://139.162.213.237:8002/api/core/responder_profile_pic/';
-     
+  private responderDocsURL = this.globals.RESPONDER_SUPPORT_DOCS_URL;
+
+
   v = localStorage.getItem('auth_token');
   private options = new RequestOptions({headers: new Headers({'Content-Type': 'application/json',
   'Authorization': 'JWT ' +this.v
@@ -94,6 +96,30 @@ export class ResponderService {
     let _data = JSON.stringify(data);
     if (responder){
         this.http.patch(this.responderPhotoURL + responder.id + '/', data, v).subscribe(
+           data => {
+
+             this.toasterService.pop('success', 'Responder photo saved', '');
+             let res =  data.json();
+           
+            if (responder){
+             responder.image_url =res;
+            }
+             
+            
+           },
+           error => console.log(error.json().message)
+        )
+    }
+     
+
+  };
+
+
+  uploadResponderDocs(responder:any= {}, data:any){
+     let v = this.page_header();
+    let _data = JSON.stringify(data);
+    if (responder){
+        this.http.patch(this.responderDocsURL + responder.id + '/', data, v).subscribe(
            data => {
 
              this.toasterService.pop('success', 'Responder photo saved', '');

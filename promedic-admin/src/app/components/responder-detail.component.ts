@@ -21,6 +21,7 @@ export class ResponderDetailComponent {
  	busyUploading : boolean = false;
  	host_address: string =  this.globals.HOST_URL; 
  	doc_types : any[];
+ 	filesToUpload: Array<File> = [];
 
 
 	constructor(private _responderService : ResponderService, private _docTypeService:DocumentTypeService,
@@ -50,6 +51,24 @@ export class ResponderDetailComponent {
 			this.upload = !this.upload;
 			 	
 	};
+
+
+	fileChangeEvent(fileInput: any) {
+    	this.filesToUpload = <Array<File>>fileInput.target.files;
+     
+	}
+
+
+	uploadResponderDocs(){
+			const formData: any = new FormData();
+			const files: Array<File> = this.filesToUpload;
+			for(let i =0; i < files.length; i++){
+      			  formData.append("uploads[]", files[i], files[i]['name']);
+    		}
+    		
+    		this._responderService.uploadResponderDocs(this.responder, formData)
+
+	}
 
 	getDocumentTypes(){
 		this._docTypeService.getDocumentTypes()
