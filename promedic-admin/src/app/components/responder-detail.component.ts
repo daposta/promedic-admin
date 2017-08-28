@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {ResponderService} from '../services/responders.srv';
 import {DocumentTypeService} from '../services/doc-type.srv';
 import {Router, ActivatedRoute, Params} from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
+
 import 'rxjs/add/operator/switchMap';
 import { Globals } from '../shared/api';
 
@@ -25,7 +27,7 @@ export class ResponderDetailComponent {
 
 
 	constructor(private _responderService : ResponderService, private _docTypeService:DocumentTypeService,
-		private route: ActivatedRoute, private globals: Globals){
+		private route: ActivatedRoute, private globals: Globals, public sanitizer: DomSanitizer){
 
 	}
 
