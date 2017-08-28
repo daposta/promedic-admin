@@ -36,11 +36,11 @@
                      
                         <div class="row">
                           <div class="row">
-                             <div  *ngIf="!responder.profile_pic" class="col-lg-4">
+                             <div  *ngIf="!responder.image_url" class="col-lg-4">
                                   <img src="assets/img/Placeholder-Portrait.jpg" height="200" width="200">
                              </div>
                              
-                              <div  *ngIf="responder.profile_pic" style="padding-bottom: 10px"  class="row col-lg-4">
+                              <div  *ngIf="responder.image_url" style="padding-bottom: 10px"  class="row col-lg-4">
                                   <img src="{{responder.image_url}}" height="200" width="200">
                              </div> 
                              
