@@ -122,11 +122,11 @@ export class ResponderService {
         this.http.patch(this.responderDocsURL + responder.id + '/', data, v).subscribe(
            data => {
 
-             this.toasterService.pop('success', 'Responder photo saved', '');
+             this.toasterService.pop('success', 'Supporting docs saved', '');
              let res =  data.json();
            
             if (responder){
-             responder.image_url =res;
+             responder.responder_docs =res;
             }
              
             

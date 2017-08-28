@@ -6341,10 +6341,10 @@ var ResponderService = (function () {
         var _data = JSON.stringify(data);
         if (responder) {
             this.http.patch(this.responderDocsURL + responder.id + '/', data, v).subscribe(function (data) {
-                _this.toasterService.pop('success', 'Responder photo saved', '');
+                _this.toasterService.pop('success', 'Supporting docs saved', '');
                 var res = data.json();
                 if (responder) {
-                    responder.image_url = res;
+                    responder.responder_docs = res;
                 }
             }, function (error) { return console.log(error.json().message); });
         }
