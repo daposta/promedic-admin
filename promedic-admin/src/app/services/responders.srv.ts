@@ -13,6 +13,7 @@ export class ResponderService {
   private toasterService: ToasterService;
   private responderPhotoURL =  this.globals.RESPONDER_PHOTO_URL; //'http://139.162.213.237:8002/api/core/responder_profile_pic/';
   private responderDocsURL = this.globals.RESPONDER_SUPPORT_DOCS_URL;
+  private rDocsListingURL = this.globals.RESPONDER_DOCS_LISTING_URL;
 
 
   v = localStorage.getItem('auth_token');
@@ -115,6 +116,11 @@ export class ResponderService {
   };
 
 
+  deleteResponderPhoto(responder:any= {}, data:any){
+
+  }
+
+
   uploadResponderDocs(responder:any= {}, data:any){
      let v = this.page_header();
     let _data = JSON.stringify(data);
@@ -137,6 +143,30 @@ export class ResponderService {
      
 
   };
+
+
+  deleteResponderDoc(responder, x){
+    let v = this.page_header();
+    if(x){
+
+        this.http.delete(this.rDocsListingURL + x.id +'/' , v).subscribe(
+           data => {
+
+             this.toasterService.pop('success', 'Document deleted successfully', '');
+             let res =  data.json();
+           
+            if (x){
+             responder.responder_docs.pop(x);
+            }
+             
+            
+           },
+           error => console.log(error.json().message)
+        )
+
+    }
+
+  }
 
 
   searchResponder(q:string){

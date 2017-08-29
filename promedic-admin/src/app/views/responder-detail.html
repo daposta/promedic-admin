@@ -40,8 +40,12 @@
                                   <img src="assets/img/Placeholder-Portrait.jpg" height="200" width="200">
                              </div>
                              
-                              <div  *ngIf="responder.image_url" style="padding-bottom: 10px"  class="row col-lg-4">
-                                  <img src="{{responder.image_url}}" height="200" width="200">
+                              <div  *ngIf="responder.image_url" style="padding-bottom: 10px;padding-left:40px"  class="row col-lg-4">
+                                <div class="row">
+                                  <img src="{{host_address + '/' +responder.image_url}}" height="200" width="200">
+                                </div>
+                                 
+                                  
                              </div> 
                              
                               
@@ -176,8 +180,10 @@
                                <div class="row">
                                    <!-- <div class="col-lg-4">Areas of Concentration</div> -->
                                    <div class="col-lg-3">
-                                      <div *ngFor="let doc of responder.responder_docs">
-                                           <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(doc)'  height="300" width="300"  webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+                                      <div *ngFor="let item of responder.responder_docs">
+                                           <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(item.doc)'  height="300" width="300"  webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> <a  (click)="deleteDoc(item )"><i class="fa fa-times" ></i> Remove Photo </a>
+
+                                          
 
                                       </div>
                                    </div>

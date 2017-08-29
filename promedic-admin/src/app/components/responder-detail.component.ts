@@ -80,6 +80,16 @@ export class ResponderDetailComponent {
 		 .catch(error => this.error = error);
 	};
 
+
+	deletePhoto(x){
+		this._responderService.deleteResponderPhoto(this.responder, x);
+	};
+
+	deleteDoc(x){
+		this._responderService.deleteResponderDoc(this.responder, x);
+
+	}
+
 	
 
 	ngOnInit() {
