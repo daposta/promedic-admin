@@ -6422,7 +6422,8 @@ var NewsletterService = (function () {
     NewsletterService.prototype.saveNewsletter = function (data) {
         var _this = this;
         var _data = JSON.stringify(data);
-        this.http.post(this.newslettersURL, data).subscribe(function (data) {
+        var v = this.page_header();
+        this.http.post(this.newslettersURL, data, v).subscribe(function (data) {
             _this.toasterService.pop('success', 'Newsletter saved', '');
             _this.router.navigateByUrl('/newsletters');
         }, function (error) { return console.log(error.json().message); });
@@ -6564,6 +6565,7 @@ var PartnerService = (function () {
     PartnerService.prototype.savePartner = function (data) {
         var _this = this;
         var _data = JSON.stringify(data);
+        var v = this.page_header();
         this.http.post(this.partnerURL, data).subscribe(function (data) {
             _this.toasterService.pop('success', 'Partner saved', '');
             _this.router.navigateByUrl('/partners');

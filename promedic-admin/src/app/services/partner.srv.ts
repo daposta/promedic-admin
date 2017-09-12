@@ -33,6 +33,7 @@ export class PartnerService {
 
   savePartner(data: any){
     let _data = JSON.stringify(data);
+    let v = this.page_header();
      this.http.post(this.partnerURL, data).subscribe(
          data => {
 

@@ -34,7 +34,8 @@ export class NewsletterService {
 
   saveNewsletter(data: any){
     let _data = JSON.stringify(data);
-     this.http.post(this.newslettersURL, data).subscribe(
+     let v = this.page_header();
+     this.http.post(this.newslettersURL, data , v).subscribe(
          data => {
 
            this.toasterService.pop('success', 'Newsletter saved', '');
