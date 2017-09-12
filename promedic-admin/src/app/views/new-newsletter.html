@@ -1,0 +1,91 @@
+
+ <header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            
+        </ol>
+
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                     <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-edit"></i>New Newsletter
+                                <div class="card-actions">
+                                    <a href="#" class="btn-setting"><i class="icon-settings"></i></a>
+                                    <a href="#" class="btn-minimize"><i class="icon-arrow-up"></i></a>
+                                    <a href="#" class="btn-close"><i class="icon-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <form class="form-horizontal" (ngSubmit)="newsletterForm.form.valid &&  onSubmit()"  #newsletterForm="ngForm" novalidate>
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Name</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <input id="" class="form-control" type="text"  
+                                                [(ngModel)]="newsletter.title" name="title" #title="ngModel" required>
+                                            </div>
+                                            
+                                           <div *ngIf="newsletterForm.submitted && !title.valid" class="alert alert-danger">Newsletter title is required</div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group row">
+                                        <label class="form-control-label" for="">Message</label>
+                                        <div class="controls">
+                                            <div class="input-group">
+                                                <textarea id="" class="form-control" type="text"  
+                                                [(ngModel)]="newsletter.msg" name="msg" #msg="ngModel" required>
+
+                                                </textarea>
+                                            </div>
+                                            
+                                           <div *ngIf="newsletterForm.submitted && !msg.valid" class="alert alert-danger">Message is required</div>
+                                        </div>
+                                    </div>
+
+
+                                    
+
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Save </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+
+    <footer-component></footer-component>

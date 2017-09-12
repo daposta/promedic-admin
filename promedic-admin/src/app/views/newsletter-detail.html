@@ -1,0 +1,99 @@
+<header-component></header-component>
+<sidebar-component></sidebar-component>
+
+
+  <!-- Main content -->
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a>
+            </li>
+            <li class="breadcrumb-item active">Dashboard</li>
+
+            <!-- Breadcrumb Menu-->
+            <li class="breadcrumb-menu">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
+                    <a class="btn btn-secondary" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
+                    <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                </div>
+            </li>
+        </ol>
+
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+               
+                <!--/row-->
+
+              
+                <!--/row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <i class="fa fa-align-justify"></i> Newsletter Detail
+                            </div>
+                            <div class="card-block">
+
+                               <div class="row">
+                                   <div class="col-lg-4">Title</div>
+                                   <div class="col-lg-4">{{newsletter.title}}</div>
+                               </div>
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">Message</div>
+                                   <div class="col-lg-4">{{newsletter.message}}</div>
+                               </div>
+
+
+                                <div class="row">
+                                   <div class="col-lg-4">Date Created</div>
+                                   <div class="col-lg-4">{{newsletter.date_created | date}}</div>
+                               </div>
+
+                                <div class="row">
+                                   <div class="col-lg-4">Last Modification</div>
+                                   <div class="col-lg-4">{{newsletter.last_modified | date}}</div>
+                               </div>
+
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">
+                                      <button (click)="newsletterReady()" class="btn btn-success" *ngIf="newsletter.state=='Draft'">
+                                          Ready
+                                      </button>
+
+                                       <button (click)="sendNewsletter()"  class="btn btn-primary" *ngIf="newsletter.state=='Ready'">
+                                          SEnd
+                                      </button>
+                                   </div>
+
+                               </div>
+
+                                
+
+                              
+
+
+                             
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-->
+                </div>
+                <!--/row-->
+            </div>
+
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+   
+    <footer-component></footer-component>

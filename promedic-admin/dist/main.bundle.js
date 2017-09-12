@@ -134,18 +134,22 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_user_detail_component__ = __webpack_require__("./src/app/components/user-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_new_user_component__ = __webpack_require__("./src/app/components/new-user.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_user_edit_component__ = __webpack_require__("./src/app/components/user-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__directives_only_number_directive__ = __webpack_require__("./src/app/directives/only-number.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_newsletters_component__ = __webpack_require__("./src/app/components/newsletters.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_newsletter_detail_component__ = __webpack_require__("./src/app/components/newsletter-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_new_newsletter_component__ = __webpack_require__("./src/app/components/new-newsletter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_newsletter_edit_component__ = __webpack_require__("./src/app/components/newsletter-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__directives_only_number_directive__ = __webpack_require__("./src/app/directives/only-number.directive.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -225,52 +229,60 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_21__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_21__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */] },
-    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_27__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_30__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_29__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_31__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_41__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_40__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_42__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_33__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_37__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/edit/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_client_edit_component__["a" /* ClientEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_43__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_45__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_46__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_47__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_49__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_48__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_50__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_51__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_53__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_52__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_54__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_55__components_users_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'user/:id', component: __WEBPACK_IMPORTED_MODULE_56__components_user_detail_component__["a" /* UserDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_57__components_new_user_component__["a" /* NewUserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_58__components_user_edit_component__["a" /* UserEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_16__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_27__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_30__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_29__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_31__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_41__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_40__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_42__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_33__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_34__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_37__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_38__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/edit/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_client_edit_component__["a" /* ClientEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_43__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_45__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_46__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_47__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_49__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_48__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_50__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_51__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_53__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_52__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_54__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'newsletters', component: __WEBPACK_IMPORTED_MODULE_59__components_newsletters_component__["a" /* NewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'newsletter/:id', component: __WEBPACK_IMPORTED_MODULE_60__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-newsletter', component: __WEBPACK_IMPORTED_MODULE_61__components_new_newsletter_component__["a" /* NewNewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'newsletter/edit/:id', component: __WEBPACK_IMPORTED_MODULE_62__components_newsletter_edit_component__["a" /* NewsletterEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_55__components_users_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/:id', component: __WEBPACK_IMPORTED_MODULE_56__components_user_detail_component__["a" /* UserDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_57__components_new_user_component__["a" /* NewUserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_58__components_user_edit_component__["a" /* UserEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */]] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -280,7 +292,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_69__directives_equal_validator_directive__["a" /* EqualValidator */], __WEBPACK_IMPORTED_MODULE_70__directives_only_number_directive__["a" /* OnlyNumber */],
+            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_11__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_73__directives_equal_validator_directive__["a" /* EqualValidator */], __WEBPACK_IMPORTED_MODULE_74__directives_only_number_directive__["a" /* OnlyNumber */],
             __WEBPACK_IMPORTED_MODULE_13__components_diseases_component__["a" /* DiseasesComponent */], __WEBPACK_IMPORTED_MODULE_14__components_disease_edit_component__["a" /* DiseaseEditComponent */], __WEBPACK_IMPORTED_MODULE_15__components_disease_form_component__["a" /* DiseaseFormComponent */],
             __WEBPACK_IMPORTED_MODULE_24__components_disabilities_component__["a" /* DisabilityComponent */], __WEBPACK_IMPORTED_MODULE_26__components_disability_edit_component__["a" /* DisabilityEditComponent */], __WEBPACK_IMPORTED_MODULE_25__components_disability_form_component__["a" /* DisabilityFormComponent */],
             __WEBPACK_IMPORTED_MODULE_17__components_allergies_component__["a" /* AllergyComponent */], __WEBPACK_IMPORTED_MODULE_19__components_allergy_edit_component__["a" /* AllergyEditComponent */], __WEBPACK_IMPORTED_MODULE_20__components_allergy_form_component__["a" /* AllergyFormComponent */], __WEBPACK_IMPORTED_MODULE_18__components_allergy_detail_component__["a" /* AllergyDetailComponent */],
@@ -294,9 +306,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_47__components_test_centers_component__["a" /* TestCenterComponent */], __WEBPACK_IMPORTED_MODULE_48__components_new_tc_component__["a" /* NewTCComponent */], __WEBPACK_IMPORTED_MODULE_49__components_tc_detail_component__["a" /* TCDetailComponent */], __WEBPACK_IMPORTED_MODULE_50__components_tc_edit_component__["a" /* TCEditComponent */],
             __WEBPACK_IMPORTED_MODULE_51__components_partners_component__["a" /* PartnerComponent */], __WEBPACK_IMPORTED_MODULE_52__components_new_partner_component__["a" /* NewPartnerComponent */], __WEBPACK_IMPORTED_MODULE_53__components_partner_detail_component__["a" /* PartnerDetailComponent */], __WEBPACK_IMPORTED_MODULE_54__components_partner_edit_component__["a" /* PartnerEditComponent */],
             __WEBPACK_IMPORTED_MODULE_43__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_46__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_45__components_hmo_form_component__["a" /* HMOFormComponent */], __WEBPACK_IMPORTED_MODULE_44__components_hmo_detail_component__["a" /* HMODetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_59__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_60__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_61__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
-            __WEBPACK_IMPORTED_MODULE_62__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_64__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_63__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_63__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_64__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_65__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_66__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_68__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_67__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */],
             __WEBPACK_IMPORTED_MODULE_55__components_users_component__["a" /* UserComponent */], __WEBPACK_IMPORTED_MODULE_56__components_user_detail_component__["a" /* UserDetailComponent */], __WEBPACK_IMPORTED_MODULE_57__components_new_user_component__["a" /* NewUserComponent */], __WEBPACK_IMPORTED_MODULE_58__components_user_edit_component__["a" /* UserEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_59__components_newsletters_component__["a" /* NewsletterComponent */], __WEBPACK_IMPORTED_MODULE_61__components_new_newsletter_component__["a" /* NewNewsletterComponent */], __WEBPACK_IMPORTED_MODULE_60__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], __WEBPACK_IMPORTED_MODULE_62__components_newsletter_edit_component__["a" /* NewsletterEditComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_7_angular2_toaster__["a" /* ToasterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_8_ng2_pagination__["Ng2PaginationModule"],
@@ -306,7 +319,7 @@ AppModule = __decorate([
                 confirmButtonType: 'danger' // set defaults here
             })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_65__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_68__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_66__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_67__utils_headers__["a" /* CustomRequestOptions */] }],
+        providers: [__WEBPACK_IMPORTED_MODULE_69__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_72__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_70__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_71__utils_headers__["a" /* CustomRequestOptions */] }],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -2828,6 +2841,56 @@ var _a;
 
 /***/ }),
 
+/***/ "./src/app/components/new-newsletter.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_newsletter_srv__ = __webpack_require__("./src/app/services/newsletter.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewNewsletterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewNewsletterComponent = (function () {
+    function NewNewsletterComponent(_newsletterService, route) {
+        this._newsletterService = _newsletterService;
+        this.route = route;
+        this.newsletter = {};
+    }
+    NewNewsletterComponent.prototype.ngOnInit = function () {
+        // this.getStates();
+    };
+    NewNewsletterComponent.prototype.onSubmit = function () {
+        this._newsletterService.saveNewsletter(this.newsletter);
+    };
+    return NewNewsletterComponent;
+}());
+NewNewsletterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'hero-form',
+        template: __webpack_require__("./src/app/views/new-newsletter.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_2__services_newsletter_srv__["a" /* NewsletterService */]
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_newsletter_srv__["a" /* NewsletterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_newsletter_srv__["a" /* NewsletterService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], NewNewsletterComponent);
+
+var _a, _b;
+//# sourceMappingURL=new-newsletter.component.js.map
+
+/***/ }),
+
 /***/ "./src/app/components/new-partner.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2998,6 +3061,204 @@ NewUserComponent = __decorate([
 
 var _a, _b, _c;
 //# sourceMappingURL=new-user.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/newsletter-detail.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__ = __webpack_require__("./src/app/services/newsletter.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap__ = __webpack_require__("./node_modules/rxjs/add/operator/switchMap.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_switchMap__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterDetailComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NewsletterDetailComponent = (function () {
+    function NewsletterDetailComponent(_newsletterService, route) {
+        this._newsletterService = _newsletterService;
+        this.route = route;
+        this.newsletter = {};
+    }
+    NewsletterDetailComponent.prototype.newsletterReady = function () {
+        this.newsletter['status'] = 'Ready';
+        this._newsletterService.changeNewsletterState(this.newsletter);
+    };
+    ;
+    NewsletterDetailComponent.prototype.sendNewsletter = function () {
+        this.newsletter['status'] = 'Send';
+        this._newsletterService.changeNewsletterState(this.newsletter);
+    };
+    ;
+    NewsletterDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.switchMap(function (params) {
+            return _this._newsletterService.findNewsletterByID(+params['id']);
+        })
+            .subscribe(function (res) { return _this.newsletter = res; });
+    };
+    ;
+    return NewsletterDetailComponent;
+}());
+NewsletterDetailComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'newsletter-detail',
+        template: __webpack_require__("./src/app/views/newsletter-detail.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], NewsletterDetailComponent);
+
+var _a, _b;
+//# sourceMappingURL=newsletter-detail.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/newsletter-edit.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__ = __webpack_require__("./src/app/services/newsletter.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterEditComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewsletterEditComponent = (function () {
+    function NewsletterEditComponent(_newsletterService, route) {
+        this._newsletterService = _newsletterService;
+        this.route = route;
+        this.newsletter = {};
+    }
+    // getLocalGovts(){
+    //   this._localGovtService.getLocalGovts().then(local_govts => this.local_govts = local_govts)
+    //           .catch(error => this.error = error);
+    // }
+    NewsletterEditComponent.prototype.getNewsletterInfo = function () {
+        var _this = this;
+        this.route.params.switchMap(function (params) {
+            return _this._newsletterService.findNewsletterByID(+params['id']);
+        })
+            .subscribe(function (data) {
+            _this.newsletter = data;
+        });
+    };
+    ;
+    NewsletterEditComponent.prototype.ngOnInit = function () {
+        this.getNewsletterInfo();
+        // this.fetchLGA();
+    };
+    NewsletterEditComponent.prototype.onSubmit = function () {
+        this._newsletterService.updateNewsletterInfo(this.newsletter);
+    };
+    return NewsletterEditComponent;
+}());
+NewsletterEditComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'newsletter-form',
+        template: __webpack_require__("./src/app/views/newsletter-edit.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */],
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], NewsletterEditComponent);
+
+var _a, _b;
+//# sourceMappingURL=newsletter-edit.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/newsletters.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__ = __webpack_require__("./src/app/services/newsletter.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NewsletterComponent = (function () {
+    function NewsletterComponent(_newsletterService) {
+        this._newsletterService = _newsletterService;
+        this.search = "";
+    }
+    NewsletterComponent.prototype.getNewsletters = function () {
+        var _this = this;
+        this._newsletterService.getNewsletters()
+            .then(function (newsletters) { return _this.newsletters = newsletters; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    NewsletterComponent.prototype.searchNewsletter = function () {
+        var _this = this;
+        if (this.search.length > 3) {
+            this._newsletterService.searchNewsletter(this.search).then(function (result) { return _this.newsletters = result; })
+                .catch(function (error) { return _this.error = error; });
+        }
+        else {
+            this.getNewsletters();
+        }
+    };
+    ;
+    NewsletterComponent.prototype.deleteNewsletter = function (x) {
+        var _this = this;
+        this._newsletterService.deleteNewsletter(x.id).then(function (response) {
+            var index = _this.newsletters.indexOf(x);
+            if (index !== -1) {
+                _this.newsletters.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
+    NewsletterComponent.prototype.ngOnInit = function () {
+        this.getNewsletters();
+    };
+    return NewsletterComponent;
+}());
+NewsletterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        //selector: 'disabilities',
+        template: __webpack_require__("./src/app/views/newsletters.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_newsletter_srv__["a" /* NewsletterService */]) === "function" && _a || Object])
+], NewsletterComponent);
+
+var _a;
+//# sourceMappingURL=newsletters.component.js.map
 
 /***/ }),
 
@@ -6110,6 +6371,149 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
+/***/ "./src/app/services/newsletter.srv.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_toPromise__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var NewsletterService = (function () {
+    function NewsletterService(http, router, _toasterService, globals) {
+        this.http = http;
+        this.router = router;
+        this.globals = globals;
+        this.newslettersURL = this.globals.NEWSLETTERS_URL;
+        this.newsletterStateURL = this.globals.NEWSLETTER_STATE_URL;
+        this.v = localStorage.getItem('auth_token');
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]({ 'Content-Type': 'application/json',
+                'Authorization': 'JWT ' + this.v
+            }) });
+        this.toasterService = _toasterService;
+    }
+    NewsletterService.prototype.getNewsletters = function () {
+        var v = this.page_header();
+        return this.http.get(this.newslettersURL, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    NewsletterService.prototype.saveNewsletter = function (data) {
+        var _this = this;
+        var _data = JSON.stringify(data);
+        this.http.post(this.newslettersURL, data).subscribe(function (data) {
+            _this.toasterService.pop('success', 'Newsletter saved', '');
+            _this.router.navigateByUrl('/newsletters');
+        }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    NewsletterService.prototype.findNewsletterByID = function (pk) {
+        var v = this.page_header();
+        return this.http.get(this.newslettersURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    NewsletterService.prototype.searchNewsletter = function (newsletter) {
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        params.append('newsletter', newsletter);
+        this.options.search = params;
+        return this.http.get(this.newslettersURL, this.options)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    NewsletterService.prototype.updateNewsletterInfo = function (newsletter) {
+        var _this = this;
+        if (newsletter === void 0) { newsletter = {}; }
+        var v = this.page_header();
+        //let _data = JSON.stringify(hmo);
+        if (newsletter) {
+            this.http.patch(this.newslettersURL + newsletter.id + '/', newsletter, v).subscribe(function (data) {
+                _this.toasterService.pop('success', 'Newsletter Info updated', '');
+                // this.router.navigateByUrl('Drug');
+                _this.router.navigateByUrl('/newsletter/' + newsletter.id);
+            }, function (error) { return console.log(error.json().message); });
+        }
+    };
+    ;
+    NewsletterService.prototype.changeNewsletterState = function (newsletter) {
+        var _this = this;
+        if (newsletter === void 0) { newsletter = {}; }
+        var v = this.page_header();
+        //let _data = JSON.stringify(hmo);
+        if (newsletter) {
+            this.http.patch(this.newsletterStateURL + newsletter.id + '/', newsletter, v).subscribe(function (data) {
+                _this.toasterService.pop('success', 'Newsletter Status Changed', '');
+                newsletter.state = newsletter.status;
+                // this.router.navigateByUrl('/newsletter/' +newsletter.id);
+            }, function (error) { return console.log(error.json().message); });
+        }
+    };
+    ;
+    NewsletterService.prototype.deleteNewsletter = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.newslettersURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Newsletter deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
+    NewsletterService.prototype.page_header = function () {
+        var data = localStorage.getItem('auth_token');
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
+        var opt;
+        headers.append('Authorization', 'JWT ' + data);
+        opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
+        return opt;
+    };
+    NewsletterService.prototype.handleError = function (error) {
+        var err = error.json();
+        if (error.detail = "Signature has expired.") {
+            localStorage.removeItem('auth_token');
+            this.router.navigateByUrl('/login');
+        }
+        return Promise.reject(error.message || error);
+    };
+    return NewsletterService;
+}());
+NewsletterService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angular2_toaster__["b" /* ToasterService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__shared_api__["a" /* Globals */]) === "function" && _d || Object])
+], NewsletterService);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=newsletter.srv.js.map
+
+/***/ }),
+
 /***/ "./src/app/services/partner.srv.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6951,6 +7355,8 @@ var Globals = (function () {
         this.TEST_CENTERS_URL = this.HOST_URL + '/api/core/test_centers/';
         this.GENDER_URL = this.HOST_URL + '/api/core/genders/';
         this.USERS_URL = this.HOST_URL + '/api/core/users/';
+        this.NEWSLETTERS_URL = this.HOST_URL + '/api/core/newsletters/';
+        this.NEWSLETTER_STATE_URL = this.HOST_URL + '/api/core/newsletter_state/';
     }
     return Globals;
 }());
@@ -7229,6 +7635,13 @@ module.exports = " <div class=\"container d-table\">\n        <div class=\"d-100
 
 /***/ }),
 
+/***/ "./src/app/views/new-newsletter.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Newsletter\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"newsletterForm.form.valid &&  onSubmit()\"  #newsletterForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"newsletter.title\" name=\"title\" #title=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"newsletterForm.submitted && !title.valid\" class=\"alert alert-danger\">Newsletter title is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Message</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"newsletter.msg\" name=\"msg\" #msg=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"newsletterForm.submitted && !msg.valid\" class=\"alert alert-danger\">Message is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
 /***/ "./src/app/views/new-partner.html":
 /***/ (function(module, exports) {
 
@@ -7247,6 +7660,27 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ (function(module, exports) {
 
 module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New User\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"userForm.form.valid &&  onSubmit()\"  #userForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Mobile</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.mobile\" name=\"mobile\" #mobile=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !mobile.valid\" class=\"alert alert-danger\">Mobile Number is required</div>\n                                        </div>\n                                    </div>\n\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Email</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"user.email\" name=\"email\" #email=\"ngModel\" >\n                                            </div>\n                                            \n                                          \n                                        </div>\n                                    </div>\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.password\" name=\"password\" #password=\"ngModel\" required validateEqual=\"confPassword\" reverse=\"true\">\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !password.valid\" class=\"alert alert-danger\">Password is required</div>\n                                        </div>\n                                    </div>\n\n                                     <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Confirm Password</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"password\"  \n                                                [(ngModel)]=\"user.confPassword\" name=\"confPassword\" #confPassword=\"ngModel\" required validateEqual=\"password\">\n                                            </div>\n                                            \n                                            <div *ngIf=\"userForm.submitted && !confPassword.valid\" class=\"alert alert-danger\"> Password mismatch </div>\n                                        </div>\n                                    </div>\n\n\n\n\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">User Type</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <select id=\"select\" class=\"form-control\"  [(ngModel)]=\"user.userType\" name=\"userType\"  #userType=\"ngModel\"   required >\n                                                <!-- <option *ngFor=\"let state of states\" [value]=\"state.id\">{{state.name}}</option> -->\n                                                <option value=\"AD\">Admin</option>\n                                                <option value=\"SA\">Sub-Admin</option>\n\n                                               \n                                            </select>\n                                            </div>\n                                            \n                                           <div *ngIf=\"userForm.submitted && !userType.valid\" class=\"alert alert-danger\">User Type is required</div>\n                                        </div>\n                                    </div>\n\n\n                                   \n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/newsletter-detail.html":
+/***/ (function(module, exports) {
+
+module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Newsletter Detail\n                            </div>\n                            <div class=\"card-block\">\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Title</div>\n                                   <div class=\"col-lg-4\">{{newsletter.title}}</div>\n                               </div>\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">Message</div>\n                                   <div class=\"col-lg-4\">{{newsletter.message}}</div>\n                               </div>\n\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Date Created</div>\n                                   <div class=\"col-lg-4\">{{newsletter.date_created | date}}</div>\n                               </div>\n\n                                <div class=\"row\">\n                                   <div class=\"col-lg-4\">Last Modification</div>\n                                   <div class=\"col-lg-4\">{{newsletter.last_modified | date}}</div>\n                               </div>\n\n\n\n                               <div class=\"row\">\n                                   <div class=\"col-lg-4\">\n                                      <button (click)=\"newsletterReady()\" class=\"btn btn-success\" *ngIf=\"newsletter.state=='Draft'\">\n                                          Ready\n                                      </button>\n\n                                       <button (click)=\"sendNewsletter()\"  class=\"btn btn-primary\" *ngIf=\"newsletter.state=='Ready'\">\n                                          SEnd\n                                      </button>\n                                   </div>\n\n                               </div>\n\n                                \n\n                              \n\n\n                             \n                               \n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/newsletter-edit.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i> Newsletter Edit\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"newsletterForm.form.valid &&  onSubmit()\"  #newsletterForm=\"ngForm\" novalidate>\n                                   \n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Name</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"newsletter.title\" name=\"title\" #title=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"newsletterForm.submitted && !title.valid\" class=\"alert alert-danger\">Newsletter title is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Message</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <textarea id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"newsletter.message\" name=\"msg\" #msg=\"ngModel\" required>\n\n                                                </textarea>\n                                            </div>\n                                            \n                                           <div *ngIf=\"newsletterForm.submitted && !msg.valid\" class=\"alert alert-danger\">Message is required</div>\n                                        </div>\n                                    </div>\n\n\n                                    \n                                      \n\n\n\n\n                                    \n                                   \n\n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save changes</button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/newsletters.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Newsletters\n                                <a class=\"\" href=\"#/new-newsletter\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchNewsletter()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Title</th>\n                                           <th>Date Created</th>\n                                           <th>Content</th>\n                                            <th>Status</th>\n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let p of newsletters\">\n                                            <td><a href=\"#/newsletter/{{p.id}}\">{{p.title}}</a></td>\n                                             <td>{{p.date_created |date}}</td>\n                                              <td>{{(p.message.length>20)? (p.message | slice:0:20)+'..':(p.message)}}</td>\n\n                                               <td>{{p.state}} </td>\n                                           \n                                            <td>\n                                                <span><a  *ngIf=\"p.state=='Draft'\" href=\"#/newsletter/edit/{{p.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                  <span><a  *ngIf=\"p.state=='Draft'\" (click)=\"deleteNewsletter(p)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
@@ -7309,7 +7743,7 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ "./src/app/views/sidebar.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/users\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
+module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/newsletters\"><i class=\"icon-speedometer\"></i> Newsletters</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/users\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
 
 /***/ }),
 

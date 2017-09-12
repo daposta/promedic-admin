@@ -82,6 +82,12 @@ import { UserDetailComponent } from './components/user-detail.component';
 import { NewUserComponent } from './components/new-user.component';
 import { UserEditComponent } from './components/user-edit.component';
 
+
+import { NewsletterComponent } from './components/newsletters.component';
+import { NewsletterDetailComponent } from './components/newsletter-detail.component';
+import { NewNewsletterComponent } from './components/new-newsletter.component';
+ import { NewsletterEditComponent } from './components/newsletter-edit.component';
+
 import {ResponderLocationChartComponent} from './components/charts/res-locs-chart.component';
 import {ResponderKitChartComponent} from './components/charts/res-kits-chart.component';
 import {ResponderConcentrationChartComponent} from './components/charts/res-concentration-chart.component';
@@ -149,6 +155,13 @@ const appRoutes: Routes = [
 	    { path: 'partner/:id', component: PartnerDetailComponent, canActivate: [LoggedInGuard]},
 	   { path: 'new-partner', component: NewPartnerComponent , canActivate: [LoggedInGuard]},
 	   { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
+
+
+
+	   { path: 'newsletters', component: NewsletterComponent, canActivate: [LoggedInGuard] },
+	    { path: 'newsletter/:id', component: NewsletterDetailComponent, canActivate: [LoggedInGuard]},
+	   { path: 'new-newsletter', component: NewNewsletterComponent , canActivate: [LoggedInGuard]},
+	   { path: 'newsletter/edit/:id', component: NewsletterEditComponent, canActivate: [LoggedInGuard]},
 	  
 
 	    { path: 'users', component:UserComponent , canActivate: [LoggedInGuard] },
@@ -178,6 +191,7 @@ const appRoutes: Routes = [
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent,
   UserComponent, UserDetailComponent, NewUserComponent, UserEditComponent,
+  NewsletterComponent, NewNewsletterComponent, NewsletterDetailComponent,NewsletterEditComponent,
   ],
   imports: [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 
