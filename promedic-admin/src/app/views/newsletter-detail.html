@@ -44,15 +44,6 @@
                                    <div class="col-lg-4">{{newsletter.title}}</div>
                                </div>
 
-
-                               <div class="row">
-                                   <div class="col-lg-4">Message</div>
-                                   <div class="col-lg-4" [innerHTML]="newsletter.message |safeHtml">
-                                 <!--   {{newsletter.message | safeHtml}} -->
-                                   </div>
-                               </div>
-
-
                                 <div class="row">
                                    <div class="col-lg-4">Date Created</div>
                                    <div class="col-lg-4">{{newsletter.date_created | date}}</div>
@@ -62,6 +53,17 @@
                                    <div class="col-lg-4">Last Modification</div>
                                    <div class="col-lg-4">{{newsletter.last_modified | date}}</div>
                                </div>
+
+
+                               <div class="row">
+                                   <div class="col-lg-4">Message</div>
+                                   <div class="col-lg-4" [innerHTML]="newsletter.message |safeHtml">
+                                 <!--   {{newsletter.message | safeHtml}} -->
+                                   </div>
+                               </div>
+
+
+                               
 
 
 
