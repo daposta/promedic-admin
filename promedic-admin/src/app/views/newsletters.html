@@ -56,7 +56,7 @@
                                         <tr>
                                             <th>Title</th>
                                            <th>Date Created</th>
-                                           <th>Content</th>
+                                         
                                             <th>Status</th>
                                             <th>Actions</th>
                                         </tr>
@@ -64,9 +64,9 @@
                                     <tbody>
                                         <tr *ngFor="let p of newsletters">
                                             <td><a href="#/newsletter/{{p.id}}">{{p.title}}</a></td>
-                                             <td>{{p.date_created |date}}</td>
-                                              <td>{{(p.message.length>20)? (p.message | slice:0:20)+'..':(p.message)}}</td>
-
+                                             <td>{{p.date_created|date}}</td>
+                                            <!--   <td>{{(p.message.length>20)? (p.message | slice:0:20)+'..':(p.message)}}</td> -->
+                                           
                                                <td>{{p.state}} </td>
                                            
                                             <td>

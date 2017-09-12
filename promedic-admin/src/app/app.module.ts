@@ -14,7 +14,7 @@ import { ChartModule } from 'angular2-highcharts';
 
 import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
 
-
+import { QuillEditorModule } from 'ngx-quill-editor';
 
 import { LoginComponent } from './components/login.component';
 import { RegisterComponent } from './components/register.component';
@@ -94,6 +94,9 @@ import {ResponderConcentrationChartComponent} from './components/charts/res-conc
 import {ClientDiseaseChartComponent} from './components/charts/clients-diseases-chart.component';
 import {ClientAllergytChartComponent} from './components/charts/clients-allergies-chart.component';
 import {ClientDisabilityChartComponent} from './components/charts/clients-disabilities-chart.component';
+
+import { SafeHtmlPipe } from './pipes/safehtml.pipe';
+
 
 import {UserService} from './services/user.srv';
 import {LoggedInGuard } from './utils/login.guard';
@@ -192,10 +195,11 @@ const appRoutes: Routes = [
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent,
   UserComponent, UserDetailComponent, NewUserComponent, UserEditComponent,
   NewsletterComponent, NewNewsletterComponent, NewsletterDetailComponent,NewsletterEditComponent,
+  SafeHtmlPipe,
   ],
   imports: [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 
-    ChartModule,
+    ChartModule, QuillEditorModule,
   RouterModule.forRoot(appRoutes, { useHash: true }) ,
   ConfirmationPopoverModule.forRoot({
       confirmButtonType: 'danger' // set defaults here

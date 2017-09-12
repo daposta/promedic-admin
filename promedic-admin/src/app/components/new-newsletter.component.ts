@@ -19,6 +19,9 @@ export class NewNewsletterComponent {
 
   newsletter: any= {};
   error: any;	
+  public editorOptions = {
+    placeholder: "insert content..."
+  };
   
 
   constructor(private _newsletterService : NewsletterService, private route: ActivatedRoute){

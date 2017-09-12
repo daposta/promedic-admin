@@ -47,7 +47,9 @@
 
                                <div class="row">
                                    <div class="col-lg-4">Message</div>
-                                   <div class="col-lg-4">{{newsletter.message}}</div>
+                                   <div class="col-lg-4" [innerHTML]="newsletter.message |safeHtml">
+                                 <!--   {{newsletter.message | safeHtml}} -->
+                                   </div>
                                </div>
 
 
@@ -65,12 +67,12 @@
 
                                <div class="row">
                                    <div class="col-lg-4">
-                                      <button (click)="newsletterReady()" class="btn btn-success" *ngIf="newsletter.state=='Draft'">
+                                      <button (click)="newsletterReady()" class="btn btn-success" *ngIf="newsletter.state=='Draft'"><i class="fa fa-arrow-right" aria-hidden="true"></i>
                                           Ready
                                       </button>
 
-                                       <button (click)="sendNewsletter()"  class="btn btn-primary" *ngIf="newsletter.state=='Ready'">
-                                          SEnd
+                                       <button (click)="sendNewsletter()"  class="btn btn-primary" *ngIf="newsletter.state=='Ready'"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                          Send
                                       </button>
                                    </div>
 

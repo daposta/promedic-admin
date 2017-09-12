@@ -58,10 +58,14 @@
                                         <label class="form-control-label" for="">Message</label>
                                         <div class="controls">
                                             <div class="input-group">
-                                                <textarea id="" class="form-control" type="text"  
+                                                <!-- <textarea id="" class="form-control" type="text"  
                                                 [(ngModel)]="newsletter.message" name="msg" #msg="ngModel" required>
 
-                                                </textarea>
+                                                </textarea> -->
+
+                                                <quill-editor [(ngModel)]="newsletter.message"  name="msg" #msg="ngModel" required [options]="editorOptions" ></quill-editor>
+
+                                                <div *ngIf="newsletterForm.submitted && !msg.valid" class="alert alert-danger">Message is required</div>
                                             </div>
                                             
                                            <div *ngIf="newsletterForm.submitted && !msg.valid" class="alert alert-danger">Message is required</div>
@@ -70,17 +74,7 @@
 
 
                                     
-                                      
-
-
-
-
-                                    
-                                   
-
-
-
-
+                            
                                     
 
                                     <div class="form-actions">
