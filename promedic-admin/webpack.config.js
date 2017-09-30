@@ -445,6 +445,9 @@ module.exports = {
     "setImmediate": false
   },
   "devServer": {
-    "historyApiFallback": true
+    "historyApiFallback": true,
+    headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
   }
 };

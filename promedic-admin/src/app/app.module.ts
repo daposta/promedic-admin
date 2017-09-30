@@ -53,6 +53,9 @@ import {ClientComponent} from './components/clients.component';
 import {ClientDetailComponent} from './components/client-detail.component';
 import {ClientEditComponent} from './components/client-edit.component';
 
+import { SubscriberComponent} from './components/subscribers.component';
+import { NewSubscriberComponent} from './components/new-subscriber.component';
+
 
 import {DrugDetailComponent} from './components/drug-detail.component';
 import {DrugFormComponent} from './components/drug-form.component';
@@ -94,6 +97,8 @@ import {ResponderConcentrationChartComponent} from './components/charts/res-conc
 import {ClientDiseaseChartComponent} from './components/charts/clients-diseases-chart.component';
 import {ClientAllergytChartComponent} from './components/charts/clients-allergies-chart.component';
 import {ClientDisabilityChartComponent} from './components/charts/clients-disabilities-chart.component';
+import { NewsletterSubscribersChartComponent} from './components/charts/newsletters-subscribers-chart.component';
+
 
 import { SafeHtmlPipe } from './pipes/safehtml.pipe';
 
@@ -160,6 +165,12 @@ const appRoutes: Routes = [
 	   { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
 
 
+	    { path: 'subscribers', component: SubscriberComponent, canActivate: [LoggedInGuard] },
+	    // { path: 'partner/:id', component: PartnerDetailComponent, canActivate: [LoggedInGuard]},
+	   { path: 'new-subscriber', component: NewSubscriberComponent , canActivate: [LoggedInGuard]},
+	   // { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
+
+
 
 	   { path: 'newsletters', component: NewsletterComponent, canActivate: [LoggedInGuard] },
 	    { path: 'newsletter/:id', component: NewsletterDetailComponent, canActivate: [LoggedInGuard]},
@@ -193,9 +204,10 @@ const appRoutes: Routes = [
   HMOComponent, HMOEditComponent, HMOFormComponent, HMODetailComponent,
   ResponderLocationChartComponent, ResponderKitChartComponent, ResponderConcentrationChartComponent ,
   ClientDiseaseChartComponent, ClientDisabilityChartComponent, ClientAllergytChartComponent,
+  NewsletterSubscribersChartComponent,
   UserComponent, UserDetailComponent, NewUserComponent, UserEditComponent,
   NewsletterComponent, NewNewsletterComponent, NewsletterDetailComponent,NewsletterEditComponent,
-  SafeHtmlPipe,
+  SafeHtmlPipe, SubscriberComponent, NewSubscriberComponent,
   ],
   imports: [
     BrowserModule,  HttpModule ,FormsModule, ToasterModule,BrowserAnimationsModule, Ng2PaginationModule, 

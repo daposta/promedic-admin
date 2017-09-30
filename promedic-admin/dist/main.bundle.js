@@ -116,42 +116,45 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__components_clients_component__ = __webpack_require__("./src/app/components/clients.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_client_detail_component__ = __webpack_require__("./src/app/components/client-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_client_edit_component__ = __webpack_require__("./src/app/components/client-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_drug_detail_component__ = __webpack_require__("./src/app/components/drug-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_drug_form_component__ = __webpack_require__("./src/app/components/drug-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_drug_edit_component__ = __webpack_require__("./src/app/components/drug-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_hmo_component__ = __webpack_require__("./src/app/components/hmo.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_hmo_detail_component__ = __webpack_require__("./src/app/components/hmo-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_hmo_form_component__ = __webpack_require__("./src/app/components/hmo-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_hmo_edit_component__ = __webpack_require__("./src/app/components/hmo-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_test_centers_component__ = __webpack_require__("./src/app/components/test-centers.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_new_tc_component__ = __webpack_require__("./src/app/components/new-tc.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_tc_detail_component__ = __webpack_require__("./src/app/components/tc-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_tc_edit_component__ = __webpack_require__("./src/app/components/tc-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_partners_component__ = __webpack_require__("./src/app/components/partners.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_new_partner_component__ = __webpack_require__("./src/app/components/new-partner.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_partner_detail_component__ = __webpack_require__("./src/app/components/partner-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_partner_edit_component__ = __webpack_require__("./src/app/components/partner-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_users_component__ = __webpack_require__("./src/app/components/users.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_user_detail_component__ = __webpack_require__("./src/app/components/user-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_new_user_component__ = __webpack_require__("./src/app/components/new-user.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_user_edit_component__ = __webpack_require__("./src/app/components/user-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_newsletters_component__ = __webpack_require__("./src/app/components/newsletters.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_newsletter_detail_component__ = __webpack_require__("./src/app/components/newsletter-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_new_newsletter_component__ = __webpack_require__("./src/app/components/new-newsletter.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_newsletter_edit_component__ = __webpack_require__("./src/app/components/newsletter-edit.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__pipes_safehtml_pipe__ = __webpack_require__("./src/app/pipes/safehtml.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__directives_only_number_directive__ = __webpack_require__("./src/app/directives/only-number.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_subscribers_component__ = __webpack_require__("./src/app/components/subscribers.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__components_new_subscriber_component__ = __webpack_require__("./src/app/components/new-subscriber.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__components_drug_detail_component__ = __webpack_require__("./src/app/components/drug-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_drug_form_component__ = __webpack_require__("./src/app/components/drug-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drug_edit_component__ = __webpack_require__("./src/app/components/drug-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_hmo_component__ = __webpack_require__("./src/app/components/hmo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__components_hmo_detail_component__ = __webpack_require__("./src/app/components/hmo-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__components_hmo_form_component__ = __webpack_require__("./src/app/components/hmo-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__components_hmo_edit_component__ = __webpack_require__("./src/app/components/hmo-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__components_test_centers_component__ = __webpack_require__("./src/app/components/test-centers.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__components_new_tc_component__ = __webpack_require__("./src/app/components/new-tc.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__components_tc_detail_component__ = __webpack_require__("./src/app/components/tc-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_tc_edit_component__ = __webpack_require__("./src/app/components/tc-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_partners_component__ = __webpack_require__("./src/app/components/partners.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_new_partner_component__ = __webpack_require__("./src/app/components/new-partner.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_partner_detail_component__ = __webpack_require__("./src/app/components/partner-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__components_partner_edit_component__ = __webpack_require__("./src/app/components/partner-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__components_users_component__ = __webpack_require__("./src/app/components/users.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__components_user_detail_component__ = __webpack_require__("./src/app/components/user-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__components_new_user_component__ = __webpack_require__("./src/app/components/new-user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__components_user_edit_component__ = __webpack_require__("./src/app/components/user-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__components_newsletters_component__ = __webpack_require__("./src/app/components/newsletters.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__components_newsletter_detail_component__ = __webpack_require__("./src/app/components/newsletter-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__components_new_newsletter_component__ = __webpack_require__("./src/app/components/new-newsletter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__components_newsletter_edit_component__ = __webpack_require__("./src/app/components/newsletter-edit.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__components_charts_res_locs_chart_component__ = __webpack_require__("./src/app/components/charts/res-locs-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__components_charts_res_kits_chart_component__ = __webpack_require__("./src/app/components/charts/res-kits-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__components_charts_res_concentration_chart_component__ = __webpack_require__("./src/app/components/charts/res-concentration-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__components_charts_clients_diseases_chart_component__ = __webpack_require__("./src/app/components/charts/clients-diseases-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_charts_clients_allergies_chart_component__ = __webpack_require__("./src/app/components/charts/clients-allergies-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_charts_clients_disabilities_chart_component__ = __webpack_require__("./src/app/components/charts/clients-disabilities-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_charts_newsletters_subscribers_chart_component__ = __webpack_require__("./src/app/components/charts/newsletters-subscribers-chart.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__pipes_safehtml_pipe__ = __webpack_require__("./src/app/pipes/safehtml.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__services_user_srv__ = __webpack_require__("./src/app/services/user.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__utils_login_guard__ = __webpack_require__("./src/app/utils/login.guard.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__utils_headers__ = __webpack_require__("./src/app/utils/headers.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__directives_equal_validator_directive__ = __webpack_require__("./src/app/directives/equal-validator.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__directives_only_number_directive__ = __webpack_require__("./src/app/directives/only-number.directive.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -237,56 +240,63 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 var appRoutes = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_22__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_22__components_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
     { path: 'login', component: __WEBPACK_IMPORTED_MODULE_12__components_login_component__["a" /* LoginComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_13__components_register_component__["a" /* RegisterComponent */] },
-    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_17__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_14__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_16__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_18__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_21__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_25__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_27__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_28__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_31__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_30__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_33__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_42__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_41__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_43__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_34__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_37__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_38__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'client/edit/:id', component: __WEBPACK_IMPORTED_MODULE_40__components_client_edit_component__["a" /* ClientEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_44__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_46__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_45__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_47__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_48__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_50__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_49__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_51__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_52__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_54__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_53__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_55__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'newsletters', component: __WEBPACK_IMPORTED_MODULE_60__components_newsletters_component__["a" /* NewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'newsletter/:id', component: __WEBPACK_IMPORTED_MODULE_61__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-newsletter', component: __WEBPACK_IMPORTED_MODULE_62__components_new_newsletter_component__["a" /* NewNewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'newsletter/edit/:id', component: __WEBPACK_IMPORTED_MODULE_63__components_newsletter_edit_component__["a" /* NewsletterEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_56__components_users_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'user/:id', component: __WEBPACK_IMPORTED_MODULE_57__components_user_detail_component__["a" /* UserDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_58__components_new_user_component__["a" /* NewUserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
-    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_59__components_user_edit_component__["a" /* UserEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drugs', component: __WEBPACK_IMPORTED_MODULE_17__components_drugs_component__["a" /* DrugsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'diseases', component: __WEBPACK_IMPORTED_MODULE_14__components_diseases_component__["a" /* DiseasesComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disease/edit/:id', component: __WEBPACK_IMPORTED_MODULE_15__components_disease_edit_component__["a" /* DiseaseEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disease', component: __WEBPACK_IMPORTED_MODULE_16__components_disease_form_component__["a" /* DiseaseFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergies', component: __WEBPACK_IMPORTED_MODULE_18__components_allergies_component__["a" /* AllergyComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/:id', component: __WEBPACK_IMPORTED_MODULE_19__components_allergy_detail_component__["a" /* AllergyDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-allergy', component: __WEBPACK_IMPORTED_MODULE_21__components_allergy_form_component__["a" /* AllergyFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'allergy/edit/:id', component: __WEBPACK_IMPORTED_MODULE_20__components_allergy_edit_component__["a" /* AllergyEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disabilities', component: __WEBPACK_IMPORTED_MODULE_25__components_disabilities_component__["a" /* DisabilityComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-disability', component: __WEBPACK_IMPORTED_MODULE_26__components_disability_form_component__["a" /* DisabilityFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'disability/edit/:id', component: __WEBPACK_IMPORTED_MODULE_27__components_disability_edit_component__["a" /* DisabilityEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'blood-groups', component: __WEBPACK_IMPORTED_MODULE_28__components_blood_groups_component__["a" /* BloodGroupComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'state/edit/:id', component: __WEBPACK_IMPORTED_MODULE_31__components_state_edit_component__["a" /* StateEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'states', component: __WEBPACK_IMPORTED_MODULE_30__components_states_component__["a" /* StateComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govts', component: __WEBPACK_IMPORTED_MODULE_32__components_local_govts_component__["a" /* LocalGovtComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'local_govt/edit/:id', component: __WEBPACK_IMPORTED_MODULE_33__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-drug', component: __WEBPACK_IMPORTED_MODULE_44__components_drug_form_component__["a" /* DrugFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/:id', component: __WEBPACK_IMPORTED_MODULE_43__components_drug_detail_component__["a" /* DrugDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'drug/edit/:id', component: __WEBPACK_IMPORTED_MODULE_45__components_drug_edit_component__["a" /* DrugEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responders', component: __WEBPACK_IMPORTED_MODULE_34__components_responders_component__["a" /* ResponderComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-responder', component: __WEBPACK_IMPORTED_MODULE_36__components_responder_form_component__["a" /* ResponderFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/:id', component: __WEBPACK_IMPORTED_MODULE_35__components_responder_detail_component__["a" /* ResponderDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'responder/edit/:id', component: __WEBPACK_IMPORTED_MODULE_37__components_responder_edit_component__["a" /* ResponderEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'clients', component: __WEBPACK_IMPORTED_MODULE_38__components_clients_component__["a" /* ClientComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/:id', component: __WEBPACK_IMPORTED_MODULE_39__components_client_detail_component__["a" /* ClientDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'client/edit/:id', component: __WEBPACK_IMPORTED_MODULE_40__components_client_edit_component__["a" /* ClientEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmos', component: __WEBPACK_IMPORTED_MODULE_46__components_hmo_component__["a" /* HMOComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-hmo', component: __WEBPACK_IMPORTED_MODULE_48__components_hmo_form_component__["a" /* HMOFormComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/:id', component: __WEBPACK_IMPORTED_MODULE_47__components_hmo_detail_component__["a" /* HMODetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'hmo/edit/:id', component: __WEBPACK_IMPORTED_MODULE_49__components_hmo_edit_component__["a" /* HMOEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-centers', component: __WEBPACK_IMPORTED_MODULE_50__components_test_centers_component__["a" /* TestCenterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/:id', component: __WEBPACK_IMPORTED_MODULE_52__components_tc_detail_component__["a" /* TCDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-tc', component: __WEBPACK_IMPORTED_MODULE_51__components_new_tc_component__["a" /* NewTCComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'test-center/edit/:id', component: __WEBPACK_IMPORTED_MODULE_53__components_tc_edit_component__["a" /* TCEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partners', component: __WEBPACK_IMPORTED_MODULE_54__components_partners_component__["a" /* PartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/:id', component: __WEBPACK_IMPORTED_MODULE_56__components_partner_detail_component__["a" /* PartnerDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-partner', component: __WEBPACK_IMPORTED_MODULE_55__components_new_partner_component__["a" /* NewPartnerComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'partner/edit/:id', component: __WEBPACK_IMPORTED_MODULE_57__components_partner_edit_component__["a" /* PartnerEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'subscribers', component: __WEBPACK_IMPORTED_MODULE_41__components_subscribers_component__["a" /* SubscriberComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    // { path: 'partner/:id', component: PartnerDetailComponent, canActivate: [LoggedInGuard]},
+    { path: 'new-subscriber', component: __WEBPACK_IMPORTED_MODULE_42__components_new_subscriber_component__["a" /* NewSubscriberComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    // { path: 'partner/edit/:id', component: PartnerEditComponent, canActivate: [LoggedInGuard]},
+    { path: 'newsletters', component: __WEBPACK_IMPORTED_MODULE_62__components_newsletters_component__["a" /* NewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'newsletter/:id', component: __WEBPACK_IMPORTED_MODULE_63__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-newsletter', component: __WEBPACK_IMPORTED_MODULE_64__components_new_newsletter_component__["a" /* NewNewsletterComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'newsletter/edit/:id', component: __WEBPACK_IMPORTED_MODULE_65__components_newsletter_edit_component__["a" /* NewsletterEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'users', component: __WEBPACK_IMPORTED_MODULE_58__components_users_component__["a" /* UserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/:id', component: __WEBPACK_IMPORTED_MODULE_59__components_user_detail_component__["a" /* UserDetailComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'new-user', component: __WEBPACK_IMPORTED_MODULE_60__components_new_user_component__["a" /* NewUserComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
+    { path: 'user/edit/:id', component: __WEBPACK_IMPORTED_MODULE_61__components_user_edit_component__["a" /* UserEditComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */]] },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -296,25 +306,26 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_13__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_12__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_75__directives_equal_validator_directive__["a" /* EqualValidator */], __WEBPACK_IMPORTED_MODULE_76__directives_only_number_directive__["a" /* OnlyNumber */],
+            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_13__components_register_component__["a" /* RegisterComponent */], __WEBPACK_IMPORTED_MODULE_12__components_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_78__directives_equal_validator_directive__["a" /* EqualValidator */], __WEBPACK_IMPORTED_MODULE_79__directives_only_number_directive__["a" /* OnlyNumber */],
             __WEBPACK_IMPORTED_MODULE_14__components_diseases_component__["a" /* DiseasesComponent */], __WEBPACK_IMPORTED_MODULE_15__components_disease_edit_component__["a" /* DiseaseEditComponent */], __WEBPACK_IMPORTED_MODULE_16__components_disease_form_component__["a" /* DiseaseFormComponent */],
             __WEBPACK_IMPORTED_MODULE_25__components_disabilities_component__["a" /* DisabilityComponent */], __WEBPACK_IMPORTED_MODULE_27__components_disability_edit_component__["a" /* DisabilityEditComponent */], __WEBPACK_IMPORTED_MODULE_26__components_disability_form_component__["a" /* DisabilityFormComponent */],
             __WEBPACK_IMPORTED_MODULE_18__components_allergies_component__["a" /* AllergyComponent */], __WEBPACK_IMPORTED_MODULE_20__components_allergy_edit_component__["a" /* AllergyEditComponent */], __WEBPACK_IMPORTED_MODULE_21__components_allergy_form_component__["a" /* AllergyFormComponent */], __WEBPACK_IMPORTED_MODULE_19__components_allergy_detail_component__["a" /* AllergyDetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__components_blood_groups_component__["a" /* BloodGroupComponent */], __WEBPACK_IMPORTED_MODULE_30__components_states_component__["a" /* StateComponent */], __WEBPACK_IMPORTED_MODULE_31__components_state_edit_component__["a" /* StateEditComponent */], __WEBPACK_IMPORTED_MODULE_42__components_drug_form_component__["a" /* DrugFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__components_blood_groups_component__["a" /* BloodGroupComponent */], __WEBPACK_IMPORTED_MODULE_30__components_states_component__["a" /* StateComponent */], __WEBPACK_IMPORTED_MODULE_31__components_state_edit_component__["a" /* StateEditComponent */], __WEBPACK_IMPORTED_MODULE_44__components_drug_form_component__["a" /* DrugFormComponent */],
             __WEBPACK_IMPORTED_MODULE_34__components_responders_component__["a" /* ResponderComponent */], __WEBPACK_IMPORTED_MODULE_37__components_responder_edit_component__["a" /* ResponderEditComponent */], __WEBPACK_IMPORTED_MODULE_36__components_responder_form_component__["a" /* ResponderFormComponent */],
             __WEBPACK_IMPORTED_MODULE_32__components_local_govts_component__["a" /* LocalGovtComponent */], __WEBPACK_IMPORTED_MODULE_33__components_local_govt_edit_component__["a" /* LocalGovtEditComponent */],
             __WEBPACK_IMPORTED_MODULE_38__components_clients_component__["a" /* ClientComponent */], __WEBPACK_IMPORTED_MODULE_39__components_client_detail_component__["a" /* ClientDetailComponent */], __WEBPACK_IMPORTED_MODULE_40__components_client_edit_component__["a" /* ClientEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__components_drugs_component__["a" /* DrugsComponent */], __WEBPACK_IMPORTED_MODULE_43__components_drug_edit_component__["a" /* DrugEditComponent */], __WEBPACK_IMPORTED_MODULE_41__components_drug_detail_component__["a" /* DrugDetailComponent */], __WEBPACK_IMPORTED_MODULE_35__components_responder_detail_component__["a" /* ResponderDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__components_drugs_component__["a" /* DrugsComponent */], __WEBPACK_IMPORTED_MODULE_45__components_drug_edit_component__["a" /* DrugEditComponent */], __WEBPACK_IMPORTED_MODULE_43__components_drug_detail_component__["a" /* DrugDetailComponent */], __WEBPACK_IMPORTED_MODULE_35__components_responder_detail_component__["a" /* ResponderDetailComponent */],
             __WEBPACK_IMPORTED_MODULE_22__components_dashboard_component__["a" /* DashboardComponent */], __WEBPACK_IMPORTED_MODULE_23__components_header_component__["a" /* HeaderComponent */],
             __WEBPACK_IMPORTED_MODULE_24__components_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_29__components_sidebar_component__["a" /* SidebarComponent */],
-            __WEBPACK_IMPORTED_MODULE_48__components_test_centers_component__["a" /* TestCenterComponent */], __WEBPACK_IMPORTED_MODULE_49__components_new_tc_component__["a" /* NewTCComponent */], __WEBPACK_IMPORTED_MODULE_50__components_tc_detail_component__["a" /* TCDetailComponent */], __WEBPACK_IMPORTED_MODULE_51__components_tc_edit_component__["a" /* TCEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_52__components_partners_component__["a" /* PartnerComponent */], __WEBPACK_IMPORTED_MODULE_53__components_new_partner_component__["a" /* NewPartnerComponent */], __WEBPACK_IMPORTED_MODULE_54__components_partner_detail_component__["a" /* PartnerDetailComponent */], __WEBPACK_IMPORTED_MODULE_55__components_partner_edit_component__["a" /* PartnerEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_44__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_47__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_46__components_hmo_form_component__["a" /* HMOFormComponent */], __WEBPACK_IMPORTED_MODULE_45__components_hmo_detail_component__["a" /* HMODetailComponent */],
-            __WEBPACK_IMPORTED_MODULE_64__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_65__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_66__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
-            __WEBPACK_IMPORTED_MODULE_67__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_69__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_68__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */],
-            __WEBPACK_IMPORTED_MODULE_56__components_users_component__["a" /* UserComponent */], __WEBPACK_IMPORTED_MODULE_57__components_user_detail_component__["a" /* UserDetailComponent */], __WEBPACK_IMPORTED_MODULE_58__components_new_user_component__["a" /* NewUserComponent */], __WEBPACK_IMPORTED_MODULE_59__components_user_edit_component__["a" /* UserEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_60__components_newsletters_component__["a" /* NewsletterComponent */], __WEBPACK_IMPORTED_MODULE_62__components_new_newsletter_component__["a" /* NewNewsletterComponent */], __WEBPACK_IMPORTED_MODULE_61__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], __WEBPACK_IMPORTED_MODULE_63__components_newsletter_edit_component__["a" /* NewsletterEditComponent */],
-            __WEBPACK_IMPORTED_MODULE_70__pipes_safehtml_pipe__["a" /* SafeHtmlPipe */],
+            __WEBPACK_IMPORTED_MODULE_50__components_test_centers_component__["a" /* TestCenterComponent */], __WEBPACK_IMPORTED_MODULE_51__components_new_tc_component__["a" /* NewTCComponent */], __WEBPACK_IMPORTED_MODULE_52__components_tc_detail_component__["a" /* TCDetailComponent */], __WEBPACK_IMPORTED_MODULE_53__components_tc_edit_component__["a" /* TCEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_54__components_partners_component__["a" /* PartnerComponent */], __WEBPACK_IMPORTED_MODULE_55__components_new_partner_component__["a" /* NewPartnerComponent */], __WEBPACK_IMPORTED_MODULE_56__components_partner_detail_component__["a" /* PartnerDetailComponent */], __WEBPACK_IMPORTED_MODULE_57__components_partner_edit_component__["a" /* PartnerEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_46__components_hmo_component__["a" /* HMOComponent */], __WEBPACK_IMPORTED_MODULE_49__components_hmo_edit_component__["a" /* HMOEditComponent */], __WEBPACK_IMPORTED_MODULE_48__components_hmo_form_component__["a" /* HMOFormComponent */], __WEBPACK_IMPORTED_MODULE_47__components_hmo_detail_component__["a" /* HMODetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_66__components_charts_res_locs_chart_component__["a" /* ResponderLocationChartComponent */], __WEBPACK_IMPORTED_MODULE_67__components_charts_res_kits_chart_component__["a" /* ResponderKitChartComponent */], __WEBPACK_IMPORTED_MODULE_68__components_charts_res_concentration_chart_component__["a" /* ResponderConcentrationChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_69__components_charts_clients_diseases_chart_component__["a" /* ClientDiseaseChartComponent */], __WEBPACK_IMPORTED_MODULE_71__components_charts_clients_disabilities_chart_component__["a" /* ClientDisabilityChartComponent */], __WEBPACK_IMPORTED_MODULE_70__components_charts_clients_allergies_chart_component__["a" /* ClientAllergytChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_72__components_charts_newsletters_subscribers_chart_component__["a" /* NewsletterSubscribersChartComponent */],
+            __WEBPACK_IMPORTED_MODULE_58__components_users_component__["a" /* UserComponent */], __WEBPACK_IMPORTED_MODULE_59__components_user_detail_component__["a" /* UserDetailComponent */], __WEBPACK_IMPORTED_MODULE_60__components_new_user_component__["a" /* NewUserComponent */], __WEBPACK_IMPORTED_MODULE_61__components_user_edit_component__["a" /* UserEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_62__components_newsletters_component__["a" /* NewsletterComponent */], __WEBPACK_IMPORTED_MODULE_64__components_new_newsletter_component__["a" /* NewNewsletterComponent */], __WEBPACK_IMPORTED_MODULE_63__components_newsletter_detail_component__["a" /* NewsletterDetailComponent */], __WEBPACK_IMPORTED_MODULE_65__components_newsletter_edit_component__["a" /* NewsletterEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_73__pipes_safehtml_pipe__["a" /* SafeHtmlPipe */], __WEBPACK_IMPORTED_MODULE_41__components_subscribers_component__["a" /* SubscriberComponent */], __WEBPACK_IMPORTED_MODULE_42__components_new_subscriber_component__["a" /* NewSubscriberComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_7_angular2_toaster__["a" /* ToasterModule */], __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_8_ng2_pagination__["Ng2PaginationModule"],
@@ -324,7 +335,7 @@ AppModule = __decorate([
                 confirmButtonType: 'danger' // set defaults here
             })
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_71__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_74__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_72__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_73__utils_headers__["a" /* CustomRequestOptions */] }],
+        providers: [__WEBPACK_IMPORTED_MODULE_74__services_user_srv__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_77__shared_api__["a" /* Globals */], __WEBPACK_IMPORTED_MODULE_75__utils_login_guard__["a" /* LoggedInGuard */], { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* RequestOptions */], useClass: __WEBPACK_IMPORTED_MODULE_76__utils_headers__["a" /* CustomRequestOptions */] }],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -943,6 +954,113 @@ ClientDiseaseChartComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=clients-diseases-chart.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/charts/newsletters-subscribers-chart.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_dashboard_srv__ = __webpack_require__("./src/app/services/dashboard.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsletterSubscribersChartComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var NewsletterSubscribersChartComponent = (function () {
+    function NewsletterSubscribersChartComponent(_dashboardService) {
+        this._dashboardService = _dashboardService;
+    }
+    ;
+    NewsletterSubscribersChartComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._dashboardService.getDashboardData()
+            .then(function (response) {
+            var g = response[6]['subscriptions'];
+            var iArray = [];
+            g.forEach(function (item) {
+                var inner = [item['unsubscribed'], item['total']];
+                iArray.push(inner);
+            });
+            _this.displayChart(iArray);
+        })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    NewsletterSubscribersChartComponent.prototype.displayChart = function (_data) {
+        this.options = {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Newsletters vs Subscribers'
+            },
+            xAxis: {
+                type: 'category',
+                title: {
+                    text: 'Newsletters'
+                },
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Subscribers'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: '{point.y}' + ' subscriber(s)' //_data[0][1] +' responder(s) in  ' +_data[0][0] //'Population in 2008: <b>{point.y} millions</b>'
+            },
+            series: [{
+                    name: 'Population',
+                    data: _data,
+                    dataLabels: {
+                        enabled: true,
+                        rotation: -90,
+                        color: '#FFFFFF',
+                        align: 'right',
+                        format: '{point.y:.1f}',
+                        y: 10,
+                        style: {
+                            fontSize: '13px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                }]
+        };
+    };
+    ;
+    return NewsletterSubscribersChartComponent;
+}());
+NewsletterSubscribersChartComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'newsletters-subscribers-component',
+        styles: ["\n      chart {\n        display: block;\n      }\n    "],
+        template: "\n           <chart [options]=\"options\"></chart>     \n  ",
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_dashboard_srv__["a" /* DashboardService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_dashboard_srv__["a" /* DashboardService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_dashboard_srv__["a" /* DashboardService */]) === "function" && _a || Object])
+], NewsletterSubscribersChartComponent);
+
+var _a;
+//# sourceMappingURL=newsletters-subscribers-chart.component.js.map
 
 /***/ }),
 
@@ -2957,6 +3075,55 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "./src/app/components/new-subscriber.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__ = __webpack_require__("./src/app/services/subscribers.srv.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewSubscriberComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewSubscriberComponent = (function () {
+    function NewSubscriberComponent(subscriberSrv, route) {
+        this.subscriberSrv = subscriberSrv;
+        this.route = route;
+        this.subscriber = {};
+    }
+    NewSubscriberComponent.prototype.ngOnInit = function () {
+    };
+    NewSubscriberComponent.prototype.onSubmit = function () {
+        this.subscriberSrv.saveSubscriber(this.subscriber);
+    };
+    return NewSubscriberComponent;
+}());
+NewSubscriberComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        // moduleId: module.id,
+        selector: 'hero-form',
+        template: __webpack_require__("./src/app/views/new-subscriber.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */],
+        ]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], NewSubscriberComponent);
+
+var _a, _b;
+//# sourceMappingURL=new-subscriber.component.js.map
+
+/***/ }),
+
 /***/ "./src/app/components/new-tc.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4067,6 +4234,76 @@ StateComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=states.component.js.map
+
+/***/ }),
+
+/***/ "./src/app/components/subscribers.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__ = __webpack_require__("./src/app/services/subscribers.srv.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubscriberComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SubscriberComponent = (function () {
+    function SubscriberComponent(_subscriberService) {
+        this._subscriberService = _subscriberService;
+        this.search = "";
+    }
+    SubscriberComponent.prototype.getSubscribers = function () {
+        var _this = this;
+        this._subscriberService.getSubscribers()
+            .then(function (allergies) { return _this.subscribers = allergies; })
+            .catch(function (error) { return _this.error = error; });
+    };
+    ;
+    SubscriberComponent.prototype.searchSubscribers = function () {
+        var _this = this;
+        if (this.search.length > 3) {
+            this._subscriberService.searchSubscriber(this.search).then(function (result) { return _this.subscribers = result; })
+                .catch(function (error) { return _this.error = error; });
+        }
+        else {
+            this.getSubscribers();
+        }
+    };
+    ;
+    SubscriberComponent.prototype.deleteSubscriber = function (x) {
+        var _this = this;
+        this._subscriberService.deleteSubscriber(x.id).then(function (response) {
+            var index = _this.subscribers.indexOf(x);
+            if (index !== -1) {
+                _this.subscribers.splice(index, 1);
+            }
+        })
+            .catch(function (err) { return _this.error = err; });
+    };
+    SubscriberComponent.prototype.ngOnInit = function () {
+        this.getSubscribers();
+    };
+    return SubscriberComponent;
+}());
+SubscriberComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        //selector: 'disabilities',
+        template: __webpack_require__("./src/app/views/subscribers.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_subscribers_srv__["a" /* SubscriberService */]) === "function" && _a || Object])
+], SubscriberComponent);
+
+var _a;
+//# sourceMappingURL=subscribers.component.js.map
 
 /***/ }),
 
@@ -7056,6 +7293,129 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
+/***/ "./src/app/services/subscribers.srv.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("./node_modules/@angular/router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__ = __webpack_require__("./node_modules/rxjs/add/operator/toPromise.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_toPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_api__ = __webpack_require__("./src/app/shared/api.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SubscriberService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var SubscriberService = (function () {
+    function SubscriberService(http, globals, router, toasterService) {
+        this.http = http;
+        this.globals = globals;
+        this.router = router;
+        this.toasterService = toasterService;
+        this.subscribersURL = this.globals.SUBSCRIBERS_URL;
+        this.v = localStorage.getItem('auth_token');
+        this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]({ 'Content-Type': 'application/json',
+                'Authorization': 'JWT ' + this.v
+            }) });
+    }
+    SubscriberService.prototype.getSubscribers = function () {
+        var v = this.page_header();
+        return this.http.get(this.subscribersURL, v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    SubscriberService.prototype.page_header = function () {
+        var data = localStorage.getItem('auth_token');
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Headers */]();
+        var opt;
+        headers.append('Authorization', 'JWT ' + data);
+        opt = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({ headers: headers });
+        return opt;
+    };
+    SubscriberService.prototype.findAllergyByID = function (pk) {
+        var v = this.page_header();
+        return this.http.get(this.subscribersURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    SubscriberService.prototype.updateAllergyInfo = function (allergy) {
+        var _this = this;
+        if (allergy === void 0) { allergy = {}; }
+        var v = this.page_header();
+        var _data = JSON.stringify(allergy);
+        if (allergy) {
+            this.http.patch(this.subscribersURL + allergy.id + '/', allergy, v).subscribe(function (data) {
+                _this.toasterService.pop('success', 'Subscriber Info updated', '');
+                _this.router.navigateByUrl('allergies');
+            }, function (error) { return console.log(error.json().message); });
+        }
+    };
+    ;
+    SubscriberService.prototype.searchSubscriber = function (allergy) {
+        var params = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* URLSearchParams */]();
+        params.append('email', allergy);
+        this.options.search = params;
+        return this.http.get(this.subscribersURL, this.options)
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    ;
+    SubscriberService.prototype.saveSubscriber = function (data) {
+        var _this = this;
+        var _data = JSON.stringify(data);
+        var v = this.page_header();
+        this.http.post(this.subscribersURL, data, v).subscribe(function (data) {
+            _this.toasterService.pop('success', 'Subscriber saved', '');
+            _this.router.navigateByUrl('subscribers');
+        }, function (error) { return console.log(error.json().message); });
+    };
+    ;
+    SubscriberService.prototype.deleteSubscriber = function (pk) {
+        var _this = this;
+        var v = this.page_header();
+        return this.http.delete(this.subscribersURL + pk + '/', v)
+            .toPromise()
+            .then(function (response) {
+            //response.json()
+            _this.toasterService.pop('success', 'Subscriber deleted!', '');
+        })
+            .catch(this.handleError);
+    };
+    ;
+    SubscriberService.prototype.handleError = function (error) {
+        console.error('An error occurred', error);
+        return Promise.reject(error.message || error);
+    };
+    return SubscriberService;
+}());
+SubscriberService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__shared_api__["a" /* Globals */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angular2_toaster__["b" /* ToasterService */]) === "function" && _d || Object])
+], SubscriberService);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=subscribers.srv.js.map
+
+/***/ }),
+
 /***/ "./src/app/services/test-center.srv.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -7375,7 +7735,7 @@ var _a, _b, _c, _d;
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])();
 var Globals = (function () {
     function Globals() {
-        this.HOST_URL = 'http://139.162.213.237:8002'; // 'http://0.0.0.0:8002'; // 
+        this.HOST_URL = 'http://139.162.213.237:8002'; // 'http://0.0.0.0:8002'; //   
         this.LOGIN_URL = this.HOST_URL + '/api/core/api-token-auth/';
         this.LOGOUT_URL = this.HOST_URL + '/client/api/logout/';
         this.DASHBOARD_URL = this.HOST_URL + '/api/medic/dashboard_data/'; //'http://139.162.213.237:8002/api/medic/dashboard_data/';
@@ -7410,6 +7770,7 @@ var Globals = (function () {
         this.USERS_URL = this.HOST_URL + '/api/core/users/';
         this.NEWSLETTERS_URL = this.HOST_URL + '/api/core/newsletters/';
         this.NEWSLETTER_STATE_URL = this.HOST_URL + '/api/core/newsletter_state/';
+        this.SUBSCRIBERS_URL = this.HOST_URL + '/api/core/subscribers/';
     }
     return Globals;
 }());
@@ -7551,7 +7912,7 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ "./src/app/views/dashboard.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<header-component></header-component>\n <sidebar-component></sidebar-component>\n\n <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n \n\n        <div class=\"container-fluid\">\n\n\n\n            <div class=\"animated fadeIn\">\n\n                <div class=\"card-columns col-2\">\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Locations\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-locations-component></responder-locations-component>\n                            </div>\n                        </div>\n                    </div>\n                     <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Kits\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Status\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <canvas id=\"canvas-2\"></canvas>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Areas of Concentration\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                 <responder-concentration-component></responder-concentration-component>\n                            </div>\n                        </div>\n                    </div>\n                   <!--  <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Reviews\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Users\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div> -->\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Allergies\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <client-allergies-component></client-allergies-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Diseases\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-diseases-component></client-diseases-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Disabilities\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-disabilities-component></client-disabilities-component>\n                            </div>\n                        </div>\n                    </div>\n                     \n                </div>\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n    \n\n\n<footer-component></footer-component>"
+module.exports = "\n<header-component></header-component>\n <sidebar-component></sidebar-component>\n\n <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n \n\n        <div class=\"container-fluid\">\n\n\n\n            <div class=\"animated fadeIn\">\n\n                <div class=\"card-columns col-2\">\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Locations\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-locations-component></responder-locations-component>\n                            </div>\n                        </div>\n                    </div>\n                     <div class=\"card\">\n                        <div class=\"card-header\">\n                            Responders / Kits\n                             <div class=\"card-actions\"> \n                           \n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Status\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <canvas id=\"canvas-2\"></canvas>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Areas of Concentration\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                 <responder-concentration-component></responder-concentration-component>\n                            </div>\n                        </div>\n                    </div>\n                   <!--  <div class=\"card\">\n                        <div class=\"card-header\">\n                             Responders / Reviews\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Users\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <responder-kits-component></responder-kits-component>\n                            </div>\n                        </div>\n                    </div> -->\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Allergies\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                             <div class=\"chart-wrapper\">\n                                <client-allergies-component></client-allergies-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Diseases\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-diseases-component></client-diseases-component>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Clients / Disabilities\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <client-disabilities-component></client-disabilities-component>\n                            </div>\n                        </div>\n                    </div>\n\n                    <div class=\"card\">\n                        <div class=\"card-header\">\n                            Newsletters / Subscribers\n                            <div class=\"card-actions\">\n                                <a href=\"http://www.chartjs.org\">\n                                    <small class=\"text-muted\">docs</small>\n                                </a>\n                            </div>\n                        </div>\n                        <div class=\"card-block\">\n                            <div class=\"chart-wrapper\">\n                                <newsletters-subscribers-component></newsletters-subscribers-component>\n                            </div>\n                        </div>\n                    </div>\n\n                     \n                </div>\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n    \n\n\n<footer-component></footer-component>"
 
 /***/ }),
 
@@ -7702,6 +8063,13 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 
 /***/ }),
 
+/***/ "./src/app/views/new-subscriber.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            \n        </ol>\n\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                     <div class=\"col-lg-8\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-edit\"></i>New Partner\n                                <div class=\"card-actions\">\n                                    <a href=\"#\" class=\"btn-setting\"><i class=\"icon-settings\"></i></a>\n                                    <a href=\"#\" class=\"btn-minimize\"><i class=\"icon-arrow-up\"></i></a>\n                                    <a href=\"#\" class=\"btn-close\"><i class=\"icon-close\"></i></a>\n                                </div>\n                            </div>\n                            <div class=\"card-block\">\n                                <form class=\"form-horizontal\" (ngSubmit)=\"subscriberForm.form.valid &&  onSubmit()\"  #subscriberForm=\"ngForm\" novalidate>\n                                    <div class=\"form-group row\">\n                                        <label class=\"form-control-label\" for=\"\">Email</label>\n                                        <div class=\"controls\">\n                                            <div class=\"input-group\">\n                                                <input id=\"\" class=\"form-control\" type=\"text\"  \n                                                [(ngModel)]=\"subscriber.email\" name=\"email\" #email=\"ngModel\" required>\n                                            </div>\n                                            \n                                           <div *ngIf=\"subscriberForm.submitted && !email.valid\" class=\"alert alert-danger\">Subscriber email is required</div>\n                                        </div>\n                                    </div>\n\n\n\n                                    \n\n                                    <div class=\"form-actions\">\n                                        <button type=\"submit\" class=\"btn btn-primary\">Save </button>\n                                    </div>\n                                </form>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
+
+/***/ }),
+
 /***/ "./src/app/views/new-test-center.html":
 /***/ (function(module, exports) {
 
@@ -7796,7 +8164,7 @@ module.exports = "<header-component></header-component>\n<sidebar-component></si
 /***/ "./src/app/views/sidebar.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/newsletters\"><i class=\"icon-speedometer\"></i> Newsletters</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/users\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
+module.exports = "\n <div class=\"sidebar\">\n       \n       <nav class=\"sidebar-nav\">\n       \n            <ul class=\"nav\">\n            \n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#\"><i class=\"icon-speedometer\"></i> Dashboard <span class=\"tag tag-info\">NEW</span></a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/responders\"><i class=\"icon-speedometer\"></i> Responders </a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/clients\"><i class=\"icon-speedometer\"></i> Clients</a>\n                </li>\n                \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/drugs\"><i class=\"icon-speedometer\"></i> Drugs</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/hmos\"><i class=\"icon-speedometer\"></i> HMOs</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/diseases\"><i class=\"icon-speedometer\"></i> Medical Conditions</a>\n                </li>\n                 \n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/allergies\"><i class=\"icon-speedometer\"></i> Allergies</a>\n                </li>\n\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/disabilities\"><i class=\"icon-speedometer\"></i> Disabilities</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/states\"><i class=\"icon-speedometer\"></i> States</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/local_govts\"><i class=\"icon-speedometer\"></i> Local Govts</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/partners\"><i class=\"icon-speedometer\"></i> Partners</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/test-centers\"><i class=\"icon-speedometer\"></i> Test Centers</a>\n                </li>\n\n                 <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/newsletters\"><i class=\"icon-speedometer\"></i> Newsletters</a>\n                </li>\n\n                <li class=\"nav-item\">\n                    <a class=\"nav-link\" href=\"#/subscribers\"><i class=\"icon-speedometer\"></i> Subscribers</a>\n                </li>\n\n\n                <li class=\"nav-item\">\n               \n                    <a class=\"nav-link\" href=\"#/users\"><i class=\"icon-speedometer\"></i> Users</a>\n                </li>\n\n                \n              \n               \n               \n              \n\n            </ul>\n        </nav>\n    </div>  \n"
 
 /***/ }),
 
@@ -7811,6 +8179,13 @@ module.exports = "\n <header-component></header-component>\n<sidebar-component><
 /***/ (function(module, exports) {
 
 module.exports = "<header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> States\n                            </div>\n\n                            <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by name\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchStates()\"/>\n                            </div>\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Name</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let state of states| paginate: { itemsPerPage: 20, currentPage: p }\">\n                                            <td>{{state.name}}</td>\n                                           \n                                            <td>\n                                               \n                                                 <span><a href=\"#/state/edit/{{state.id}}\"><i class=\"icon-pencil icons\"></i></a></span> |\n                                                    <span><a (click)=\"deleteState(state)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                  <pagination-controls (pageChange)=\"p = $event\"></pagination-controls>\n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n    <footer-component></footer-component>"
+
+/***/ }),
+
+/***/ "./src/app/views/subscribers.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div *ngFor=\"let allergy of allergies\">\n   \t\t\t<div>{{allergy.name}}</div>\n </div> -->\n\n\n <header-component></header-component>\n<sidebar-component></sidebar-component>\n\n  <!-- Main content -->\n    <main class=\"main\">\n\n        <!-- Breadcrumb -->\n        <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\">Home</li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Admin</a>\n            </li>\n            <li class=\"breadcrumb-item active\">Dashboard</li>\n\n            <!-- Breadcrumb Menu-->\n            <li class=\"breadcrumb-menu\">\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Button group with nested dropdown\">\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-speech\"></i></a>\n                    <a class=\"btn btn-secondary\" href=\"./\"><i class=\"icon-graph\"></i> &nbsp;Dashboard</a>\n                    <a class=\"btn btn-secondary\" href=\"#\"><i class=\"icon-settings\"></i> &nbsp;Settings</a>\n                </div>\n            </li>\n        </ol>\n\n\n        <div class=\"container-fluid\">\n            <div class=\"animated fadeIn\">\n               \n                <!--/row-->\n\n              \n                <!--/row-->\n\n                <div class=\"row\">\n                    <div class=\"col-lg-12\">\n                        <div class=\"card\">\n                            <div class=\"card-header\">\n                                <i class=\"fa fa-align-justify\"></i> Subscribers\n                                <a class=\"\" href=\"#/new-subscriber\"><i class=\"icon-pencil icons  \"></i></a>\n                            </div>\n\n                             <div class=\"card-header\">\n                               Search\n                                <input class=\"form-control\" type=\"text\"  placeholder=\"Search by email\" \n                                                [(ngModel)]=\"search\" (keyup)=\"searchSubscribers()\"/>\n                            </div>\n\n\n                            <div class=\"card-block\">\n                                <table class=\"table table-bordered table-striped table-condensed\">\n                                    <thead>\n                                        <tr>\n                                            <th>Date Added</th>\n                                            <th>Email</th>\n                                           \n                                            <th>Actions</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr *ngFor=\"let p of subscribers\">\n                                           <td>{{p.date_added |date}}</td>\n                                            <td>{{p.email}}</td>\n                                           \n                                            <td>\n                                               <!--  <span><a href=\"#/partner/edit/{{p.id}}\"><i class=\"icon-pencil icons\"></i></a></span> | -->\n                                                  <span><a (click)=\"deleteSubscriber(p)\"><i class=\"icon-trash icons\"></i></a></span> \n                                            </td>\n                                        </tr>\n                                       \n                                      \n                                    </tbody>\n                                </table>\n                                <nav>\n                                    \n                                </nav>\n                            </div>\n                        </div>\n                    </div>\n                    <!--/col-->\n                </div>\n                <!--/row-->\n            </div>\n\n        </div>\n        <!-- /.conainer-fluid -->\n    </main>\n\n   \n\n    <footer-component></footer-component>"
 
 /***/ }),
 
