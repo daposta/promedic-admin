@@ -56,19 +56,22 @@
                                         <tr>
                                             <th>Date Added</th>
                                             <th>Email</th>
-                                           
-                                            <th>Actions</th>
+                                            <th>Unsubscribed</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr *ngFor="let p of subscribers">
                                            <td>{{p.date_added |date}}</td>
                                             <td>{{p.email}}</td>
-                                           
                                             <td>
-                                               <!--  <span><a href="#/partner/edit/{{p.id}}"><i class="icon-pencil icons"></i></a></span> | -->
-                                                  <span><a (click)="deleteSubscriber(p)"><i class="icon-trash icons"></i></a></span> 
+                                           <!--  <input class="checkbox checkbox-success" type="checkbox" [checked]="p.unsubscribed" [disabled]="true" /> -->
+
+                                            <i class="fa fa-lock"  *ngIf="p.unsubscribed"  aria-hidden="true"></i>
+                                            
                                             </td>
+                                           
+                                          
                                         </tr>
                                        
                                       
